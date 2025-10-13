@@ -1,10 +1,10 @@
 import "./App.css";
 import About from "./components/About/About";
-import FAQ from "./components/FAQ/Faq";
-import Menu from "./components/menu/Menu";
+import FAQ from "./components/Faq/Faq";
+import Menu from "./components/Menu/Menu";
 import Products from "./components/Products/Products";
-import EspacoSection from "./components/services-appointments/EspacoSection";
-import Service from "./components/services-appointments/Service";
+import EspacoSection from "./components/Services-appointments/EspacoSection";
+import Service from "./components/Services-appointments/Service";
 
 function App() {
   return (
