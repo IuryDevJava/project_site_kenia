@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About/About";
+import Faq from "./components/Faq/Faq";
 import FAQ from "./components/Faq/Faq";
 import Menu from "./components/Menu/Menu";
 import Products from "./components/Products/Products";
@@ -14,7 +15,7 @@ function App() {
       <Service />
       <EspacoSection />
       <Products />
-      <FAQ />
+      <Faq />
     </div>
   );
 }
