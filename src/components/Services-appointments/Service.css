@@ -1,0 +1,256 @@
+/* Estilo geral da seção */
+.service_section {
+  padding: 70px 0 100px;
+  overflow: hidden;
+}
+
+/* Cabeçalho da seção */
+.service_header {
+  margin-bottom: 40px;
+  gap: 24px;
+  display: grid;
+}
+
+.service_header h1 {
+  font-size: var(--service-section-title-font-size);
+  color: var(--service-section-color-title);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.service_header .service_subtitle {
+  font-size: var(--service-section-sutitle-font-size);
+  color: #322b1a;
+  font-weight: 300;
+}
+
+/* Estilo dos cards de serviço */
+.service_card {
+  background-color: var(--service-card-background);
+  border: 1px solid #e3e7f4;
+  padding: 40px 23px 112px;
+  border-radius: 5px;
+  box-shadow: 0 15px 20px rgba(62, 19, 77, 0.25);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.card_title {
+  font-size: var(--service-section-card-title-font-size);
+  color: #675018;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card_icon_figure {
+  margin: 0;
+}
+
+.card_icon {
+  width: 34px;
+  height: 34px;
+}
+
+.card_text {
+  font-size: 16px;
+  color: #a09d97;
+  line-height: 160%;
+  margin: 0;
+}
+
+.service_div_button {
+  margin-top: 24px;
+}
+
+/* .service_button {
+  background-color: var(--service-button-color);
+  color: #ffffff;
+  border: none;
+  -webkit-text-stroke: 1px #ffffff1a;
+  text-shadow: 0px 2px 2px rgba(120, 120, 120, 1);
+  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
+  border-radius: 6px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.3s ease;
+} */
+
+.service_button {
+  background-color: var(--service-button-color);
+  font-size: 18px;
+  width: 204px;
+  height: 50px;
+}
+
+.btn-base {
+  color: #ffffff;
+  border: none;
+  -webkit-text-stroke: 1px #ffffff1a;
+  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
+  border-radius: 6px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: flex;
+  transition: background-color 0.3s ease;
+  min-width: 230px !important;
+  justify-content: center;
+}
+
+img.Image_button_icon {
+  width: 35px;
+  height: 35px;
+}
+
+.service_button:hover {
+  background-color: #725110;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .service_section {
+    padding: 50px 0 80px;
+  }
+
+  .service_header h1 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .service_header .service_subtitle {
+    font-size: 16px;
+  }
+
+  .service_header {
+    margin-bottom: 32px;
+    gap: 18px;
+  }
+
+  .card_title {
+    font-size: 16px;
+  }
+
+  .card_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card_text {
+    font-size: 14px;
+  }
+
+  .service_button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .btn-base {
+    min-width: 180px !important;
+  }
+
+  img.Image_button_icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service_section {
+    padding: 32px 0 60px;
+  }
+
+  .service_header {
+    margin-bottom: 16px;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .service_header h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .service_header h1,
+  .service_header .service_subtitle {
+    margin-right: auto;
+  }
+
+  .service_header .service_subtitle {
+    font-size: 14px;
+  }
+
+  .row_div_card {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .service_card {
+    background-color: var(--service-card-background);
+    border: 1px solid #e3e7f4;
+    padding: 25px 10px 50px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(62, 19, 77, 0.25);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card_title {
+    font-size: 15px;
+  }
+
+  .card_icon {
+    width: 28px;
+    height: 38px;
+  }
+
+  .card_text {
+    font-size: 13px;
+  }
+
+  .service_button {
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .btn-base {
+    min-width: 140px !important;
+  }
+
+  img.Image_button_icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .swiper-buttons-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .row_div_card {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 280px;
+    margin: auto !important;
+  }
+
+  .service_header {
+    margin: 0 0 0 !important;
+  }
+}

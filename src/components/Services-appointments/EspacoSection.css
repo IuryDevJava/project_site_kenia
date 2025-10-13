@@ -1,0 +1,192 @@
+.espaco-section {
+  padding: 0 0 70px 0;
+  overflow: hidden;
+}
+
+.espaco-texto h2 {
+  font-size: 30px;
+  color: #656565;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.espaco-texto p {
+  font-size: 18px;
+  color: #8b8985;
+  line-height: 116%;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.espaco-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 150%;
+}
+
+.espaco-swiper {
+  overflow: visible;
+}
+
+.espaco-swiper .swiper-slide {
+  width: 330px;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  opacity: 0.7;
+  transform: scale(0.8);
+  transform-origin: right center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.espaco-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.espaco-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================================================= */
+/* CÓDIGO CORRIGIDO SOMENTE PARA BULLETS E BOTÕES    */
+/* ================================================= */
+
+/* Contêiner principal para todos os controles */
+/* .swiper-navigation-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* O Swiper vai popular esta div que está acima dos botões */
+
+.swiper-navigation-controls {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.swiper-buttons-wrapper {
+  display: flex;
+  gap: 14px;
+  padding-top: 25px;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  position: static;
+  width: 44px;
+  height: 44px;
+  background-color: #468d86;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-color: #0d4124;
+}
+
+.swiper-button-prev-custom::after,
+.swiper-button-next-custom::after {
+  content: "";
+  border: solid #feffe6;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.swiper-button-prev-custom::after {
+  transform: rotate(135deg);
+}
+
+.swiper-button-next-custom::after {
+  transform: rotate(-45deg);
+}
+
+/* Estilo de cada bullet (inativo) */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ced4da;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo do bullet ATIVO */
+.swiper-pagination-bullet-active {
+  background-color: #008080;
+}
+
+/* ================================================= */
+/* SUAS MEDIA QUERIES (INTOCADAS)                    */
+/* ================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .espaco-section {
+    padding: 0 0 50px 0;
+  }
+
+  .espaco-texto h2 {
+    font-size: 25px;
+    color: #656565;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  .espaco-texto p {
+    font-size: 16px;
+    color: #8b8985;
+    padding: 0 0 32px;
+    margin-top: 18px;
+  }
+
+  .espaco-carousel-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    width: 120%;
+  }
+
+  .espaco-swiper {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .espaco-section {
+    padding: 0 0 32px 0;
+  }
+  .espaco-texto {
+    text-align: center;
+  }
+  .espaco-texto h2 {
+    font-size: 20px;
+  }
+  .espaco-texto p {
+    text-align: center;
+    font-size: 14px;
+    color: #8b8985;
+    padding: 0 0 24px;
+    margin-top: 18px;
+  }
+  .espaco-texto h2 {
+    font-size: 20px;
+  }
+  .espaco-carousel-wrapper {
+    margin-left: 0;
+  }
+  .espaco-swiper .swiper-slide {
+    width: 280px;
+    height: 260px;
+  }
+}

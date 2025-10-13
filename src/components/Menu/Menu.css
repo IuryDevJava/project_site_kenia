@@ -1,0 +1,220 @@
+/* .header {
+  padding: 12px 0;
+  position: fixed;
+} */
+
+.header {
+  padding: 12px 0;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.795);
+  z-index: 99999;
+  width: 100%;
+  visibility: visible;
+}
+
+.language-switcher-toggle {
+  background: none !important;
+  border: none !important;
+  color: #000 !important;
+}
+
+div.language-switcher-menu {
+  background: rgba(255, 255, 255, 0.815) !important;
+  border: none !important;
+  box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.26) !important;
+  z-index: 1000 !important;
+}
+
+.language-switcher-menu .item-language-menu:hover {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.language-switcher-toggle {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.hamburger-button {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav-list {
+  gap: var(--menu-gap-space);
+  margin-left: 115px !important;
+}
+
+.header-nav-link {
+  font-size: var(--menu-font-size);
+  color: #000;
+}
+
+.hamburger-button .material-symbols-outlined {
+  font-size: 1.8rem;
+  color: #353535;
+  vertical-align: middle;
+}
+
+.header-nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ac882c;
+  transition: width 0.3s;
+}
+
+.header-nav-item a:hover::after {
+  width: 100%;
+}
+
+.mobile-nav-link {
+  display: block;
+  font-size: var(--menu-font-size);
+  color: #000;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mobile-nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #675018;
+  transition: width 0.3s;
+}
+
+.mobile-nav-item a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .header-wrapper {
+    margin-bottom: 0 !important;
+  }
+
+  .img_logo_kenia {
+    width: 110px;
+    height: 80px;
+  }
+
+  .mobile-nav-item,
+  .mobile-nav-link,
+  .language-switcher-toggle,
+  .language-switcher-text {
+    font-size: 14px !important;
+  }
+
+  .hamburger-button .material-symbols-outlined {
+    font-size: 1.6rem;
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .mobile-nav-link {
+    color: white;
+    font-weight: bolder;
+  }
+
+  .language-switcher-flag {
+    width: 20px !important;
+    height: max-content !important;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 80px;
+    width: max-content;
+    right: 0;
+    /* background: rgba(255, 255, 255, 0.95); */
+    background-color: #a9873f;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 26px 20px;
+    z-index: 1000;
+  }
+
+  .mobile-nav-item a::after {
+    background: #ffc5c5;
+  }
+
+  .language-switcher-toggle {
+    margin-right: 10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .mobile-nav-item,
+  .mobile-nav-link,
+  .language-switcher-toggle,
+  .language-switcher-text {
+    font-size: 12px !important;
+  }
+
+  .img_logo_kenia {
+    width: 90px;
+    height: 60px;
+  }
+
+  .hamburger-button .material-symbols-outlined {
+    font-size: 1.4rem;
+  }
+
+  .language-switcher-flag {
+    width: 18px !important;
+    height: max-content !important;
+  }
+
+  .language-switcher-toggle {
+    margin-right: 10px !important;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 70px;
+    width: max-content;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 26px 20px;
+    z-index: 1000;
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .mobile-nav-item a::after {
+    background: #67511800;
+  }
+}

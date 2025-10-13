@@ -1,0 +1,145 @@
+/* Estilo geral da seção FAQ */
+.faq-section {
+  padding: 70px 0;
+}
+
+.faq-title {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #656565;
+}
+
+.accordion-item {
+  border: 2px solid rgba(138, 0, 119, 0.151) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  margin: 0 0 0 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 16px !important;
+}
+
+.accordion-item:hover {
+  background: #fffaff;
+  filter: drop-shadow(4px 2px 2px rgb(117, 63, 63));
+}
+
+.accordion-button {
+  font-weight: 400;
+  font-size: 20px !important;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.accordion-button:not(.collapse) .accordion-button:not(.collapsed) {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  color: none !important;
+}
+
+.accordion-button:not(.collapse):focus {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  color: none !important;
+}
+
+.accordion-button:not(.collapsed):focus {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  color: rgb(117, 0, 102);
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.accordion-body {
+  color: #000000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+.accordion-body ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.accordion-body li {
+  margin-bottom: 5px;
+}
+
+.accordion-body li::marker {
+  color: #4a8d48;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-section {
+    padding: 50px 0;
+  }
+
+  .faq-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .accordion-item {
+    margin-top: 12px !important;
+  }
+
+  .accordion-button {
+    font-weight: 400;
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Para dispositivos menores */
+@media (max-width: 767px) {
+  .faq-section {
+    padding: 32px 0;
+  }
+
+  .faq-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+
+  .accordion-item {
+    margin-top: 8px !important;
+  }
+
+  .accordion-button {
+    font-weight: 400;
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  li {
+    font-size: 13px;
+  }
+
+}

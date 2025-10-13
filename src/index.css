@@ -1,0 +1,40 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --background-all: #eeedee;
+
+  --menu-logo-space-padding: 12px;
+  --menu-font-size: 16px;
+  --menu-gap-space: 24px;
+
+  --about-section-background: #f4f0ef;
+  --about-section-padding: 70px;
+  --about-text-font-size: 20px;
+  --about-text-font-weight: 300;
+  --about-text-alignment: left;
+  --about-text-button: 40px;
+  --about-button-color: #8c0072;
+  --about-button-font-size: 18px;
+  --about-img-border-radius: 24px;
+  --about-img-border: 1px solid #598584;
+
+  --service-section-title-font-size: 30px;
+  --service-section-sutitle-font-size: 20px;
+  --service-section-card-title-font-size: 18px;
+  --service-section-color-title: #988358;
+  --service-card-background: #ffffff;
+  --service-button-color: #a9873f;
+
+  --margintop-service-space: 100px;
+
+  --bs-accordion-bg: transparent;
+  --bs-accordion-inner-border-radius: 12px;
+  --bs-accordion-btn-color: #e5e5e5;
+  --bs-accordion-btn-icon: none;
+  --bs-accordion-btn-icon-active: none;
+  --bs-accordion-active-color: #ffffff;
+  --bs-accordion-active-bg: #405a5f;
+  --bs-accordion-btn-focus-box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

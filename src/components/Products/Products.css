@@ -1,0 +1,352 @@
+.section_products {
+  background-color: #344a4e;
+  color: #ffffff;
+  padding: 70px 0;
+  position: relative;
+  overflow: hidden;
+  color: #e5e5e5;
+}
+
+.div_products_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.div_product_item {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  gap: 0;
+}
+
+.div_product_item--purchase {
+  margin-top: 100px;
+}
+
+.div_product_image-wrapper,
+.div_product_content-wrapper {
+  flex: 1;
+}
+
+.div_product_content-wrapper--centered {
+  text-align: center;
+}
+
+/* --- Estilos de Texto e Títulos (Desktop) --- */
+.h1_product_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.h2_product_subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.ul_product_features li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* --- Card de Compra --- */
+.div_purchase-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.div_purchase-card_covers {
+  display: flex;
+  gap: 24px;
+}
+
+.h3_purchase-card_title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.img_purchase-card_ebook-cover {
+  max-width: 250px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.div_purchase-card_price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.span_price_current {
+  font-size: 20px;
+}
+
+.span_price_original {
+  font-size: 16px;
+}
+
+/* --- Imagens --- */
+.img_product_open-book,
+.img_product_stacked-books {
+  max-width: 100%;
+  height: auto;
+}
+
+.img_purchase-card_cover {
+  border: 1px solid rgba(48, 48, 48, 0.068);
+  background-color: #472011;
+}
+
+.div_products_block {
+  margin-top: 150px;
+}
+
+s {
+  color: #ff5959;
+}
+
+/* ########## RESPONSIVIDADE ########## */
+
+/* --- Tablet (até 991px) --- */
+@media (max-width: 991px) {
+  .section_products {
+    padding: 50px 0;
+  }
+
+  .div_products_container {
+    max-width: 840px !important;
+  }
+
+  .div_product_item {
+    gap: 30px;
+  }
+
+  /* Espaçamento Reduzido */
+  .div_product_item--purchase {
+    margin-top: 80px;
+  }
+
+  .div_purchase-card {
+    gap: 16px;
+  }
+
+  /* Fontes Reduzidas */
+  .h1_product_title {
+    font-size: 20px;
+  }
+  .h2_product_subtitle {
+    font-size: 20px;
+  }
+  .h3_purchase-card_title {
+    font-size: 20px;
+  }
+
+  .div_products_block {
+    margin-top: 120px;
+  }
+
+  .img_purchase-card_cover {
+    max-width: 150px;
+  }
+  .img_purchase-card_ebook-cover {
+    max-width: 155px !important;
+  }
+
+  .img_product_stacked-books {
+    width: 200px;
+    height: 210px;
+  }
+
+  .img_product_open-book {
+    width: 290px;
+    height: 300px;
+  }
+
+  .span_price_current {
+    font-size: 16px;
+  }
+
+  .span_price_original {
+    font-size: 14px;
+  }
+
+  svg {
+    height: 70px !important;
+  }
+}
+
+/* --- Mobile (até 767px) --- */
+@media (max-width: 767px) {
+  .section_products {
+    padding: 32px 0;
+  }
+
+  .div_products_container {
+    max-width: 600px !important;
+  }
+
+  .div_product_item {
+    align-items: center;
+  }
+
+  .div_product_item--purchase {
+    margin-top: 30px;
+  }
+
+  .h1_product_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .h2_product_subtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .h3_purchase-card_title {
+    font-size: 18px;
+  }
+  .ul_product_features li {
+    font-size: 14px;
+  }
+
+  .img_purchase-card_cover {
+    max-width: 110px;
+  }
+
+  .img_purchase-card_ebook-cover {
+    max-width: 130px !important;
+  }
+
+  .img_product_stacked-books {
+    width: 130px;
+    height: 150px;
+  }
+
+  .img_product_open-book {
+    width: 190px;
+    height: 220px;
+  }
+
+  .div_purchase-card_covers {
+    display: flex;
+    gap: 12px;
+  }
+
+  .div_products_block {
+    margin-top: 80px;
+  }
+
+  .span_price_current {
+    font-size: 14px;
+  }
+
+  .span_price_original {
+    font-size: 13px;
+  }
+
+  .div_purchase-card {
+    gap: 8px;
+  }
+
+  /* Posição e tamanho do segundo brilho */
+  .sparkle--2 {
+    top: 30% !important;
+    right: 20% !important;
+    transform: rotate(-7deg);
+  }
+
+  svg {
+    height: 50px !important;
+  }
+}
+
+@media (min-width: 501px) {
+  .h1_version_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .div_product_item.div_product_item--purchase {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .img_product_stacked-books {
+    transform: none;
+    transform-origin: center center;
+    transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: -2px 2px 3px 4px rgba(0, 0, 0, 0.247);
+    border: solid 5px rgba(255, 255, 255, 0);
+    padding: 5px;
+  }
+
+  .h1_product_title {
+    display: none;
+  }
+
+  .h1_version_mobile {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .sparkle--1 {
+    top: 10% !important;
+    right: 35% !important;
+    transform: rotate(-7deg);
+  }
+}
+
+/* --- Elementos Decorativos (sem alteração) --- */
+/* Estilo base para os ícones de brilho */
+.sparkle_icon {
+  position: absolute;
+  z-index: 0;
+}
+
+/* Posição e tamanho do primeiro brilho */
+.sparkle--1 {
+  top: 1%;
+  right: 50%;
+  transform: rotate(-7deg);
+}
+
+svg {
+  height: 180px;
+}
+
+/* Posição e tamanho do segundo brilho */
+.sparkle--2 {
+  width: 60px; /* Um brilho maior */
+  height: 60px;
+  top: 20%;
+  right: 10%;
+  transform: rotate(-7deg);
+}
+
+.div_decoration_circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -150px;
+  left: -150px;
+  z-index: 0;
+}
+
+.img_decoration_heart {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  left: -40px;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
