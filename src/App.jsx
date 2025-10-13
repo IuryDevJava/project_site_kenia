@@ -4,7 +4,7 @@ import About from './components/About/About';
 import Service from './components/Services-appointments/Service';
 import EspacoSection from './components/Services-appointments/EspacoSection';
 import Products from './components/Products/Products';
-import FAQ from './components/FAQ/FAQ';
+import Faq from './components/AskedQuestions/Faq';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Service />
       <EspacoSection />
       <Products />
-      <FAQ />
+      <Faq />
     </div>
   );
 }
