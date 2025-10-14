@@ -5,6 +5,8 @@ import Service from './components/Services-appointments/Service';
 import EspacoSection from './components/Services-appointments/EspacoSection';
 import Products from './components/Products/Products';
 import Faq from './components/AskedQuestions/Faq';
+import Location from './components/Location/Location';
+
 
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
       <EspacoSection />
       <Products />
       <Faq />
+      <Location />
     </div>
   );
 }

@@ -170,7 +170,7 @@ img.Image_button_icon {
 
 @media (max-width: 767px) {
   .service_section {
-    padding: 32px 0 60px;
+    padding: 32px 0 60px !important;
   }
 
   .service_header {

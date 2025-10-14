@@ -137,6 +137,10 @@
     padding: 0 0 50px 0;
   }
 
+  .swiper-buttons-wrapper {
+    display: none !important;
+  }
+
   .espaco-texto h2 {
     font-size: 25px;
     color: #656565;
@@ -166,6 +170,11 @@
   .espaco-section {
     padding: 0 0 32px 0;
   }
+
+  .swiper-buttons-wrapper {
+    display: none !important;
+  }
+
   .espaco-texto {
     text-align: center;
   }

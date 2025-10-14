@@ -18,17 +18,109 @@
   color: #000 !important;
 }
 
-div.language-switcher-menu {
-  background: rgba(255, 255, 255, 0.815) !important;
+/* div.language-switcher-menu {
+  background: none !important;
   border: none !important;
-  box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.26) !important;
+  outline: none;
+  box-shadow: none !important;
   z-index: 1000 !important;
 }
 
 .language-switcher-menu .item-language-menu:hover {
   background: none !important;
-  border: none !important;
   box-shadow: none !important;
+}
+
+div.dropdown-menu {
+  margin-right: 20px ;
+  width: 40px;
+  background-color: red !important;
+}
+
+a.item-language-menu {
+  padding: 0;
+  margin: 0 4px 0;
+  margin-right: 0;
+  width: 5px;
+  margin-top: 8px;
+} */
+/* ===== Dropdown principal ===== */
+.language-switcher .dropdown-menu,
+.language-switcher-menu {
+  min-width: auto !important;
+  width: 140px !important;
+  white-space: nowrap;
+  padding: 6px 8px !important;
+  background-color: rgba(234, 236, 255, 0.753) !important;
+  opacity: 0.8;
+  border: 2px solid rgba(0, 0, 0, 0.158) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  z-index: 9999 !important;
+  margin: 30px 0 !important;
+
+  /* 🔹 Mantém o menu fixo e centralizado sob o botão */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  position: absolute !important;
+}
+
+/* ===== Botão que abre o menu ===== */
+.language-switcher .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.language-switcher .dropdown-toggle:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+/* ===== Itens do menu ===== */
+.language-switcher .dropdown-item,
+.language-switcher-menu .item-language-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3px;
+  padding: 6px 8px !important;
+  margin: 0 !important;
+  color: #000000 !important;
+  background: transparent !important;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.language-switcher .dropdown-item:hover,
+.language-switcher-menu .item-language-menu:hover {
+  background: rgba(0, 12, 184, 0.123) !important;
+}
+
+/* ===== Bandeira ===== */
+.language-switcher .language-switcher-flag {
+  width: 18px !important;
+  height: 15px !important;
+  display: inline-block;
+}
+
+/* ===== Texto do idioma ===== */
+.language-switcher .language-switcher-text {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  text-align: left;
 }
 
 .language-switcher-toggle {
@@ -217,4 +309,9 @@ div.language-switcher-menu {
   .mobile-nav-item a::after {
     background: #67511800;
   }
+
+  .language-switcher .dropdown-menu,
+.language-switcher-menu {
+  width: 130px !important;
+}
 }

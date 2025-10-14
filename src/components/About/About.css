@@ -1,5 +1,5 @@
 .about_section {
-  padding: 190px 0 70px;
+  padding: 197px 0 70px;
   overflow: hidden;
   background-color: var(--about-section-background);
 }
@@ -84,10 +84,11 @@ p {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .about_section {
-    padding: 50px 0;
+    padding: 155px 0 50px;
   }
-  p {
-    font-size: 16px;
+  .p-1-text, 
+  .p-2-text {
+    font-size: 16px !important;
     width: 85%;
   }
 
@@ -114,13 +115,20 @@ p {
 
 @media (max-width: 767px) {
   .about_section {
-    padding: 32px !important;
+    padding: 117px 0 32px !important;
   }
 
-  p {
-    font-size: 16px;
-    width: 90%;
-    text-align: center;
+  .p-1-text, 
+  .p-2-text {
+    font-size: 14px !important;
+    /* width: 90%; */
+    width: 250px !important;
+    text-align: left;
+    
+  }
+
+  .p-2-text{
+    margin-top: 10px !important;
   }
 
   .p-1-text,

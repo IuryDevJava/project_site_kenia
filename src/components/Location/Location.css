@@ -1,0 +1,69 @@
+.section_maps {
+  padding: 70px 0;
+}
+
+iframe {
+  border-radius: 12px !important;
+}
+
+.h3_title_maps {
+  margin-bottom: 24px;
+  font-size: 30px;
+  color: #656565;
+  text-shadow: 1px 1px 0px #d1d1d1, -1px -1px 0px #d1d1d1, 1px -1px 0px #d1d1d1,
+    -1px 1px 0px #d1d1d1;
+}
+
+.icon_location {
+  margin-right: 18px;
+}
+
+.text_p_maps {
+  margin-bottom: 50px;
+  color: #8b8985;
+  font-size: 18px;
+}
+
+.icon_location {
+  color: #7e5124;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section_maps {
+    padding: 50px 0;
+  }
+
+  .h3_title_maps {
+    margin-bottom: 18px;
+    font-size: 25px;
+  }
+
+  .text_p_maps {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .icon_location {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_maps {
+    padding: 32px 0;
+  }
+
+  .h3_title_maps {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  .text_p_maps {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .icon_location {
+    margin-right: 8px;
+  }
+}

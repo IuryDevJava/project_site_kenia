@@ -72,14 +72,14 @@ const Menu = () => {
                   </span>
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu className="language-switcher-menu p-0 m-0">
+                <Dropdown.Menu className="language-switcher-menu">
                   {availableLanguages
                     .filter((lang) => lang.id !== currentLanguage.id)
                     .map((lang) => (
                       <Dropdown.Item
                         key={lang.id}
                         onClick={() => setCurrentLanguage(lang)}
-                        className="d-flex align-items-center item-language-menu"
+                        className="item-language-menu"
                       >
                         <img
                           className="mb-1 language-switcher-flag"
