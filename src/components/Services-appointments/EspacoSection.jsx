@@ -32,7 +32,7 @@ function EspacoSection() {
             <div className="espaco-carousel-wrapper">
               <Swiper
                 modules={[Navigation, Pagination]}
-                spaceBetween={-10}
+                spaceBetween={2}
                 slidesPerView={"auto"}
                 centeredSlides={false}
                 grabCursor={true}
