@@ -29,7 +29,7 @@ const Products = () => {
           <div className="div_product_item">
             <div className="div_product_image-wrapper">
               <h1 className="h1_version_mobile">
-                Caderno de Receitas: Do mundo para sua casa
+                Caderno de Receitas: do mundo para sua casa
               </h1>
               <img
                 src={ImageOpenBook}
@@ -40,7 +40,7 @@ const Products = () => {
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
               <h1 className="text-center h1_product_title ">
                 Caderno de Receitas: <br />
-                Do mundo para sua casa
+                do mundo para sua casa
               </h1>
               <ul className="ul_product_features">
                 <li>Receitas autorais com inspiração internacional.</li>
@@ -79,7 +79,7 @@ const Products = () => {
                   </span>
                 </div>
                 <AnimatedButton text="Comprar agora"
-                link="https://www.keniabispo.com/checkout?checkoutId=b3c52492-e4b7-3132-9e0e-06cda86cfb51&origin=side+cart" />
+                link="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart" />
               </div>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">

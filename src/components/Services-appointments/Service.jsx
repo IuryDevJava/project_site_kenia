@@ -94,7 +94,7 @@ const Service = () => {
 
         <div className="service_div_button">
           <button className="service_button btn-base">
-            Agendar Consulta
+            Agendar consulta
             {/* <img
               className="Image_button_icon"
               src={IconButtonNote}

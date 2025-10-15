@@ -6,12 +6,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./EspacoSection.css";
 
-import img1 from "../../assets/images/service-img/Image-card1.jpeg";
-import img2 from "../../assets/images/service-img/Image-card2.jpeg";
-import img3 from "../../assets/images/service-img/Image-card3.jpeg";
-import img4 from "../../assets/images/service-img/Image-card4.jpeg";
-import img5 from "../../assets/images/service-img/Image-card5.jpeg";
-import img6 from "../../assets/images/service-img/Image-card6.jpeg";
+import img1 from "../../assets/images/service-img/Image-card1 1.png";
+import img2 from "../../assets/images/service-img/Image-card2 1.png";
+import img3 from "../../assets/images/service-img/Image-card3 1.png";
+import img4 from "../../assets/images/service-img/Image-card4 1.png";
+import img5 from "../../assets/images/service-img/Image-card5 1.png";
+import img6 from "../../assets/images/service-img/Image-card6 1.png";
 
 function EspacoSection() {
   const espacoImages = [img1, img2, img3, img4, img5, img6];

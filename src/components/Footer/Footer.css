@@ -1,0 +1,318 @@
+.site-footer {
+  background-color: rgba(56, 52, 78, 1);
+  color: white;
+  padding: 70px 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  display: flex;
+  padding: 4px 10px !important;
+  font-size: 18px;
+  border-radius: 3px;
+  background: rgba(127, 100, 28, 0.2);
+  color: #f2f0f5;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.12s ease;
+  border: 1px solid rgba(255, 255, 255, 0.69);
+}
+
+.social-btn:hover {
+  background: #514b70;
+  box-shadow: 1px -2px 10px 1px #ffbfbf7e;
+  transform: translateY(-1px);
+}
+
+.footer-logo {
+  width: 70px;
+  height: 55px;
+}
+
+.footer-desc {
+  color: #c2bfb8;
+  font-size: 18px;
+  width: 100%;
+  line-height: 160%;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 20px 0 24px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-weight: 800;
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.footer-list a {
+  color: #d0cfe0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a:hover {
+  color: #e2e2e2;
+  text-decoration: underline !important;
+}
+
+.div_col_company {
+  padding-left: 80px !important;
+}
+
+.footer-divider {
+  border: 1px solid #3958b6;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.copy-left {
+  color: #bdb8c6;
+  font-size: 15px;
+  justify-content: left;
+  text-align: left;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.copy-right {
+  color: #bdb8c6;
+  font-size: 15px;
+  justify-content: right;
+  text-align: right;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.a_copy_footer {
+  text-decoration: none !important;
+  color: #bdb8c6;
+}
+
+.a_icdigitalexperience {
+  color: #cecece;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+}
+
+ .a_icdigitalexperience:hover {
+  text-decoration: underline !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-footer {
+    padding: 50px 0;
+  }
+
+  .div_col_company {
+    padding-left: 10px !important;
+  }
+
+  .footer-top {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 0 auto;
+    align-items: start;
+    justify-items: center;
+  }
+
+  .footer-desc {
+    width: 300px;
+    max-width: 270px;
+  }
+
+  .div_col_service,
+  .div_col_nutrition {
+    margin-top: 30px !important;
+  }
+
+  .div_col_nutrition {
+    width: 100%;
+    grid-column: 2 / -1;
+    text-align: left;
+  }
+
+  .footer-desc {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    padding: 16px 0 18px;
+  }
+
+  .footer-social {
+    gap: 8px;
+  }
+
+  .social-btn {
+    padding: 3px 8px !important;
+    font-size: 15px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .footer-list a {
+    font-size: 14px;
+  }
+
+  .footer-list {
+    margin-bottom: -12px !important;
+  }
+
+  .footer-divider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .copy-left {
+    font-size: 14px;
+    justify-content: start !important;
+    text-align: left !important;
+  }
+
+  .copy-right {
+    font-size: 14px;
+    justify-content: start !important;
+    text-align: left !important;
+  }
+
+  .footer-bottom {
+    display: grid !important;
+    gap: 8px;
+    justify-content: center !important;
+    align-items: start !important;
+    justify-items: center !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding: 32px 0;
+  }
+
+  .flex_items_imgtext {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left !important;
+    justify-items: start !important;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    line-height: 1.45;
+    max-width: 220px;
+    padding: 10px 0 12px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .social-btn {
+    padding: 2px 6px !important;
+    font-size: 14px;
+  }
+
+  .div_col_service {
+    text-align: center;
+  }
+
+  .div_col_company {
+    text-align: center;
+    padding-left: 10px !important;
+  }
+
+  /* Nutrição ocupa linha completa e fica centralizado */
+  .div_col_nutrition {
+    text-align: center;
+  }
+
+  /* Estilos de títulos e links */
+  .footer-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-list {
+    margin: 0;
+  }
+
+  .footer-list {
+    margin-bottom: -11px !important;
+  }
+
+  .footer-list li {
+    margin-bottom: 8px;
+  }
+
+  .footer-list a {
+    font-size: 13px;
+  }
+
+  /* Divider e rodapé inferior */
+  .footer-divider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .copy-left {
+    font-size: 13px !important;
+    justify-content: start !important;
+    text-align: center !important;
+  }
+
+  .copy-right {
+    font-size: 13px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .footer-bottom {
+    display: grid !important;
+    gap: 8px;
+    justify-content: center !important;
+    align-items: start !important;
+    justify-items: center !important;
+    width: 100% !important;
+  }
+}

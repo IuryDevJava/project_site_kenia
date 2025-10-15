@@ -6,8 +6,7 @@ import EspacoSection from './components/Services-appointments/EspacoSection';
 import Products from './components/Products/Products';
 import Faq from './components/AskedQuestions/Faq';
 import Location from './components/Location/Location';
-
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
       <Products />
       <Faq />
       <Location />
+      <Footer />
     </div>
   );
 }

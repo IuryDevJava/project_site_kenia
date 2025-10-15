@@ -124,7 +124,7 @@ const Faq = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <h2 className="faq-title text-center">Perguntas Frequentes</h2>
+            <h2 className="faq-title text-center">Perguntas frequentes</h2>
 
             <div className="accordion" id="faqAccordion">
               {faqData.map((item) => (
