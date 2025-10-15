@@ -32,7 +32,7 @@ function EspacoSection() {
             <div className="espaco-carousel-wrapper">
               <Swiper
                 modules={[Navigation, Pagination]}
-                spaceBetween={-25}
+                spaceBetween={-10}
                 slidesPerView={"auto"}
                 centeredSlides={false}
                 grabCursor={true}
@@ -41,13 +41,30 @@ function EspacoSection() {
                   nextEl: ".swiper-button-next-custom",
                   prevEl: ".swiper-button-prev-custom",
                 }}
-                // ✅ 1. A ÚNICA MUDANÇA NO SWIPER: DIZER ONDE FICARÃO OS BULLETS
                 pagination={{
                   clickable: true,
                   el: ".swiper-pagination-container",
                 }}
                 className="espaco-swiper"
               >
+
+              {/* <Swiper
+                modules={[Navigation, Pagination]}
+                spaceBetween={24} // positivo (sem "recortes")
+                slidesPerView={"auto"}
+                centeredSlides={true} // centraliza o slide principal
+                grabCursor={true}
+                loop={true}
+                navigation={{
+                  nextEl: ".swiper-button-next-custom",
+                  prevEl: ".swiper-button-prev-custom",
+                }}
+                pagination={{
+                  clickable: true,
+                  el: ".swiper-pagination-container",
+                }}
+                className="espaco-swiper"
+              > */}
                 {espacoImages.map((imgSrc, index) => (
                   <SwiperSlide key={index}>
                     <img src={imgSrc} alt={`Foto do espaço ${index + 1}`} />
