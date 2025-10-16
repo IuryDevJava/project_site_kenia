@@ -1,7 +1,10 @@
 import React from "react";
 import "./Footer.css";
 
-import ImageLogoFooter from "../../assets/images/menu-img/Kenia Bispo 1.png";
+// As imagens já estão importadas corretamente
+import ImageLogoFooterDesk from "../../assets/images/menu-img/logo (6).png";
+import ImageLogoFooterTablet from "../../assets/images/menu-img/logo-tablet.png";
+import ImageLogoFooterMobile from "../../assets/images/menu-img/logo-mobile.png";
 
 const Footer = () => {
   // const waLink = "https://wa.me/5521991116951";
@@ -13,7 +16,26 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <div className="footer-brand">
               <div className="flex_items_imgtext">
-                <img src={ImageLogoFooter} alt="Logo" className="footer-logo" />
+                {/* --- ALTERAÇÃO AQUI --- */}
+                <picture>
+                  {/* Imagem para Desktop (telas a partir de 1024px) */}
+                  <source
+                    media="(min-width: 1024px)"
+                    srcSet={ImageLogoFooterDesk}
+                  />
+                  {/* Imagem para Tablet (telas a partir de 768px) */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={ImageLogoFooterTablet}
+                  />
+                  {/* Imagem padrão (Mobile) e fallback */}
+                  <img
+                    src={ImageLogoFooterMobile}
+                    alt="Logo"
+                    className="footer-logo"
+                  />
+                </picture>
+                {/* --- FIM DA ALTERAÇÃO --- */}
                 <p className="footer-desc">
                   Acompanhamento nutricional personalizado, com foco em saúde,
                   bem-estar e equilíbrio alimentar.
@@ -27,7 +49,7 @@ const Footer = () => {
                   aria-label="LinkedIn"
                   className="social-btn"
                 >
-                  <i class="bi bi-linkedin"></i>
+                  <i className="bi bi-linkedin"></i> {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://www.instagram.com/keniabisponutri/"
@@ -36,7 +58,7 @@ const Footer = () => {
                   aria-label="Instagram"
                   className="social-btn"
                 >
-                  <i class="bi bi-instagram"></i>
+                  <i className="bi bi-instagram"></i> {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://www.youtube.com/@keniabisponutri/videos"
@@ -45,7 +67,7 @@ const Footer = () => {
                   aria-label="YouTube"
                   className="social-btn"
                 >
-                  <i class="bi bi-youtube"></i>
+                  <i className="bi bi-youtube"></i> {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://api.whatsapp.com/send/?phone=5521969526214&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0"
@@ -54,7 +76,7 @@ const Footer = () => {
                   aria-label="WhatsApp"
                   className="social-btn"
                 >
-                  <i class="bi bi-whatsapp"></i>
+                  <i className="bi bi-whatsapp"></i> {/* Corrigido para className */}
                 </a>
               </div>
             </div>
@@ -65,20 +87,24 @@ const Footer = () => {
             <h6 className="footer-title">Empresa</h6>
             <ul className="list-unstyled footer-list">
               <li>
-                <a href="#about" target="_top"
-                rel="noopener noreferrer">Sobre mim</a>
+                <a href="#about" target="_top" rel="noopener noreferrer">
+                  Sobre mim
+                </a>
               </li>
               <li>
-                <a href="#services" target="_top"
-                rel="noopener noreferrer">Serviços</a>
+                <a href="#services" target="_top" rel="noopener noreferrer">
+                  Serviços
+                </a>
               </li>
               <li>
-                <a href="#products" target="_top"
-                rel="noopener noreferrer">Meus produtos</a>
+                <a href="#products" target="_top" rel="noopener noreferrer">
+                  Meus produtos
+                </a>
               </li>
               <li>
-                <a href="#" target="_blank"
-                rel="noopener noreferrer">Política de privacidade</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Política de privacidade
+                </a>
               </li>
             </ul>
           </div>
@@ -88,20 +114,27 @@ const Footer = () => {
             <h6 className="footer-title">Atendimento</h6>
             <ul className="list-unstyled footer-list">
               <li>
-                <a href="#" target="_blank"
-                rel="noopener noreferrer">Como funciona o Atendimento</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Como funciona o Atendimento
+                </a>
               </li>
               <li>
-                <a href="#" target="_blank"
-                rel="noopener noreferrer">Dúvidas frequentes</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Dúvidas frequentes
+                </a>
               </li>
               <li>
-                <a href="#" target="_blank"
-                rel="noopener noreferrer">Termos de uso</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Termos de uso
+                </a>
               </li>
               <li>
-                <a className="a_police" href="#" target="_blank"
-                rel="noopener noreferrer">
+                <a
+                  className="a_police"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Política de cancelamento
                 </a>
               </li>
@@ -113,16 +146,27 @@ const Footer = () => {
             <h6 className="footer-title">Nutrição</h6>
             <ul className="list-unstyled footer-list">
               <li>
-                <a href="#" target="_blank"
-                rel="noopener noreferrer">Blog / Artigos</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Blog / Artigos
+                </a>
               </li>
               <li>
-                <a href="https://pay.hotmart.com/M100399386O?bid=1750428900670" target="_blank"
-                rel="noopener noreferrer">E-book</a>
+                <a
+                  href="https://pay.hotmart.com/M100399386O?bid=1750428900670"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  E-book
+                </a>
               </li>
               <li>
-                <a href="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart" target="_blank"
-                rel="noopener noreferrer">Receitas</a>
+                <a
+                  href="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Receitas
+                </a>
               </li>
               <li>
                 <a href="#">Dicas de alimentação saudável</a>

@@ -73,13 +73,8 @@ function EspacoSection() {
               </Swiper>
             </div>
           </div>
-
-          {/* O contêiner de controles fica fora da coluna do carrossel para alinhar com o container geral */}
           <div className="swiper-navigation-controls">
-            {/* O contêiner dos bullets vem PRIMEIRO, para aparecer em cima */}
             <div className="swiper-pagination-container"></div>
-
-            {/* ✅ 2. A ÚNICA MUDANÇA NA ESTRUTURA: AGRUPAR OS BOTÕES */}
             <div className="swiper-buttons-wrapper">
               <div className="swiper-button-prev-custom"></div>
               <div className="swiper-button-next-custom"></div>

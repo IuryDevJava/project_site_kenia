@@ -7,8 +7,10 @@ import Products from './components/Products/Products';
 import Faq from './components/AskedQuestions/Faq';
 import Location from './components/Location/Location';
 import Footer from './components/Footer/Footer';
+import useSmoothScroll from "./hooks/useSmoothScroll";
 
 function App() {
+  useSmoothScroll(80, { closeMenuSelector: ".menu-toggle" });
   return (
     <div className="app">
       <Menu />

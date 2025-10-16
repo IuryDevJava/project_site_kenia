@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Service.css";
 
 // Importando os ícones
@@ -8,9 +8,8 @@ import IconCard03 from "../../assets/icons/service-icons/Icon-card03.svg";
 import IconCard04 from "../../assets/icons/service-icons/Icon-card04.svg";
 import IconCard05 from "../../assets/icons/service-icons/Icon-card05.svg";
 import IconCard06 from "../../assets/icons/service-icons/Icon-card06.svg";
-import IconButtonNote from "../../assets/icons/service-icons/Icon-note.svg";
+import Modal from './ModalAppointments/Modal';
 
-// Array com os dados dos serviços para evitar repetição de código
 const servicesData = [
   {
     icon: IconCard01,
@@ -55,8 +54,10 @@ const servicesData = [
 ];
 
 const Service = () => {
+
+  const [showModal, setShowModal] = useState(false); // controla a modal
+
   return (
-    // A tag <main> seria mais semântica aqui, mas mantive <section>
     <section className="service_section" id="services">
       <div className="container">
         <div className="service_header">
@@ -65,8 +66,6 @@ const Service = () => {
             Vou te ajudar a levar uma vida saudável.
           </h4>
         </div>
-
-        {/* Usando o sistema de Grid do Bootstrap para criar o layout responsivo */}
         <div className="row g-4 row_div_card">
           {servicesData.map((service, index) => (
             <div
@@ -93,15 +92,11 @@ const Service = () => {
         </div>
 
         <div className="service_div_button">
-          <button className="service_button btn-base">
+          <button onClick={() => setShowModal(true)} className="service_button btn-base">
             Agendar consulta
-            {/* <img
-              className="Image_button_icon"
-              src={IconButtonNote}
-              alt="Ícone de um calendário para agendamento"
-            /> */}
           </button>
         </div>
+        {showModal && <Modal onClose={() => setShowModal(false)} />}
       </div>
     </section>
   );

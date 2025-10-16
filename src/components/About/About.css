@@ -1,5 +1,5 @@
 .about_section {
-  padding: 197px 0 70px;
+  padding: 202px 0 70px;
   overflow: hidden;
   background-color: var(--about-section-background);
 }
@@ -80,11 +80,12 @@ p {
 .button_arrow {
   width: 35px;
   height: 35px;
+  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .about_section {
-    padding: 155px 0 50px;
+    padding: 152px 0 50px;
   }
   .p-1-text, 
   .p-2-text {
@@ -121,7 +122,6 @@ p {
   .p-1-text, 
   .p-2-text {
     font-size: 14px !important;
-    /* width: 90%; */
     width: 250px !important;
     text-align: left;
     

@@ -1,0 +1,77 @@
+.custom-select-wrapper {
+  position: relative;
+  user-select: none; /* Impede que o texto seja selecionado */
+  width: 100%;
+}
+
+.custom-select-trigger {
+  /* Estilos herdados do seu .custom-input */
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 0.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.custom-select-wrapper:focus-within .custom-select-trigger {
+  border: 2px solid #800020;
+  box-shadow: 0 0 6px rgba(128,0,32,0.3);
+  padding: calc(0.6rem - 1px) calc(0.8rem - 1px); /* Ajuste para o border mais grosso */
+}
+
+/* Seta do dropdown */
+.arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #555;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.custom-select-options {
+  position: absolute;
+  top: 110%; /* Um pouco abaixo do input */
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px; /* BORDAS ARREDONDADAS! ✨ */
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.custom-select-option {
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.custom-select-option:hover {
+  background-color: #f5f5f5;
+}
+
+.custom-select-option.selected {
+  background-color: #aa3352;
+  color: white;
+  font-weight: 500;
+}
+
+/* Arredonda a primeira e última opção para combinar com o container */
+.custom-select-option:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.custom-select-option:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}

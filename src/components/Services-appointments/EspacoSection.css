@@ -24,7 +24,6 @@
   width: 150%;
 }
 
-/* Garanta que o Swiper não mostre overflow */
 .espaco-swiper {
   overflow: hidden !important;
 }
@@ -104,7 +103,6 @@
   transform: rotate(-45deg);
 }
 
-/* Estilo de cada bullet (inativo) */
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -113,14 +111,10 @@
   transition: background-color 0.3s ease;
 }
 
-/* Estilo do bullet ATIVO */
 .swiper-pagination-bullet-active {
   background-color: #008080;
+  transform: scale(1.2);
 }
-
-/* ================================================= */
-/* SUAS MEDIA QUERIES (INTOCADAS)                    */
-/* ================================================= */
 
 @media (min-width: 768px) and (max-width: 991px) {
   .espaco-section {

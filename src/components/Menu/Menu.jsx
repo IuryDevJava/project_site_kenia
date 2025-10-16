@@ -1,5 +1,10 @@
 import { useState } from "react";
-import ImgLogo from "../../assets/images/menu-img/Kenia Bispo 1.png";
+
+// logo
+import ImgLogoMenuDesk from "../../assets/images/menu-img/logo (6).png";
+import ImgLogoMenuTablet from "../../assets/images/menu-img/logo-tablet.png";
+import ImgLogoMenuMobile from "../../assets/images/menu-img/logo-mobile.png";
+
 import IconBrazil from "../../assets/icons/menu-icons/BR.svg";
 import IconUSA from "../../assets/icons/menu-icons/EUA.svg";
 import IconSpain from "../../assets/icons/menu-icons/ESP.svg";
@@ -14,11 +19,8 @@ const availableLanguages = [
 
 const Menu = () => {
   const [currentLanguage, setCurrentLanguage] = useState(availableLanguages[0]);
-  
-  // NOVO: Estado para controlar a visibilidade do menu mobile
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // NOVO: Função para abrir/fechar o menu mobile
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -26,24 +28,46 @@ const Menu = () => {
   return (
     <header className="header">
       <div className="container">
-        <div className="header-wrapper d-flex align-items-center">
+        <div className="header-wrapper d-flex align-items-end">
           <figure className="header-logo mb-0 pb-0">
-            <img className="img_logo_kenia" src={ImgLogo} alt="Logo for Drª Kenia's practice" />
+            {/* --- ALTERAÇÃO AQUI: Usando <picture> para o logo responsivo --- */}
+            <picture>
+              {/* Imagem para Desktop (telas a partir de 1024px) */}
+              <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />
+              {/* Imagem para Tablet (telas a partir de 768px) */}
+              <source media="(min-width: 768px) and (max-width: 991px)" srcSet={ImgLogoMenuTablet} />
+              {/* Imagem padrão (Mobile) e fallback */}
+              <img
+                className="img_logo_kenia"
+                src={ImgLogoMenuMobile} // A imagem mobile é o default
+                alt="Logo for Drª Kenia's practice"
+              />
+            </picture>
+            {/* --- FIM DA ALTERAÇÃO --- */}
           </figure>
           <nav className="header-nav">
             <ul className="header-nav-list d-flex list-unstyled mb-0">
               <li className="header-nav-item">
-                <a className="header-nav-link text-decoration-none" href="#about">
+                <a
+                  className="header-nav-link text-decoration-none"
+                  href="#about"
+                >
                   Sobre mim
                 </a>
               </li>
               <li className="header-nav-item">
-                <a className="header-nav-link text-decoration-none" href="#services">
+                <a
+                  className="header-nav-link text-decoration-none"
+                  href="#services"
+                >
                   Serviços e agendamentos
                 </a>
               </li>
               <li className="header-nav-item">
-                <a className="header-nav-link text-decoration-none" href="#products">
+                <a
+                  className="header-nav-link text-decoration-none"
+                  href="#products"
+                >
                   Produtos
                 </a>
               </li>
@@ -95,35 +119,53 @@ const Menu = () => {
               </Dropdown>
             </div>
 
-            {/* NOVO: Botão Hambúrguer. Ele só vai aparecer em telas pequenas via CSS */}
-            <button className="hamburger-button p-0 m-0" onClick={toggleMobileMenu}>
+            {/* Botão Hambúrguer. Ele só vai aparecer em telas pequenas via CSS */}
+            <button
+              className="hamburger-button p-0 m-0"
+              onClick={toggleMobileMenu}
+            >
               <span className="material-symbols-outlined">menu</span>
             </button>
-            
           </div>
         </div>
 
-        {/* NOVO: Menu Mobile. Só é renderizado se o estado isMobileMenuOpen for true */}
+        {/* Menu Mobile. Só é renderizado se o estado isMobileMenuOpen for true */}
         {isMobileMenuOpen && (
           <nav className="mobile-nav">
             <ul className="mobile-nav-list list-unstyled mb-0">
               <li className="mobile-nav-item">
-                <a className="mobile-nav-link text-decoration-none" href="#about" onClick={toggleMobileMenu}>
+                <a
+                  className="mobile-nav-link text-decoration-none"
+                  href="#about"
+                  onClick={toggleMobileMenu}
+                >
                   Sobre mim
                 </a>
               </li>
               <li className="mobile-nav-item">
-                <a className="mobile-nav-link text-decoration-none" href="#services" onClick={toggleMobileMenu}>
+                <a
+                  className="mobile-nav-link text-decoration-none"
+                  href="#services"
+                  onClick={toggleMobileMenu}
+                >
                   Serviços e agendamentos
                 </a>
               </li>
               <li className="mobile-nav-item">
-                <a className="mobile-nav-link text-decoration-none" href="#products" onClick={toggleMobileMenu}>
+                <a
+                  className="mobile-nav-link text-decoration-none"
+                  href="#products"
+                  onClick={toggleMobileMenu}
+                >
                   Produtos
                 </a>
               </li>
               <li className="mobile-nav-item">
-                <a className="mobile-nav-link text-decoration-none" href="#faq" onClick={toggleMobileMenu}>
+                <a
+                  className="mobile-nav-link text-decoration-none"
+                  href="#faq"
+                  onClick={toggleMobileMenu}
+                >
                   FAQ
                 </a>
               </li>
