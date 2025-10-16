@@ -18,7 +18,7 @@
 .div_product_item {
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
+  align-items: flex-start;
   gap: 0;
 }
 
@@ -183,6 +183,10 @@ s {
 
 /* --- Mobile (até 767px) --- */
 @media (max-width: 767px) {
+  /* .div_product_image-wrapper {
+    margin-top: -50px;
+  } */
+
   .section_products {
     padding: 32px 0;
   }
@@ -191,8 +195,12 @@ s {
     max-width: 600px !important;
   }
 
-  .div_product_item {
-    align-items: center;
+  .div_product_image-wrapper {
+    align-items: start !important;
+  }
+
+  .div_product_item--purchase {
+    align-items: center !important;
   }
 
   .div_product_item--purchase {
@@ -227,10 +235,10 @@ s {
     height: 150px;
   }
 
-  .img_product_open-book {
-    width: 190px;
+  /* .img_product_open-book {
+    width: 290px;
     height: 220px;
-  }
+  } */
 
   .div_purchase-card_covers {
     display: flex;
@@ -278,14 +286,23 @@ s {
     gap: 20px;
   }
 
-  .img_product_stacked-books {
+  .div_products_container {
+    max-width: 1000px;
+    padding: 0 4px;
+  }
+
+  /* .div_product_image-wrapper {
+    margin-bottom: 150px;
+  } */
+
+  /* .img_product_stacked-books {
     transform: none;
     transform-origin: center center;
     transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
     box-shadow: -2px 2px 3px 4px rgba(0, 0, 0, 0.247);
     border: solid 5px rgba(255, 255, 255, 0);
     padding: 5px;
-  }
+  } */
 
   .h1_product_title {
     display: none;

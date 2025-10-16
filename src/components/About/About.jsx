@@ -1,7 +1,9 @@
 import React from "react";
 import "./About.css";
-import IconArrow from "../../assets/icons/about-icons/Icon-arrow.svg";
-import ImageAbout from "../../assets/images/about-img/Image-about.png";
+// import IconArrow from "../../assets/icons/about-icons/Icon-arrow.svg";
+import ImageAboutDesk1 from '../../assets/images/about-img/img_kenia_about_desk.png';
+import ImageAboutTablet1 from '../../assets/images/about-img/img_kenia_about_tablet.png';
+import ImageAboutMobile1 from '../../assets/images/about-img/img_kenia_about_mobile.png';
 
 import { useTranslation } from "react-i18next";
 
@@ -20,31 +22,32 @@ const About = () => {
               <p className="p-2-text">
                 {t('about.textAbout2')}
               </p>
-              <div className="div-button-about">
-                <a
-                href="https://www.patreon.com/KeniaBispo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button-section btn-base">
-                  {t('about.aboutButton')}
-                  <span>
-                    <img
-                      className="button_arrow"
-                      src={IconArrow}
-                      alt="Button arrow"
-                    />
-                  </span>
-                </a>
-              </div>
+              {/* Div do botão comentada */}
             </div>
 
-            <div>
-              <img
-                className="img-about-content"
-                src={ImageAbout}
-                alt="Image about"
-              />
+            {/* AQUI ESTÁ A CORREÇÃO */}
+            <div className="about_image_container"> {/* Um contêiner pode ser útil para estilização */}
+              <picture>
+                {/* Imagem para Desktop (telas a partir de 992px) */}
+                <source
+                  media="(min-width: 992px)"
+                  srcSet={ImageAboutDesk1}
+                />
+                {/* Imagem para Tablet (telas de 768px até 991px) */}
+                <source
+                  media="(min-width: 768px) and (max-width: 991px)"
+                  srcSet={ImageAboutTablet1}
+                />
+                {/* A tag <img> é OBRIGATÓRIA. Ela é a imagem padrão e o fallback */}
+                {/* O navegador usará a imagem mobile (ou a primeira que encontrar) como padrão */}
+                <img
+                  className="img-about-content"
+                  src={ImageAboutMobile1}
+                  alt="Uma foto de Kenia Bispo" // Use um texto alternativo descritivo
+                />
+              </picture>
             </div>
+
           </div>
         </div>
       </div>

@@ -3,7 +3,14 @@ import "./Products.css";
 import AnimatedButton from "./AnimatedButton";
 
 // Importando as imagens
-import ImageOpenBook from "../../assets/images/products-img/Image-open-livro.png";
+import ImageOpenBookDesk from "../../assets/images/products-img/Image-open-livro.png";
+
+import ImageOpenBookTablet from "../../assets/images/products-img/Image-open-livro 2.png";
+
+import ImageOpenBookMobile2 from "../../assets/images/products-img/Image-open-livro 3.png";
+
+import ImageOpenBookMobile1 from "../../assets/images/products-img/Image-open-livro 4.png";
+
 import ImageBookFront from "../../assets/images/products-img/BookFront.png";
 import ImageBookBack from "../../assets/images/products-img/LivroBack.png";
 import ImageBooks from "../../assets/images/products-img/ImageLivros.png";
@@ -15,7 +22,6 @@ import SparkleIcon from "./SparkIcon";
 const Products = () => {
   return (
     <section className="section_products" id="products">
-      {/* --- Elementos Decorativos --- */}
       <SparkleIcon className="sparkle_icon sparkle--1" />
       <SparkleIcon className="sparkle_icon sparkle--2" />
       <img
@@ -31,14 +37,43 @@ const Products = () => {
               <h1 className="h1_version_mobile">
                 Caderno de Receitas: do mundo para sua casa
               </h1>
-              <img
+              {/* <img
                 src={ImageOpenBook}
                 alt="Livro Aberto"
                 className="img_product_open-book"
-              />
+              /> */}
+
+              <picture>
+                {/* Imagem para Desktop (telas a partir de 1024px) */}
+                <source
+                  media="(min-width: 992px)"
+                  alt="Livro Aberto"
+                  srcSet={ImageOpenBookDesk}
+                />
+                {/* Imagem para Tablet (telas a partir de 768px) */}
+                <source
+                  media="(min-width: 767px) and (max-width: 991px)"
+                  alt="Livro Aberto"
+                  srcSet={ImageOpenBookTablet}
+                />
+
+                <source
+                  media="(max-width: 460px)"
+                  alt="Livro Aberto"
+                  srcSet={ImageOpenBookMobile1}
+                />
+
+                {/* Imagem padrão (Mobile) e fallback */}
+                <img
+                  src={ImageOpenBookMobile2}
+                  alt="Livro Aberto"
+                  className="footer-logo"
+                />
+              </picture>
+
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
-              <h1 className="text-center h1_product_title ">
+              <h1 className="text-center h1_product_title">
                 Caderno de Receitas: <br />
                 do mundo para sua casa
               </h1>
@@ -78,8 +113,10 @@ const Products = () => {
                     Por <strong>R$ 97,00</strong>
                   </span>
                 </div>
-                <AnimatedButton text="Comprar agora"
-                link="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart" />
+                <AnimatedButton
+                  text="Comprar agora"
+                  link="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart"
+                />
               </div>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">
@@ -129,8 +166,10 @@ const Products = () => {
                     Por <strong>R$ 27,00</strong>
                   </span>
                 </div>
-                <AnimatedButton text="Comprar agora"
-                link="https://pay.hotmart.com/M100399386O?bid=1750428900670" />
+                <AnimatedButton
+                  text="Comprar agora"
+                  link="https://pay.hotmart.com/M100399386O?bid=1750428900670"
+                />
               </div>
             </div>
           </div>

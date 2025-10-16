@@ -40,7 +40,6 @@ const Menu = () => {
     <header className="header">
       <div className="container">
         <div className="header-wrapper d-flex align-items-end">
-          {/* ... (código do logo e navegação principal) ... */}
           <figure className="header-logo mb-0 pb-0">
              <picture>
                <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />

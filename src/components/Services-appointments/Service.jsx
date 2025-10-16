@@ -11,12 +11,11 @@ import IconCard05 from "../../assets/icons/service-icons/Icon-card05.svg";
 import IconCard06 from "../../assets/icons/service-icons/Icon-card06.svg";
 import Modal from './ModalAppointments/Modal';
 
-// --- ALTERAÇÃO 1: O array agora usa chaves de tradução ---
 const servicesData = [
   {
     icon: IconCard01,
-    titleKey: "services.serviceCardTitle1", // <-- De 'title' para 'titleKey'
-    descriptionKey: "services.serviceCardText1", // <-- De 'description' para 'descriptionKey'
+    titleKey: "services.serviceCardTitle1",
+    descriptionKey: "services.serviceCardText1",
     alt: "Ícone de prancheta com um X, simbolizando personalização",
   },
   {

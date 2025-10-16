@@ -202,11 +202,6 @@ a.item-language-menu {
     margin-bottom: 0 !important;
   }
 
-  /* .img_logo_kenia {
-    width: 110px;
-    height: 80px;
-  } */
-
   .mobile-nav-item,
   .mobile-nav-link,
   .language-switcher-toggle,
@@ -221,7 +216,8 @@ a.item-language-menu {
   .mobile-nav-list {
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 0.9rem;
+
   }
 
   .mobile-nav-link {
@@ -274,13 +270,8 @@ a.item-language-menu {
   .mobile-nav-link,
   .language-switcher-toggle,
   .language-switcher-text {
-    font-size: 12px !important;
+    font-size: 13px !important;
   }
-
-  /* .img_logo_kenia {
-    width: 90px;
-    height: 60px;
-  } */
 
   .hamburger-button .material-symbols-outlined {
     font-size: 1.4rem;

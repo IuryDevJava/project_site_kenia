@@ -2,9 +2,9 @@ import React from "react";
 import "./Footer.css";
 
 // As imagens já estão importadas corretamente
-import ImageLogoFooterDesk from "../../assets/images/menu-img/logo (6).png";
-import ImageLogoFooterTablet from "../../assets/images/menu-img/logo-tablet.png";
-import ImageLogoFooterMobile from "../../assets/images/menu-img/logo-mobile.png";
+import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk.png";
+import ImageLogoFooterTablet from "../../assets/images/footer-img/logo_footer_tablet.png";
+import ImageLogoFooterMobile from "../../assets/images/footer-img/logo_footer_mobile.png";
 
 const Footer = () => {
   // const waLink = "https://wa.me/5521991116951";
