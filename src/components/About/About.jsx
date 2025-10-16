@@ -3,7 +3,11 @@ import "./About.css";
 import IconArrow from "../../assets/icons/about-icons/Icon-arrow.svg";
 import ImageAbout from "../../assets/images/about-img/Image-about.png";
 
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about_section" id="about">
       <div className="container">
@@ -11,17 +15,10 @@ const About = () => {
           <div className="col-12 div_section_cont">
             <div className="about_section_text">
               <p className="p-1-text">
-                Sou nutricionista no Rio de Janeiro e apaixonada por conectar
-                ciência, comida e memórias. Em meu livro de receitas de viagens,
-                reúno histórias, sabores do mundo e um olhar leve sobre a
-                alimentação.
+                {t('about.textAbout1')}
               </p>
               <p className="p-2-text">
-                Minha missão é mostrar que o emagrecimento saudável não se
-                constrói com dietas restritivas, mas com escolhas inteligentes,
-                que cuidam tanto da microbiota intestinal quanto da relação com
-                a comida. Entre consultas, escrita e aquarelas, criei um espaço
-                dedicado a quem busca mais saúde, equilíbrio e prazer à mesa.
+                {t('about.textAbout2')}
               </p>
               <div className="div-button-about">
                 <a
@@ -29,7 +26,7 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button-section btn-base">
-                  Saiba mais
+                  {t('about.aboutButton')}
                   <span>
                     <img
                       className="button_arrow"

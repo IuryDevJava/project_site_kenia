@@ -1,0 +1,150 @@
+{
+  "companyName": "IC Digital Experience",
+  "header": {
+    "about": "Sobre mim",
+    "services": "Serviços e agendamentos",
+    "products": "Produtos",
+    "FAQ": "FAQ"
+  },
+
+  "languages": {
+    "pt": "Português",
+    "en": "Inglês",
+    "es": "Espanhol"
+  },
+
+  "about": {
+    "textAbout1": "Sou nutricionista no Rio de Janeiro e apaixonada por conectar ciência, comida e memórias. Em meu livro de receitas de viagens, reúno histórias, sabores do mundo e um olhar leve sobre a alimentação.",
+    "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não se constrói com dietas restritivas, mas com escolhas inteligentes, que cuidam tanto da microbiota intestinal quanto da relação com a comida. Entre consultas, escrita e aquarelas, criei um espaço dedicado a quem busca mais saúde, equilíbrio e prazer à mesa.",
+    "aboutButton": "Saiba mais"
+  },
+
+  "services": {
+    "serviceTitle": "Agende já a sua consulta",
+    "serviceSubTitle": "Vou te ajudar a levar uma vida saudável.",
+
+    "serviceCardTitle1": "Consultas personalizadas",
+    "serviceCardText1": "Plano alimentar exclusivo, adaptado às suas metas e estilo de vida.",
+
+    "serviceCardTitle2": "Acompanhamento nutricional",
+    "serviceCardText2": "Monitoramento contínuo para garantir resultados reais e sustentáveis.",
+
+    "serviceCardTitle3": "Atendimento Individualizado",
+    "serviceCardText3": "Cada consulta é pensada para atender às suas necessidades.",
+
+    "serviceCardTitle4": "Programa Nutricional para emagrecimento",
+    "serviceCardText4": "Estratégias inteligentes para perda de peso com equilíbrio e bem-estar.",
+
+    "serviceCardTitle5": "Controle para Diabetes",
+    "serviceCardText5": "Controle nutricional especializado para promover qualidade de vida.",
+
+    "serviceCardTitle6": "Saúde da Mulher",
+    "serviceCardText6": "Cuidado nutricional voltado às necessidades femininas.",
+    "serviceCardButton": "Agendar consulta",
+
+    "modalAppointmentsTitle": "Preencha os dados abaixo",
+    "modalAppointmentsLabel1": "Nome",
+    "modalAppointmentsInput1Placeholder": "Nome completo",
+
+    "modalAppointmentsLabe2": "Telefone",
+    "modalAppointmentsInput2Placeholder": "(21) 99999-9999",
+
+    "modalAppointmentsLabe3": "E-mail",
+    "modalAppointmentsInput3Placeholder": "nome@e-mail.com",
+
+    "modalAppointmentsSelect": "Tipo de consulta",
+    "modalAppointmentsSelectOption1": "Presencial",
+    "modalAppointmentsSelectOption2": "Online / Teleconsulta",
+    "modalAppointmentsButton": "Agendar",
+
+    "appointmentsTitle": "Nosso espaço",
+    "appointmentsText": "Nosso espaço foi pensado para oferecer conforto, privacidade e uma experiência única em cada consulta."
+  },
+
+  "products": {
+    "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
+    "productsBookText1": "Receitas autorais com inspiração internacional.",
+    "productsBookText2": "Estilo elegante, pensado para experiências gastronômicas diferenciadas.",
+    "productsBookText3": "Ilustrações exclusivas em aquarela.",
+    "productsBookText4": "Uma obra que une arte, cultura e sabor.",
+
+    "productsBookPreco1": "De R$ 197,00",
+    "productsBookPreco2": "Por R$ 97,00",
+
+    "productsBookButton": "Comprar agora",
+
+    "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
+    "productsE-BookTitle": "E-book",
+    "productsE-BookText1": "Descubra como a sua microbiota pode ser a chave para emagrecer com leveza e sem dietas complicadas.",
+    "productsE-BookText2": "Estratégias aplicáveis e 2 cardápios semanais para te inspirar no dia a dia.",
+    "productsE-BookText3": "Um ebook prático, com conceitos essenciais.",
+
+    "productsE-BookPreco1": "De R$ 97,00",
+    "productsE-BookPreco2": "Por R$ 27,00",
+
+    "productsE-BookButton": "Comprar agora"
+  },
+
+  "FAQ": {
+    "faqTitle": "Perguntas frequentes",
+
+    "faqQuestion1": "Posso devolver o livro se eu me arrepender?",
+    "faqAnswer1": "Sim. Você tem até 7 dias corridos depois de receber o livro para desistir da compra. Nesse caso, eu devolvo todo o valor pago.",
+
+    "faqQuestion2": "E se o livro chegar com algum problema?",
+    "faqAnswer2": "Se o livro vier com defeito ou danificado no transporte, você pode escolher: receber um novo exemplar ou ter o dinheiro de volta. Basta me avisar e eu cuido de tudo para você não ter dor de cabeça.",
+
+    "faqQuestion3": "Quais são as formas de pagamento?",
+    "faqAnswer3": "Você pode pagar com cartão de crédito ou Pix. No cartão, dá para parcelar em até 5 vezes sem juros. No Pix, o pagamento é à vista e a confirmação cai rápido.",
+
+    "faqQuestion4": "Em quanto tempo vocês enviam o livro?",
+    "faqAnswer4": "Depois que o pagamento é confirmado, eu preparo tudo com cuidado e posto nos Correios em até 2 dias úteis.",
+
+    "faqQuestion5": "Quanto tempo leva para chegar?",
+    "faqAnswer5": "O prazo varia de acordo com o CEP e o tipo de envio que você escolher:PAC: mais econômico, mas demora um pouco mais.Sedex: chega mais rápido.Para ter uma ideia: quem está no Rio de Janeiro recebe em cerca de 5 dias úteis.",
+
+    "faqQuestion6": "Como acompanho meu pedido?",
+    "faqAnswer6": "Assim que o livro for postado, você recebe por e-mail o código de rastreio dos Correios. Assim pode acompanhar cada etapa da entrega.",
+
+    "faqQuestion7": "Posso comprar para presente?",
+    "faqAnswer7": "Sim. É só colocar o endereço da pessoa presenteada na hora da compra. Se quiser, posso até incluir um recadinho especial dentro do pacote.",
+
+    "faqQuestion8": "Onde mais posso comprar esse livro?",
+    "faqAnswer8": "A versão física está disponível exclusivamente aqui no meu site. A versão digital (eBook) está disponível na Amazon Kindle.",
+
+    "faqQuestion9": "E se eu tiver outra dúvida?",
+    "faqAnswer9": "É só me chamar. Estou disponível pelos canais abaixo e sou eu mesma que respondo.E-mail: kenia.bispo@hotmail.com WhatsApp: +55 (21) 96952-6214"
+  },
+
+
+  "locale": {
+    "localeTitle": "Localização",
+    "localeText": "Um espaço que une conforto, privacidade e elegância, pensado para acolher você com toda a exclusividade que merece."
+  },
+
+
+  "footer": {
+    "footerTextAbout": "Acompanhamento nutricional personalizado, com foco em saúde, bem-estar e equilíbrio alimentar.",
+
+    "footerTextTitleCompany": "Empresa",
+    "footerTextCompanyp1": "Sobre mim",
+    "footerTextCompanyp2": "Serviços",
+    "footerTextCompanyp3": "Meus produtos",
+    "footerTextCompanyp4": "Política de privacidade",
+
+    "footerTextTitleService": "Atendimento",
+    "footerTextServicep1": "Como funciona o Atendimento",
+    "footerTextServicep2": "Dúvidas frequentes",
+    "footerTextServicep3": "Termos de uso",
+    "footerTextServicep4": "Política de cancelamento",
+
+    "footerTextTitleNutrition": "Nutrição",
+    "footerTextNutritionp1": "Blog / Artigos",
+    "footerTextNutritionp2": "E-book",
+    "footerTextNutritionp3": "Receitas",
+    "footerTextNutritionp4": "Dicas de alimentação saudável",
+
+    "footerRodape1": "© 2025 Drª Kenia. Todos os direitos reservados.",
+    "footerRodape2": "Desenvolvido por IC Digital Experience"
+  }
+}

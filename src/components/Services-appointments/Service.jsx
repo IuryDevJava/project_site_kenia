@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Service.css";
+import { useTranslation } from "react-i18next";
 
 // Importando os ícones
 import IconCard01 from "../../assets/icons/service-icons/Icon-card01.svg";
@@ -10,60 +11,57 @@ import IconCard05 from "../../assets/icons/service-icons/Icon-card05.svg";
 import IconCard06 from "../../assets/icons/service-icons/Icon-card06.svg";
 import Modal from './ModalAppointments/Modal';
 
+// --- ALTERAÇÃO 1: O array agora usa chaves de tradução ---
 const servicesData = [
   {
     icon: IconCard01,
-    title: "Consultas personalizadas",
-    description:
-      "Plano alimentar exclusivo, adaptado às suas metas e estilo de vida.",
+    titleKey: "services.serviceCardTitle1", // <-- De 'title' para 'titleKey'
+    descriptionKey: "services.serviceCardText1", // <-- De 'description' para 'descriptionKey'
     alt: "Ícone de prancheta com um X, simbolizando personalização",
   },
   {
     icon: IconCard02,
-    title: "Acompanhamento nutricional",
-    description:
-      "Monitoramento contínuo para garantir resultados reais e sustentáveis.",
+    titleKey: "services.serviceCardTitle2",
+    descriptionKey: "services.serviceCardText2",
     alt: "Ícone de duas setas em círculo, simbolizando acompanhamento",
   },
   {
     icon: IconCard03,
-    title: "Atendimento Individualizado",
-    description: "Cada consulta é pensada para atender às suas necessidades.",
+    titleKey: "services.serviceCardTitle3",
+    descriptionKey: "services.serviceCardText3",
     alt: "Ícone de um prontuário médico, simbolizando atendimento individual",
   },
   {
     icon: IconCard04,
-    title: "Programa Nutricional para emagrecimento",
-    description:
-      "Estratégias inteligentes para perda de peso com equilíbrio e bem-estar.",
+    titleKey: "services.serviceCardTitle4",
+    descriptionKey: "services.serviceCardText4",
     alt: "Ícone de um documento, simbolizando um programa nutricional",
   },
   {
     icon: IconCard05,
-    title: "Controle para Diabetes",
-    description:
-      "Controle nutricional especializado para promover qualidade de vida.",
+    titleKey: "services.serviceCardTitle5",
+    descriptionKey: "services.serviceCardText5",
     alt: "Ícone de uma gota de sangue, simbolizando controle de diabetes",
   },
   {
     icon: IconCard06,
-    title: "Saúde da Mulher",
-    description: "Cuidado nutricional voltado às necessidades femininas.",
+    titleKey: "services.serviceCardTitle6",
+    descriptionKey: "services.serviceCardText6",
     alt: "Ícone de um coração dentro de uma mão, simbolizando cuidado e saúde",
   },
 ];
 
 const Service = () => {
-
-  const [showModal, setShowModal] = useState(false); // controla a modal
+  const { t } = useTranslation();
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <section className="service_section" id="services">
       <div className="container">
         <div className="service_header">
-          <h1>Agende já a sua consulta</h1>
+          <h1>{t('services.serviceTitle')}</h1>
           <h4 className="service_subtitle">
-            Vou te ajudar a levar uma vida saudável.
+            {t('services.serviceSubTitle')}
           </h4>
         </div>
         <div className="row g-4 row_div_card">
@@ -74,7 +72,8 @@ const Service = () => {
             >
               <div className="service_card">
                 <div className="card_header">
-                  <h5 className="card_title">{service.title}</h5>
+                  {/* --- ALTERAÇÃO 2: Usando t() para traduzir o título --- */}
+                  <h5 className="card_title">{t(service.titleKey)}</h5>
                   <figure className="card_icon_figure">
                     <img
                       src={service.icon}
@@ -84,7 +83,8 @@ const Service = () => {
                   </figure>
                 </div>
                 <div className="card_body">
-                  <p className="card_text">{service.description}</p>
+                  {/* --- ALTERAÇÃO 3: Usando t() para traduzir a descrição --- */}
+                  <p className="card_text">{t(service.descriptionKey)}</p>
                 </div>
               </div>
             </div>
@@ -92,8 +92,9 @@ const Service = () => {
         </div>
 
         <div className="service_div_button">
+           {/* --- ALTERAÇÃO 4: Usando t() para traduzir o botão --- */}
           <button onClick={() => setShowModal(true)} className="service_button btn-base">
-            Agendar consulta
+            {t('services.serviceCardButton')}
           </button>
         </div>
         {showModal && <Modal onClose={() => setShowModal(false)} />}

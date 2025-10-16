@@ -136,7 +136,7 @@ Aguardo confirmação.
 
                 <div className="div_option_consult">
                   <label htmlFor="tipo" className="form-label">
-                    Tipo de Consulta
+                    Tipo de consulta
                   </label>
                   <CustomSelect
                     name="tipo"
