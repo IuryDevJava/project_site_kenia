@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import "./Button.css";
+import "../../assets/Style/Button.css";
 
 const AnimatedButton = ({ text, link }) => {
   const buttonRef = useRef(null);

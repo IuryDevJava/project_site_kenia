@@ -1,27 +1,18 @@
-import './App.css';
-import Menu from './components/Menu/Menu';
-import About from './components/About/About';
-import Service from './components/Services-appointments/Service';
-import EspacoSection from './components/Services-appointments/EspacoSection';
-import Products from './components/Products/Products';
-import Faq from './components/AskedQuestions/Faq';
-import Location from './components/Location/Location';
-import Footer from './components/Footer/Footer';
-import useSmoothScroll from "./hooks/useSmoothScroll";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import Layout from "./components/Layout/Layout";
+import HomePage from "./pages/HomePage";
+import ComunidadePage from "./pages/ComunidadePage";
 
 function App() {
-  useSmoothScroll(80, { closeMenuSelector: ".menu-toggle" });
   return (
-    <div className="app">
-      <Menu />
-      <About />
-      <Service />
-      <EspacoSection />
-      <Products />
-      <Faq />
-      <Location />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="comunidade" element={<ComunidadePage />} />
+      </Route>
+    </Routes>
   );
 }
 

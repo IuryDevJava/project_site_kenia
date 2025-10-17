@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./CustomSelect.css"; // Vamos criar este CSS a seguir
+import "../../../assets/Style/CustomSelect.css"
 
 export default function CustomSelect({ options, value, onChange, name }) {
   const [isOpen, setIsOpen] = useState(false);

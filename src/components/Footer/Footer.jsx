@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../../assets/Style/Footer.css";
 
 // As imagens já estão importadas corretamente
 import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk.png";

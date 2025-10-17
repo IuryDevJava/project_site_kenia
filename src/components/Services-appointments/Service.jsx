@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Service.css";
+import "../../assets/Style/Service.css";
 import { useTranslation } from "react-i18next";
 
 // Importando os ícones

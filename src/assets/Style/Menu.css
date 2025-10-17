@@ -185,6 +185,13 @@ a.item-language-menu {
   width: 100%;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-nav-list {
+    gap: var(--menu-gap-space);
+    margin-left: 35px !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
     padding: 30px 0;
@@ -217,7 +224,6 @@ a.item-language-menu {
     display: flex;
     flex-direction: row;
     gap: 0.9rem;
-
   }
 
   .mobile-nav-link {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "../../assets/Style/About.css";
 // import IconArrow from "../../assets/icons/about-icons/Icon-arrow.svg";
 import ImageAboutDesk1 from '../../assets/images/about-img/img_kenia_about_desk.png';
 import ImageAboutTablet1 from '../../assets/images/about-img/img_kenia_about_tablet.png';

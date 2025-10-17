@@ -1,0 +1,99 @@
+.section_community_patreon {
+  padding: 200px 0 70px;
+  overflow: hidden;
+  display: flex; /* Adicionado para centralizar o conteúdo verticalmente */
+  align-items: center; /* Adicionado para centralizar o conteúdo verticalmente */
+  min-height: calc(100vh - var(--header-height, 100px) - var(--footer-height, 50px)); /* Ajustar conforme sua altura de header/footer */
+}
+
+.container_community_patreon {
+  width: 100%; /* Garante que o container ocupe a largura total */
+}
+
+.div_patreon_response_community {
+  display: flex; /* Para desktop, imagem e texto lado a lado */
+  align-items: center; /* Centraliza verticalmente os itens no desktop */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  gap: 40px; /* Espaçamento entre a imagem e o texto */
+  max-width: 1200px; /* Limita a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza a div_patreon_response_community na página */
+}
+
+.community_image_wrapper {
+  flex: 1; /* Permite que a imagem ocupe o espaço disponível */
+  display: flex;
+  justify-content: center; /* Centraliza a imagem dentro do wrapper */
+  align-items: center;
+  max-width: 50%; /* Limita a largura da imagem para não ser muito grande no desktop */
+}
+
+.img_patreon_community {
+  max-width: 100%; /* Garante que a imagem não transborde */
+  height: auto;
+  border-radius: 8px; /* Opcional: Adiciona um leve arredondamento nas bordas da imagem */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Opcional: Adiciona uma sombra sutil */
+}
+
+.div_response_title_text {
+  flex: 1; /* Permite que o texto ocupe o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o texto à esquerda por padrão */
+  text-align: left; /* Alinha o texto à esquerda por padrão */
+  max-width: 50%; /* Limita a largura do bloco de texto no desktop */
+}
+
+.h1_title_patreon {
+  padding: 0;
+  margin-bottom: 20px; /* Espaçamento após o título */
+  font-size: clamp(28px, 4vw, 42px); /* Tamanho de fonte responsivo */
+  font-weight: 700; /* Título mais forte */
+  color: #333; /* Cor do título */
+}
+
+.p_text_patreon {
+  padding: 0;
+  margin-bottom: 30px; /* Espaçamento após o parágrafo */
+  font-size: clamp(16px, 2vw, 18px); /* Tamanho de fonte responsivo */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  color: #555; /* Cor do texto */
+}
+
+
+/* --- Media Queries para Mobile --- */
+@media (max-width: 991px) {
+  .section_community_patreon {
+    padding: 132px 0 50px;
+  }
+
+  .div_patreon_response_community {
+    flex-direction: column; /* Coloca imagem e texto em coluna no mobile */
+    gap: 40px; /* Espaçamento entre os elementos */
+    max-width: 90%; /* Ajusta a largura para mobile */
+  }
+
+  .community_image_wrapper,
+  .div_response_title_text {
+    max-width: 100%; /* Permite que ocupem a largura total */
+  }
+
+  .div_response_title_text {
+    align-items: center; /* Centraliza o texto no mobile */
+    text-align: center; /* Centraliza o texto no mobile */
+  }
+
+  .h1_title_patreon {
+    font-size: 32px; /* Ajuste para mobile */
+  }
+
+  .p_text_patreon {
+    font-size: 17px; /* Ajuste para mobile */
+  }
+}
+
+@media (max-width: 767px) { /* Mantenha este para um controle mais fino em smartphones */
+  .section_community_patreon {
+    padding: 80px 0 40px;
+  }
+}

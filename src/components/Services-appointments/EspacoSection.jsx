@@ -4,7 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./EspacoSection.css";
+import "../../assets/Style/EspacoSection.css";
 
 import img1 from "../../assets/images/service-img/Image-card1 1.png";
 import img2 from "../../assets/images/service-img/Image-card2 1.png";

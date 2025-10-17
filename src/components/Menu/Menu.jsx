@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 // logos e ícones
 import ImgLogoMenuDesk from "../../assets/images/menu-img/logo (6).png";
@@ -9,7 +10,7 @@ import IconBrazil from "../../assets/icons/menu-icons/BR.svg";
 import IconUSA from "../../assets/icons/menu-icons/EUA.svg";
 import IconSpain from "../../assets/icons/menu-icons/ESP.svg";
 
-import "./Menu.css";
+import "../../assets/Style/Menu.css";
 import Dropdown from "react-bootstrap/Dropdown";
 
 // Agora o 'name' aqui serve mais como um fallback ou identificador
@@ -23,9 +24,11 @@ const Menu = () => {
   const { t, i18n } = useTranslation();
 
   const [currentLanguage, setCurrentLanguage] = useState(
-    () => availableLanguages.find(lang => lang.id === i18n.language) || availableLanguages[0]
+    () =>
+      availableLanguages.find((lang) => lang.id === i18n.language) ||
+      availableLanguages[0]
   );
-  
+
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
@@ -41,25 +44,64 @@ const Menu = () => {
       <div className="container">
         <div className="header-wrapper d-flex align-items-end">
           <figure className="header-logo mb-0 pb-0">
-             <picture>
-               <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />
-               <source media="(min-width: 768px) and (max-width: 991px)" srcSet={ImgLogoMenuTablet} />
-               <img
-                 className="img_logo_kenia"
-                 src={ImgLogoMenuMobile}
-                 alt="Logo for Drª Kenia's practice"
-               />
-             </picture>
-           </figure>
-           <nav className="header-nav">
-             <ul className="header-nav-list d-flex list-unstyled mb-0">
-               <li className="header-nav-item"><a className="header-nav-link text-decoration-none" href="#about">{t('header.about')}</a></li>
-               <li className="header-nav-item"><a className="header-nav-link text-decoration-none" href="#services">{t('header.services')}</a></li>
-               <li className="header-nav-item"><a className="header-nav-link text-decoration-none" href="#products">{t('header.products')}</a></li>
-               <li className="header-nav-item"><a className="header-nav-link text-decoration-none" href="#faq">{t('header.FAQ')}</a></li>
-             </ul>
-           </nav>
-          
+            <picture>
+              <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />
+              <source
+                media="(min-width: 768px) and (max-width: 991px)"
+                srcSet={ImgLogoMenuTablet}
+              />
+              <img
+                className="img_logo_kenia"
+                src={ImgLogoMenuMobile}
+                alt="Logo for Drª Kenia's practice"
+              />
+            </picture>
+          </figure>
+          <nav className="header-nav">
+            <ul className="header-nav-list d-flex list-unstyled mb-0">
+              <li className="header-nav-item">
+                <Link
+                  className="header-nav-link text-decoration-none"
+                  to="/#about"
+                >
+                  {t("header.about")}
+                </Link>
+              </li>
+              <li className="header-nav-item">
+                <Link
+                  className="header-nav-link text-decoration-none"
+                  to="/#services"
+                >
+                  {t("header.services")}
+                </Link>
+              </li>
+              <li className="header-nav-item">
+                <Link
+                  className="header-nav-link text-decoration-none"
+                  to="/#products"
+                >
+                  {t("header.products")}
+                </Link>
+              </li>
+              <li className="header-nav-item">
+                <Link
+                  className="header-nav-link text-decoration-none"
+                  to="/#faq"
+                >
+                  {t("header.FAQ")}
+                </Link>
+              </li>
+              <li className="header-nav-item">
+                <Link
+                  className="header-nav-link text-decoration-none"
+                  to="/comunidade"
+                >
+                  Comunidade
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
           <div className="header-actions ms-auto d-flex align-items-center">
             <div className="language-switcher">
               <Dropdown>
@@ -70,7 +112,7 @@ const Menu = () => {
                   <img
                     className="language-switcher-flag mx-1 mb-1"
                     src={currentLanguage.icon}
-                    alt={`${t('languages.' + currentLanguage.id)} flag`} // ALTERADO AQUI
+                    alt={`${t("languages." + currentLanguage.id)} flag`} // ALTERADO AQUI
                   />
                   {/* --- ALTERAÇÃO PRINCIPAL AQUI --- */}
                   <span className="language-switcher-text">
@@ -90,7 +132,7 @@ const Menu = () => {
                         <img
                           className="mb-1 language-switcher-flag"
                           src={lang.icon}
-                          alt={`${t('languages.' + lang.id)} flag`} // ALTERADO AQUI
+                          alt={`${t("languages." + lang.id)} flag`} // ALTERADO AQUI
                         />
                         {/* --- E ALTERAÇÃO PRINCIPAL AQUI --- */}
                         <span className="mx-1 language-switcher-text">
@@ -113,15 +155,55 @@ const Menu = () => {
 
         {/* ... (código do menu mobile) ... */}
         {isMobileMenuOpen && (
-           <nav className="mobile-nav">
-             <ul className="mobile-nav-list list-unstyled mb-0">
-               <li className="mobile-nav-item"><a className="mobile-nav-link text-decoration-none" href="#about" onClick={toggleMobileMenu}>{t('header.about')}</a></li>
-               <li className="mobile-nav-item"><a className="mobile-nav-link text-decoration-none" href="#services" onClick={toggleMobileMenu}>{t('header.services')}</a></li>
-               <li className="mobile-nav-item"><a className="mobile-nav-link text-decoration-none" href="#products" onClick={toggleMobileMenu}>{t('header.products')}</a></li>
-               <li className="mobile-nav-item"><a className="mobile-nav-link text-decoration-none" href="#faq" onClick={toggleMobileMenu}>{t('header.FAQ')}</a></li>
-             </ul>
-           </nav>
-         )}
+          <nav className="mobile-nav">
+            <ul className="mobile-nav-list list-unstyled mb-0">
+              <li className="mobile-nav-item">
+                <Link
+                  className="mobile-nav-link text-decoration-none"
+                  to="/#about"
+                  onClick={toggleMobileMenu}
+                >
+                  {t("header.about")}
+                </Link>
+              </li>
+              <li className="mobile-nav-item">
+                <Link
+                  className="mobile-nav-link text-decoration-none"
+                  to="/#services"
+                  onClick={toggleMobileMenu}
+                >
+                  {t("header.services")}
+                </Link>
+              </li>
+              <li className="mobile-nav-item">
+                <Link
+                  className="mobile-nav-link text-decoration-none"
+                  to="/#products"
+                  onClick={toggleMobileMenu}
+                >
+                  {t("header.products")}
+                </Link>
+              </li>
+              <li className="mobile-nav-item">
+                <Link
+                  className="mobile-nav-link text-decoration-none"
+                  to="/#faq"
+                  onClick={toggleMobileMenu}
+                >
+                  {t("header.FAQ")}
+                </Link>
+              </li>
+              <li className="mobile-nav-item">
+                <Link
+                  className="mobile-nav-link text-decoration-none"
+                  to="/comunidade"
+                >
+                  Comunidade
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );

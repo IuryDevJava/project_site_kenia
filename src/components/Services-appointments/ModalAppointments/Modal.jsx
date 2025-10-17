@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Modal.css";
+import "../../../assets/Style/Modal.css";
 import CustomSelect from "./CustomSelect";
 
 export default function Modal({ onClose }) {
@@ -31,7 +31,7 @@ export default function Modal({ onClose }) {
 
     // 2. Define um atraso de 2 segundos (2000 ms) antes de redirecionar
     setTimeout(() => {
-      const seuNumeroWhatsapp = "5521980892914";
+      const seuNumeroWhatsapp = "5521969526214";
 
       const mensagem = `
 Olá! Gostaria de agendar uma consulta.
@@ -60,7 +60,6 @@ Aguardo confirmação.
     <div className="custom-modal-backdrop">
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content custom-modal-content">
-            
           <button className="custom-close-btn" onClick={onClose}>
             &times;
           </button>
@@ -71,17 +70,12 @@ Aguardo confirmação.
             <div className="redirect-container">
               <div className="spinner"></div>{" "}
               {/* <-- SPINNER ADICIONADO AQUI */}
-              <h2 className="custom-modal-title">
-                Aguarde um momento...
-              </h2>
-              <p>
-                Estamos te redirecionando para o WhatsApp.
-              </p>
+              <h2 className="custom-modal-title">Aguarde um momento...</h2>
+              <p>Estamos te redirecionando para o WhatsApp.</p>
             </div>
           ) : (
             // Caso contrário, mostra o formulário
             <>
-            
               <h2 className="custom-modal-title text-center mb-4">
                 Preencha os dados abaixo
               </h2>

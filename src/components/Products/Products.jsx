@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "../../assets/Style/Products.css";
 import AnimatedButton from "./AnimatedButton";
 
 // Importando as imagens

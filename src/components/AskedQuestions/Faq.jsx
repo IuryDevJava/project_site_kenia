@@ -1,7 +1,6 @@
 import React from "react";
-import "./Faq.css";
+import "../../assets/Style/Faq.css";
 
-// Dados das perguntas e respostas. Separar os dados assim torna o código mais limpo!
 const faqData = [
   {
     id: "faq1",
