@@ -11,30 +11,26 @@ const CommunityPage = () => {
   return (
     <section className="section_community_patreon">
       <div className="container container_community_patreon">
-        {/* Mantive a div_patreon_response_community, mas a ordem dos filhos mudou */}
         <div className="div_patreon_response_community">
-          {/* DIV DA IMAGEM - AGORA É O PRIMEIRO FILHO PARA O LAYOUT DESEJADO */}
-          <div className="community_image_wrapper"> {/* Nova div para agrupar a imagem */}
+          <div className="community_image_wrapper">
             <picture>
               <source
                 media="(min-width: 992px)"
-                alt="Livro Aberto"
+                alt="Image Patreon desktop"
                 srcSet={ImagePatreonCommunity1}
               />
               <source
                 media="(min-width: 767px) and (max-width: 991px)"
-                alt="Livro Aberto"
+                alt="Image Patreon tablet"
                 srcSet={ImagePatreonCommunity2}
               />
               <img
                 src={ImagePatreonCommunity3}
-                alt="Livro Aberto"
-                className="img_patreon_community" // Mudei a classe para ser mais específica
+                alt="Image Patreon mobile"
+                className="img_patreon_community"
               />
             </picture>
           </div>
-
-          {/* DIV DO TEXTO E BOTÃO - AGORA É O SEGUNDO FILHO */}
           <div className="div_response_title_text">
             <h1 className="h1_title_patreon">Comunidade Patreon</h1>
             <p className="p_text_patreon">

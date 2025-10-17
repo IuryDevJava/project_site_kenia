@@ -255,7 +255,7 @@
     padding: 10px 0 12px;
   }
 
-  .footer-social {
+    .footer-social {
     display: flex;
     gap: 6px;
     justify-content: center;
@@ -266,7 +266,7 @@
   .social-btn {
     width: 30px !important;
     height: 30px !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     justify-content: center !important;
     align-items: center !important;
     padding: 0 !important;
