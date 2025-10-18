@@ -4,13 +4,13 @@
   background-color: var(--about-section-background);
 }
 
-p {
+.p-1-text,
+.p-2-text {
   display: inline-flex;
-  font-size: var(--about-text-font-size) !important;
+  font-size: 22px !important;
   line-height: 116%;
-  /* color: #5e5e5e; */
-  color: #303030;
-  font-weight: var(--about-text-font-weight);
+  color: #8b8985;
+  font-weight: 400;
   text-align: var(--about-text-alignment);
   width: 85%;
 }
@@ -18,51 +18,6 @@ p {
 .p-2-text {
   padding: 0;
   margin: 0;
-}
-
-.div-button-about {
-  margin: 40px 0 0;
-}
-
-/* .button-section {
-  background-color: var(--about-button-color);
-  color: #ffffff;
-  -webkit-text-stroke: 1px #ffffff1a;
-  text-shadow: 0px 2px 2px rgba(120, 120, 120, 1);
-  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
-  font-weight: bolder;
-  font-size: var(--about-button-font-size);
-  border: none;
-  border-radius: 6px;
-  padding: 6px 22px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-} */
-
-.button-section {
-  background-color: var(--about-button-color);
-  width: 204px;
-  height: 50px;
-  font-size: var(--about-button-font-size);
-}
-
-.btn-base {
-  /* Estilos que você já tinha em comum */
-  color: #ffffff;
-  border: none;
-  -webkit-text-stroke: 1px #ffffff1a;
-  text-shadow: 0px 2px 2px rgba(120, 120, 120, 1);
-  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
-  border-radius: 6px;
-  font-weight: bolder;
-  cursor: pointer;
-  align-items: center;
-  gap: 12px;
-  transition: background-color 0.3s ease;
-  min-width: 230px !important;
-  justify-content: center;
 }
 
 .div_section_cont {
@@ -87,27 +42,11 @@ p {
   .about_section {
     padding: 152px 0 50px;
   }
-  .p-1-text, 
+  .p-1-text,
   .p-2-text {
-    font-size: 16px !important;
+    font-size: 18px !important;
     width: 100%;
   }
-
-  .div-button-about {
-    margin: 30px 0 0;
-  }
-
-  /* .button-section {
-    width: 160px;
-    height: 40px;
-    font-size: 16px;
-  }
-
-  .button_arrow {
-    width: 30px;
-    height: 30px;
-  } */
-
 }
 
 @media (max-width: 767px) {
@@ -115,15 +54,14 @@ p {
     padding: 117px 0 32px !important;
   }
 
-  .p-1-text, 
+  .p-1-text,
   .p-2-text {
-    font-size: 14px !important;
+    font-size: 16px !important;
     width: 290px !important;
     text-align: left;
-    
   }
 
-  .p-2-text{
+  .p-2-text {
     margin-top: 10px !important;
   }
 
@@ -133,28 +71,7 @@ p {
     display: flex;
   }
 
-  /* .div-button-about {
-    margin-top: 20px;
-  }
-
-  .button-section {
-    width: 150px;
-    height: 35px;
-    font-size: 14px;
-  }
-
-  .btn-base {
-    margin: auto;
-  }
-
-  .button_arrow {
-    width: 22px;
-    height: 22px;
-  } */
-
   .img-about-content {
-    /* width: 250px;
-    height: 300px; */
     margin: auto;
     display: flex;
   }

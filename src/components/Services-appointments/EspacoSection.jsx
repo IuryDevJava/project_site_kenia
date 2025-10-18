@@ -21,8 +21,8 @@ function EspacoSection() {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-12 espaco-texto">
-            <h2>Nosso espaço</h2>
-            <p>
+            <h2 className="space_h2">Nosso espaço</h2>
+            <p className="p_espaco_section">
               Nosso espaço foi pensado para oferecer conforto, privacidade e uma
               experiência única em cada consulta.
             </p>

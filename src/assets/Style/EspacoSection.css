@@ -3,17 +3,18 @@
   overflow: hidden;
 }
 
-.espaco-texto h2 {
+.space_h2 {
   font-size: 30px;
   color: #656565;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.espaco-texto p {
-  font-size: 18px;
+.p_espaco_section {
+  font-size: 20px !important;
   color: #8b8985;
   line-height: 116%;
+  font-weight: 400;
   margin-top: 30px;
   margin-bottom: 0;
 }
@@ -125,15 +126,15 @@
     display: none !important;
   }
 
-  .espaco-texto h2 {
-    font-size: 25px;
+  .space_h2 {
+    font-size: 25px !important;
     color: #656565;
     font-weight: 600;
     margin-bottom: 0;
   }
 
-  .espaco-texto p {
-    font-size: 16px;
+  .p_espaco_section {
+    font-size: 18px !important;
     color: #8b8985;
     padding: 0 0 32px;
     margin-top: 18px;
@@ -167,22 +168,21 @@
   .espaco-texto {
     text-align: center;
   }
-  .espaco-texto h2 {
-    font-size: 20px;
+  .space_h2 {
+    font-size: 20px !important;
   }
-  .espaco-texto p {
+  .p_espaco_section {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px !important;
     color: #8b8985;
     padding: 0 0 24px;
     margin-top: 18px;
   }
-  .espaco-texto h2 {
-    font-size: 20px;
-  }
+
   .espaco-carousel-wrapper {
     margin-left: 0;
   }
+
   .espaco-swiper .swiper-slide {
     width: 250px;
     height: 360px;

@@ -1,8 +1,3 @@
-/* .header {
-  padding: 12px 0;
-  position: fixed;
-} */
-
 .header {
   padding: 40px 0;
   position: fixed;
@@ -16,34 +11,9 @@
   background: none !important;
   border: none !important;
   color: #000 !important;
+  font-weight: 400;
 }
 
-/* div.language-switcher-menu {
-  background: none !important;
-  border: none !important;
-  outline: none;
-  box-shadow: none !important;
-  z-index: 1000 !important;
-}
-
-.language-switcher-menu .item-language-menu:hover {
-  background: none !important;
-  box-shadow: none !important;
-}
-
-div.dropdown-menu {
-  margin-right: 20px ;
-  width: 40px;
-  background-color: red !important;
-}
-
-a.item-language-menu {
-  padding: 0;
-  margin: 0 4px 0;
-  margin-right: 0;
-  width: 5px;
-  margin-top: 8px;
-} */
 /* ===== Dropdown principal ===== */
 .language-switcher .dropdown-menu,
 .language-switcher-menu {
@@ -96,14 +66,14 @@ a.item-language-menu {
   color: #000000 !important;
   background: transparent !important;
   border-radius: 6px;
-  font-size: 16px;
+  font-weight: 400 !important;
   width: 100%;
   z-index: 9999;
 }
 
 .language-switcher .dropdown-item:hover,
 .language-switcher-menu .item-language-menu:hover {
-  background: rgba(0, 12, 184, 0.123) !important;
+  background: rgba(107, 0, 27, 0.404) !important;
 }
 
 /* ===== Bandeira ===== */
@@ -121,6 +91,8 @@ a.item-language-menu {
   white-space: nowrap;
   flex: 1;
   text-align: left;
+  font-size: 16px !important;
+  font-weight: 400;
 }
 
 .language-switcher-toggle {
@@ -141,8 +113,9 @@ a.item-language-menu {
 }
 
 .header-nav-link {
-  font-size: var(--menu-font-size);
+  font-size: 16px;
   color: #000;
+  font-weight: 400;
 }
 
 .hamburger-button .material-symbols-outlined {
@@ -213,8 +186,12 @@ a.item-language-menu {
   .mobile-nav-link,
   .language-switcher-toggle,
   .language-switcher-text {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
+
+  .language-switcher .language-switcher-text {
+  font-size: 15px !important;
+}
 
   .hamburger-button .material-symbols-outlined {
     font-size: 1.6rem;
@@ -228,7 +205,10 @@ a.item-language-menu {
 
   .mobile-nav-link {
     color: white;
-    font-weight: bolder;
+  }
+
+  .header-nav-link {
+    font-size: 15px;
   }
 
   .language-switcher-flag {
@@ -251,7 +231,7 @@ a.item-language-menu {
   }
 
   .mobile-nav-item a::after {
-    background: #ffc5c5;
+    background: #ffeded;
   }
 
   .language-switcher-toggle {
@@ -276,8 +256,19 @@ a.item-language-menu {
   .mobile-nav-link,
   .language-switcher-toggle,
   .language-switcher-text {
-    font-size: 13px !important;
+    font-size: 14px !important;
   }
+
+  .mobile-nav-item,
+  .mobile-nav-link,
+  .language-switcher-toggle,
+  .language-switcher-text {
+    font-size: 14px !important;
+  }
+
+  .language-switcher .language-switcher-text {
+  font-size: 14px !important;
+}
 
   .hamburger-button .material-symbols-outlined {
     font-size: 1.4rem;

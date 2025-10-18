@@ -12,16 +12,16 @@
 }
 
 .service_header h1 {
-  font-size: var(--service-section-title-font-size);
-  color: var(--service-section-color-title);
+  font-size: 30px;
+  color: #656565;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-.service_header .service_subtitle {
-  font-size: var(--service-section-sutitle-font-size);
-  color: #322b1a;
-  font-weight: 300;
+.service_subtitle {
+  font-size: 20px;
+  color: #8b8985;
+  font-weight: 400;
 }
 
 /* Estilo dos cards de serviço */
@@ -72,24 +72,6 @@
   margin-top: 24px;
 }
 
-/* .service_button {
-  background-color: var(--service-button-color);
-  color: #ffffff;
-  border: none;
-  -webkit-text-stroke: 1px #ffffff1a;
-  text-shadow: 0px 2px 2px rgba(120, 120, 120, 1);
-  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
-  border-radius: 6px;
-  padding: 12px 25px;
-  font-size: 18px;
-  font-weight: bolder;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  transition: background-color 0.3s ease;
-} */
-
 .service_button {
   background-color: var(--service-button-color);
   font-size: 18px;
@@ -109,6 +91,7 @@
   transition: background-color 0.3s ease;
   min-width: 230px !important;
   justify-content: center;
+  align-items: center;
 }
 
 img.Image_button_icon {
@@ -126,8 +109,11 @@ img.Image_button_icon {
   }
 
   .service_header h1 {
-    font-size: 25px;
-    margin-bottom: 0;
+    font-size: 25px !important;
+  }
+
+  .service_subtitle {
+    font-size: 18px !important;
   }
 
   .service_header .service_subtitle {
@@ -174,8 +160,8 @@ img.Image_button_icon {
   }
 
   .service_header {
-    margin-bottom: 16px;
-    gap: 16px;
+    margin-bottom: 18px;
+    gap: 12px;
     justify-content: center;
   }
 
@@ -186,7 +172,7 @@ img.Image_button_icon {
 
   .service_header h1,
   .service_header .service_subtitle {
-    margin-right: auto;
+    margin: auto;
   }
 
   .service_header .service_subtitle {
@@ -230,6 +216,7 @@ img.Image_button_icon {
 
   .btn-base {
     min-width: 140px !important;
+    margin: auto;
   }
 
   img.Image_button_icon {

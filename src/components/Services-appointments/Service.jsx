@@ -59,9 +59,9 @@ const Service = () => {
       <div className="container">
         <div className="service_header">
           <h1>{t('services.serviceTitle')}</h1>
-          <h4 className="service_subtitle">
+          <h5 className="service_subtitle">
             {t('services.serviceSubTitle')}
-          </h4>
+          </h5>
         </div>
         <div className="row g-4 row_div_card">
           {servicesData.map((service, index) => (
