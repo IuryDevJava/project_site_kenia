@@ -98,7 +98,7 @@ const Menu = () => {
                   className="header-nav-link text-decoration-none"
                   to="/comunidade"
                 >
-                  Comunidade
+                  {t("header.community")}
                 </HashLink>
               </li>
             </ul>
@@ -200,7 +200,7 @@ const Menu = () => {
                   className="mobile-nav-link text-decoration-none"
                   to="/comunidade"
                 >
-                  Comunidade
+                  {t("header.community")}
                 </HashLink>
               </li>
             </ul>

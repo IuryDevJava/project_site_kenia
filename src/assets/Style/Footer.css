@@ -35,7 +35,8 @@
 }
 
 .footer-desc {
-  color: #c2bfb8;
+  color: #8b8985;
+  font-weight: 400px;
   font-size: 18px;
   width: 100%;
   line-height: 160%;
@@ -83,23 +84,24 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  justify-content: space-between;
 }
 
 .copy-left {
   color: #bdb8c6;
   font-size: 16px !important;
-  justify-content: left;
-  text-align: left;
+  justify-content: left !important;
+  text-align: left !important;
   font-weight: 500;
   margin: 0;
   padding: 0;
 }
 
-.copy-right {
+.copy-right{
   color: #bdb8c6;
   font-size: 16px !important;
-  justify-content: right;
-  text-align: right;
+  justify-content: right !important;
+  text-align: right !important;
   font-weight: 500;
   margin: 0;
   padding: 0;
@@ -108,6 +110,8 @@
 .a_copy_footer {
   text-decoration: none !important;
   color: #bdb8c6;
+  justify-content: right !important;
+  
 }
 
 .a_icdigitalexperience {

@@ -21,15 +21,9 @@ export default function Modal({ onClose }) {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
-  // ALTERADO: A função handleSubmit agora exibe uma mensagem antes de redirecionar
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // 1. Ativa o estado para mostrar a mensagem na tela
     setIsRedirecting(true);
-
-    // 2. Define um atraso de 2 segundos (2000 ms) antes de redirecionar
     setTimeout(() => {
       const seuNumeroWhatsapp = "5521969526214";
 
@@ -50,10 +44,9 @@ Aguardo confirmação.
       const mensagemCodificada = encodeURIComponent(mensagem);
       const urlWhatsapp = `https://wa.me/${seuNumeroWhatsapp}?text=${mensagemCodificada}`;
 
-      // 3. Abre o link em uma nova aba e fecha a modal
       window.open(urlWhatsapp, "_blank");
       onClose();
-    }, 2000); // Tempo do atraso em milissegundos
+    }, 2000);
   };
 
   return (
@@ -64,19 +57,15 @@ Aguardo confirmação.
             &times;
           </button>
 
-          {/* NOVO: Renderização condicional */}
           {isRedirecting ? (
-            // Se estiver redirecionando, mostra esta mensagem
             <div className="redirect-container">
               <div className="spinner"></div>{" "}
-              {/* <-- SPINNER ADICIONADO AQUI */}
               <h2 className="custom-modal-title">Aguarde um momento...</h2>
               <p>Estamos te redirecionando para o WhatsApp.</p>
             </div>
           ) : (
-            // Caso contrário, mostra o formulário
             <>
-              <h2 className="custom-modal-title text-center mb-4">
+              <h2 className="custom-modal-title text-center">
                 Preencha os dados abaixo
               </h2>
               <form className="form_camp_client" onSubmit={handleSubmit}>

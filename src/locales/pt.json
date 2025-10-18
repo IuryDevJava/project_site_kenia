@@ -4,7 +4,8 @@
     "about": "Sobre mim",
     "services": "Serviços e agendamentos",
     "products": "Produtos",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "community": "Comunidade"
   },
 
   "languages": {
@@ -14,8 +15,8 @@
   },
 
   "about": {
-    "textAbout1": "Sou nutricionista no Rio de Janeiro e apaixonada por conectar ciência, comida e memórias. Em meu livro de receitas de viagens, reúno histórias, sabores do mundo e um olhar leve sobre a alimentação.",
-    "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não se constrói com dietas restritivas, mas com escolhas inteligentes, que cuidam tanto da microbiota intestinal quanto da relação com a comida. Entre consultas, escrita e aquarelas, criei um espaço dedicado a quem busca mais saúde, equilíbrio e prazer à mesa.",
+    "textAbout1": "Sou nutricionista e pesquisadora de pós-doutorado na UFRJ, apaixonada por conectar ciência, comida e memórias. Doutora pela Universidad CEU San Pablo e mestre pela UFRJ, atuo em pré-diabetes, saúde intestinal e emagrecimento. Em meu livro de receitas de viagens, uno histórias e sabores do mundo com um olhar leve sobre a alimentação.",
+    "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não nasce de dietas restritivas, mas de escolhas inteligentes que cuidam do corpo e da relação com a comida.",
     "aboutButton": "Saiba mais"
   },
 

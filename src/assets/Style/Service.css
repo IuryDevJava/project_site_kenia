@@ -142,11 +142,15 @@ img.Image_button_icon {
     width: 160px;
     height: 40px;
     font-size: 16px;
+    
   }
 
   .btn-base {
     min-width: 180px !important;
+    padding: 5px 0 !important;
   }
+
+  
 
   img.Image_button_icon {
     width: 30px;
@@ -210,13 +214,14 @@ img.Image_button_icon {
 
   .service_button {
     width: 150px;
-    height: 35px;
+    height: 38px;
     font-size: 14px;
   }
 
   .btn-base {
     min-width: 140px !important;
     margin: auto;
+    line-height: 1;
   }
 
   img.Image_button_icon {

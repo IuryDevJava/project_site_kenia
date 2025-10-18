@@ -4,7 +4,8 @@
     "about": "Sobre mí",
     "services": "Servicios y citas",
     "products": "Productos",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "community": "Comunidad"
   },
 
   "languages": {
@@ -15,8 +16,8 @@
 
   
   "about": {
-    "textAbout1": "Soy nutricionista en Río de Janeiro y una apasionada por conectar ciencia, comida y recuerdos. En mi libro de recetas de viajes, reúno historias, sabores del mundo y una mirada ligera sobre la alimentación. ",
-    "textAbout2": "Mi misión es demostrar que la pérdida de peso saludable no se construye con dietas restrictivas, sino con elecciones inteligentes que cuidan tanto la microbiota intestinal como la relación con la comida. Entre consultas, escritura y acuarelas, he creado un espacio dedicado a quienes buscan más salud, equilibrio y placer en la mesa.",
+    "textAbout1": "Soy nutricionista e investigadora postdoctoral en la UFRJ, apasionada por conectar ciencia, comida y memorias. Doctora por la Universidad CEU San Pablo y máster por la UFRJ, me especializo en pre-diabetes, salud intestinal y adelgazamiento. En mi libro de recetas de viajes, uno historias y sabores del mundo con una mirada ligera sobre la alimentación.",
+    "textAbout2": "Mi misión es demostrar que el adelgazamiento saludable no nace de dietas restrictivas, sino de elecciones inteligentes que cuidan el cuerpo y la relación con la comida.",
 
     "aboutButton": "Saber más"
   },
@@ -35,7 +36,7 @@
     "serviceCardText5": "Control nutricional especializado para promover la calidad de vida.",
     "serviceCardTitle6": "Salud de la Mujer",
     "serviceCardText6": "Cuidado nutricional enfocado en las necesidades femeninas.",
-    "serviceCardButton": "Agendar consulta",
+    "serviceCardButton": "Agendar cita",
     "modalAppointmentsTitle": "Complete los datos a continuación",
     "modalAppointmentsLabel1": "Nombre",
     "modalAppointmentsInput1Placeholder": "Nombre completo",

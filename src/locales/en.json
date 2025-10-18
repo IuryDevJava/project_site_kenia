@@ -4,7 +4,8 @@
     "about": "About me",
     "services": "Services and appointments",
     "products": "Products",
-    "FAQ": "FAQ"
+    "FAQ": "FAQ",
+    "community": "Community"
   },
 
   "languages": {
@@ -14,8 +15,8 @@
   },
 
   "about": {
-    "textAbout1": "I am a nutritionist in Rio de Janeiro, passionate about connecting science, food, and memories. In my travel recipe book, I bring together stories, world flavors, and a light approach to eating. My mission is to show that healthy weight loss is not built on restrictive diets, but on smart choices that care for both the gut microbiota and the relationship with food. Between consultations, writing, and watercolors, I have created a space dedicated to those seeking more health, balance, and pleasure at the table.",
-    "textAbout2": "My mission is to show that healthy weight loss is not built on restrictive diets, but on smart choices that care for both the gut microbiota and the relationship with food. Between consultations, writing, and watercolors, I have created a space dedicated to those seeking more health, balance, and pleasure at the table.",
+    "textAbout1": "I am a nutritionist and postdoctoral researcher at UFRJ, passionate about connecting science, food, and memories. With a PhD from Universidad CEU San Pablo and a Master's from UFRJ, I focus on pre-diabetes, gut health, and weight loss. In my travel recipe book, I combine stories and flavors from around the world with a lighthearted approach to eating.",
+    "textAbout2": "My mission is to show that healthy weight loss doesn't come from restrictive diets, but from smart choices that take care of the body and the relationship with food.",
     "aboutButton": "Learn more"
   },
   "services": {

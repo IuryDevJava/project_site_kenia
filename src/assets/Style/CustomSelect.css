@@ -1,11 +1,10 @@
 .custom-select-wrapper {
   position: relative;
-  user-select: none; /* Impede que o texto seja selecionado */
+  user-select: none;
   width: 100%;
 }
 
 .custom-select-trigger {
-  /* Estilos herdados do seu .custom-input */
   border-radius: 6px;
   border: 1px solid #ccc;
   padding: 0.6rem 0.8rem;
@@ -15,12 +14,13 @@
   justify-content: space-between;
   align-items: center;
   transition: border 0.3s, box-shadow 0.3s;
+  font-size: 18px !important;
 }
 
 .custom-select-wrapper:focus-within .custom-select-trigger {
   border: 2px solid #800020;
-  box-shadow: 0 0 6px rgba(128,0,32,0.3);
-  padding: calc(0.6rem - 1px) calc(0.8rem - 1px); /* Ajuste para o border mais grosso */
+  box-shadow: 0 0 6px rgba(128, 0, 32, 0.3);
+  padding: calc(0.6rem - 1px) calc(0.8rem - 1px);
 }
 
 /* Seta do dropdown */
@@ -37,16 +37,17 @@
 
 .custom-select-options {
   position: absolute;
-  top: 110%; /* Um pouco abaixo do input */
+  top: 100%;
   left: 0;
   right: 0;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 6px; /* BORDAS ARREDONDADAS! ✨ */
+  border-radius: 6px;
   z-index: 10;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-height: 200px;
   overflow-y: auto;
+  font-size: 18px !important;
 }
 
 .custom-select-option {
@@ -60,9 +61,9 @@
 }
 
 .custom-select-option.selected {
-  background-color: #aa3352;
+  background-color: #800020;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* Arredonda a primeira e última opção para combinar com o container */
@@ -74,4 +75,34 @@
 .custom-select-option:last-child {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-select-trigger {
+    font-size: 16px !important;
+  }
+
+  .custom-select-options {
+    max-height: 200px;
+    font-size: 16px !important;
+  }
+
+  .custom-select-option {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-select-trigger {
+    font-size: 14px !important;
+  }
+
+  .custom-select-options {
+    max-height: 200px;
+    font-size: 14px !important;
+  }
+
+  .custom-select-option {
+    padding: 0.6rem;
+  }
 }
