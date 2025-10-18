@@ -6,7 +6,12 @@ import HomePage from "./pages/HomePage";
 import ComunidadePage from "./pages/ComunidadePage";
 import BookandQuestions from "./pages/BookandQuestions";
 
+import useHashScrollOffset from './hooks/useHashScrollOffset';
+
 function App() {
+
+  useHashScrollOffset(131);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

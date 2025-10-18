@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 // logos e ícones
 import ImgLogoMenuDesk from "../../assets/images/menu-img/logo (6).png";
@@ -60,44 +62,44 @@ const Menu = () => {
           <nav className="header-nav">
             <ul className="header-nav-list d-flex list-unstyled mb-0">
               <li className="header-nav-item">
-                <Link
+                <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#about"
                 >
                   {t("header.about")}
-                </Link>
+                </HashLink>
               </li>
               <li className="header-nav-item">
-                <Link
+                <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#services"
                 >
                   {t("header.services")}
-                </Link>
+                </HashLink>
               </li>
               <li className="header-nav-item">
-                <Link
+                <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#products"
                 >
                   {t("header.products")}
-                </Link>
+                </HashLink>
               </li>
               <li className="header-nav-item">
-                <Link
+                <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/livro#faq"
                 >
                   {t("header.FAQ")}
-                </Link>
+                </HashLink>
               </li>
               <li className="header-nav-item">
-                <Link
+                <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/comunidade"
                 >
                   Comunidade
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </nav>
@@ -158,48 +160,48 @@ const Menu = () => {
           <nav className="mobile-nav">
             <ul className="mobile-nav-list list-unstyled mb-0">
               <li className="mobile-nav-item">
-                <Link
+                <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/#about"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.about")}
-                </Link>
+                </HashLink>
               </li>
               <li className="mobile-nav-item">
-                <Link
+                <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/#services"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.services")}
-                </Link>
+                </HashLink>
               </li>
               <li className="mobile-nav-item">
-                <Link
+                <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/#products"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.products")}
-                </Link>
+                </HashLink>
               </li>
               <li className="mobile-nav-item">
-                <Link
+                <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/#faq"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.FAQ")}
-                </Link>
+                </HashLink>
               </li>
               <li className="mobile-nav-item">
-                <Link
+                <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/comunidade"
                 >
                   Comunidade
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </nav>

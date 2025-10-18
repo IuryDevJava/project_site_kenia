@@ -9,7 +9,7 @@ import Products from '../components/Products/Products';
 import Location from '../components/Location/Location';
 
 // Importe o hook se ele for específico desta página
-import useSmoothScroll from "../hooks/useSmoothScroll";
+import useSmoothScroll from "../hooks/useHashScrollOffset";
 
 const HomePage = () => {
   // Se o scroll suave é para a página inteira, ele pode ficar no App.js ou no Layout
