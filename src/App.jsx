@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/HomePage";
 import ComunidadePage from "./pages/ComunidadePage";
+import BookandQuestions from "./pages/BookandQuestions";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="comunidade" element={<ComunidadePage />} />
+        <Route path="livro" element={<BookandQuestions />} />
       </Route>
     </Routes>
   );

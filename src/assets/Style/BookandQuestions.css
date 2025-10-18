@@ -1,0 +1,313 @@
+/* src/assets/Style/BookandQuestions.css */
+
+/* --- Layout da Seção --- */
+.section_bookandquestions {
+  padding: 132px 0 0;
+  overflow-x: hidden;
+}
+
+.div_response_full {
+  flex-direction: row;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 70px 0;
+  background-color: #faf1e6;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.main-image-wrapper {
+  background-color: #80002013;
+  padding: 30px;
+  border: 4px solid #58380010;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgb(0, 0, 0);
+}
+
+.main-image-wrapper img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.main-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+/* --- Estilos das Miniaturas (Swiper) --- */
+.thumbnails-swiper {
+  width: 160%;
+  padding-top: 20px;
+}
+
+.thumbnail-button {
+  width: 100%;
+  padding: 0;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.thumbnail-button:hover {
+  border-color: #b3b3b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail-button.active {
+  border-color: #800020;
+  box-shadow: 1px 1px 15px 2px #80002065;
+}
+
+.thumbnail-button img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* --- "Card" de Conteúdo da Direita --- */
+.book-details-content {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+  width: 100%;
+}
+
+.h1_title_patreon {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+
+.h5_title_book {
+  font-size: 25px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.863);
+  margin: 0;
+  padding: 10px 0 15px;
+}
+
+.p_text_book1 {
+  font-size: 18px !important;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.863);
+  margin: 0;
+}
+
+.p_text_book2 {
+  font-size: 18px !important;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.863);
+  margin: 0;
+  padding: 5px 0 0;
+}
+
+.dados_book {
+  font-size: 22px !important;
+  font-weight: 400;
+  color: #800020;
+  margin: 0;
+  padding: 30px 0 10px;
+}
+
+.strong {
+  font-size: 20px !important;
+  font-weight: 500;
+  color: #383838;
+}
+
+.li {
+  font-size: 18px !important;
+  font-weight: 400;
+  color: #696969;
+}
+
+.book-details {
+  margin-bottom: 4px !important;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .section_bookandquestions {
+    padding: 100px 0 0;
+  }
+
+  .div_response_full {
+    flex-direction: row;
+    gap: 30px;
+    padding: 50px 0;
+  }
+
+  .main-image-wrapper {
+    padding: 20px;
+  }
+
+  .thumbnails-swiper {
+    width: 150%;
+    padding-top: 18px;
+  }
+
+  .book-details-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .h1_title_patreon {
+    font-size: 25px;
+  }
+
+  .h5_title_book {
+    font-size: 20px;
+    padding: 8px 0 12px !important;
+  }
+
+  .p_text_book1 {
+    font-size: 16px !important;
+  }
+
+  .p_text_book2 {
+    font-size: 16px !important;
+  }
+
+  .dados_book {
+    font-size: 20px !important;
+    padding: 25px 0 8px;
+  }
+
+  strong {
+    font-size: 18px !important;
+  }
+
+  li {
+    font-size: 16px !important;
+  }
+
+  .book-details {
+    margin-bottom: -4px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section_bookandquestions {
+    padding: 86px 0 0;
+  }
+
+  .div_response_full {
+    flex-direction: column;
+    display: grid;
+    gap: 30px;
+    padding: 32px 0;
+  }
+
+  /* --- MUDANÇAS AQUI --- */
+
+  .book-gallery {
+    /* 1. Usamos flex para controlar os itens internos */
+    display: flex;
+    flex-direction: column;
+    /* 2. Centraliza tudo (imagem e swiper) horizontalmente */
+    align-items: center;
+    width: 100%; /* Ocupa a célula do grid */
+  }
+
+  .main-image-wrapper {
+    /* 3. Removemos 'margin: auto' pois o pai (.book-gallery) já está centralizando */
+    margin: 0;
+    padding: 10px;
+    /* 4. Aumentamos a largura para um tamanho mais visível no mobile */
+    width: 163px !important;
+    max-width: 300px; /* Um limite máximo razoável */
+    
+    /* Estilos originais mantidos */
+    background-color: #80002013;
+    border: 4px solid #58380010;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
+  }
+
+  .thumbnails-swiper {
+    /* 5. Forçamos o swiper a ter a MESMA largura da imagem principal */
+    width: 70%;
+    max-width: 240px;
+    margin-left: 140px !important;
+    /* 6. Removemos 'margin: auto' e centralizações desnecessárias */
+    margin: 0;
+    padding-top: 15px; /* Um espaçamento limpo entre a imagem e as miniaturas */
+
+    /* Propriedades removidas pois não se aplicam ou estavam incorretas:
+       justify-items, align-items, text-align, object-fit 
+    */
+  }
+
+  /* --- FIM DAS MUDANÇAS --- */
+
+  .book-details-content {
+    background-color: #ffffff;
+    /* 7. Ajustei o padding para o texto não colar nas bordas do card */
+    padding: 25px 20px;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Organiza o texto verticalmente */
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 90% !important; /* Usar 90% ao invés de 100% para ter margens */
+    margin: 0 auto; /* Centraliza o card de texto */
+  }
+
+  /* --- Estilos de texto (sem alteração, apenas copiados) --- */
+  .h1_title_patreon {
+    font-size: 20px;
+  }
+
+  .h5_title_book {
+    font-size: 17px;
+    padding: 6px 0 10px !important;
+  }
+
+  .p_text_book1 {
+    font-size: 15px !important;
+  }
+
+  .p_text_book2 {
+    font-size: 15px !important;
+  }
+
+  .dados_book {
+    font-size: 18px !important;
+    padding: 18px 0 6px;
+  }
+
+  .strong {
+    font-size: 15px !important;
+  }
+
+  .li {
+    font-size: 15px !important;
+  }
+
+  .book-details {
+    margin-bottom: -2px !important;
+  }
+}

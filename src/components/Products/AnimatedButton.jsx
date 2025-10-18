@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "../../assets/Style/Button.css";
+import { Link } from "react-router-dom";
 
 const AnimatedButton = ({ text, link }) => {
   const buttonRef = useRef(null);
@@ -25,16 +26,27 @@ const AnimatedButton = ({ text, link }) => {
     };
   }, []);
 
+  const isExternal =
+    link && (link.startsWith("http") || link.startsWith("https:"));
+
   return (
-    <a
-      ref={buttonRef}
-      className="button_purchase"
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {text}
-    </a>
+    <>
+      {isExternal ? (
+        <a
+          ref={buttonRef}
+          className="button_purchase"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {text}
+        </a>
+      ) : (
+        <Link ref={buttonRef} className="button_purchase" to={link}>
+          {text}
+        </Link>
+      )}
+    </>
   );
 };
 

@@ -86,7 +86,7 @@ const Menu = () => {
               <li className="header-nav-item">
                 <Link
                   className="header-nav-link text-decoration-none"
-                  to="/#faq"
+                  to="/livro#faq"
                 >
                   {t("header.FAQ")}
                 </Link>

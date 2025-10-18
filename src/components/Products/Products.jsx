@@ -20,6 +20,8 @@ import ImageHartDecoration from "../../assets/images/products-img/Ilustração2-
 import SparkleIcon from "./SparkIcon";
 
 const Products = () => {
+  const linkPaymentEbook =
+    "https://pay.hotmart.com/M100399386O?bid=1750428900670";
   return (
     <section className="section_products" id="products">
       <SparkleIcon className="sparkle_icon sparkle--1" />
@@ -70,7 +72,6 @@ const Products = () => {
                   className="footer-logo"
                 />
               </picture>
-
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
               <h1 className="text-center h1_product_title">
@@ -113,10 +114,7 @@ const Products = () => {
                     Por <strong>R$ 97,00</strong>
                   </span>
                 </div>
-                <AnimatedButton
-                  text="Comprar agora"
-                  link="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart"
-                />
+                <AnimatedButton text="Ver detalhes" link="/livro" />
               </div>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">
@@ -166,10 +164,7 @@ const Products = () => {
                     Por <strong>R$ 27,00</strong>
                   </span>
                 </div>
-                <AnimatedButton
-                  text="Comprar agora"
-                  link="https://pay.hotmart.com/M100399386O?bid=1750428900670"
-                />
+                <AnimatedButton text="Comprar agora" link={linkPaymentEbook} />
               </div>
             </div>
           </div>

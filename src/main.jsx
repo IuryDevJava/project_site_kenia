@@ -10,8 +10,8 @@ import './i18n';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    <BrowserRouter> {/* <-- ADICIONE AQUI */}
+    <BrowserRouter>
       <App />
-    </BrowserRouter> {/* <-- E AQUI */}
+    </BrowserRouter>
   </StrictMode>
 );

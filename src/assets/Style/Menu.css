@@ -188,11 +188,11 @@ a.item-language-menu {
 @media (min-width: 992px) and (max-width: 1199px) {
   .header-nav-list {
     gap: var(--menu-gap-space);
-    margin-left: 35px !important;
+    margin-left: 20px !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 995px) {
   .header {
     padding: 30px 0;
   }

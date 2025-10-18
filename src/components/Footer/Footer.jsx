@@ -1,14 +1,11 @@
 import React from "react";
 import "../../assets/Style/Footer.css";
 
-// As imagens já estão importadas corretamente
 import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk.png";
 import ImageLogoFooterTablet from "../../assets/images/footer-img/logo_footer_tablet.png";
 import ImageLogoFooterMobile from "../../assets/images/footer-img/logo_footer_mobile.png";
 
 const Footer = () => {
-  // const waLink = "https://wa.me/5521991116951";
-
   return (
     <footer className="site-footer">
       <div className="container">
@@ -20,7 +17,7 @@ const Footer = () => {
                 <picture>
                   {/* Imagem para Desktop (telas a partir de 1024px) */}
                   <source
-                    media="(min-width: 1024px)"
+                    media="(min-width: 992px)"
                     srcSet={ImageLogoFooterDesk}
                   />
                   {/* Imagem para Tablet (telas a partir de 768px) */}
@@ -49,7 +46,8 @@ const Footer = () => {
                   aria-label="LinkedIn"
                   className="social-btn"
                 >
-                  <i className="bi bi-linkedin"></i> {/* Corrigido para className */}
+                  <i className="bi bi-linkedin"></i>{" "}
+                  {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://www.instagram.com/keniabisponutri/"
@@ -58,7 +56,8 @@ const Footer = () => {
                   aria-label="Instagram"
                   className="social-btn"
                 >
-                  <i className="bi bi-instagram"></i> {/* Corrigido para className */}
+                  <i className="bi bi-instagram"></i>{" "}
+                  {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://www.youtube.com/@keniabisponutri/videos"
@@ -67,7 +66,8 @@ const Footer = () => {
                   aria-label="YouTube"
                   className="social-btn"
                 >
-                  <i className="bi bi-youtube"></i> {/* Corrigido para className */}
+                  <i className="bi bi-youtube"></i>{" "}
+                  {/* Corrigido para className */}
                 </a>
                 <a
                   href="https://api.whatsapp.com/send/?phone=5521969526214&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0"
@@ -76,7 +76,8 @@ const Footer = () => {
                   aria-label="WhatsApp"
                   className="social-btn"
                 >
-                  <i className="bi bi-whatsapp"></i> {/* Corrigido para className */}
+                  <i className="bi bi-whatsapp"></i>{" "}
+                  {/* Corrigido para className */}
                 </a>
               </div>
             </div>
