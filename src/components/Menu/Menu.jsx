@@ -189,7 +189,7 @@ const Menu = () => {
               <li className="mobile-nav-item">
                 <HashLink
                   className="mobile-nav-link text-decoration-none"
-                  to="/#faq"
+                  to="/livro#faq"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.FAQ")}
