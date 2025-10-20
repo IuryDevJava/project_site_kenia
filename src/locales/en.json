@@ -20,7 +20,7 @@
     "aboutButton": "Learn more"
   },
   "services": {
-    "serviceTitle": "Schedule your appointment",
+    "serviceTitle": "I will help you",
     "serviceSubTitle": "I will help you lead a healthy life.",
     "serviceCardTitle1": "Personalized consultations",
     "serviceCardText1": "Exclusive eating plan, adapted to your goals and lifestyle.",
@@ -35,20 +35,44 @@
     "serviceCardTitle6": "Women's Health",
     "serviceCardText6": "Nutritional care focused on women's needs.",
     "serviceCardButton": "Schedule appointment",
-    "modalAppointmentsTitle": "Please fill in the details below",
+
+
+
+
+    "modalAppointmentsTitle": "Fill in the details below",
     "modalAppointmentsLabel1": "Name",
     "modalAppointmentsInput1Placeholder": "Full name",
-    "modalAppointmentsLabe2": "Phone",
-    "modalAppointmentsInput2Placeholder": "(21) 99999-9999",
-    "modalAppointmentsLabe3": "E-mail",
+
+    "modalAppointmentsLabel2": "Phone",
+    "modalAppointmentsInput2Placeholder": "+1 (555) 999-9999",
+
+    "modalAppointmentsLabel3": "E-mail",
     "modalAppointmentsInput3Placeholder": "name@email.com",
-    "modalAppointmentsSelect": "Type of consultation",
+
+    "modalAppointmentsSelect": "Appointment type",
     "modalAppointmentsSelectOption1": "In-person",
-    "modalAppointmentsSelectOption2": "Online / Telehealth",
+    "modalAppointmentsSelectOption2": "Online / Teleconsultation",
+
     "modalAppointmentsButton": "Schedule",
+
+    "modalRedirectTitle": "Just a moment...",
+    "modalRedirectText": "We are redirecting you to WhatsApp.",
+    
+    "whatsappGreeting": "Hello! I would like to schedule an appointment.",
+    "whatsappClientData": "Client Data:",
+    "whatsappFooter": "Awaiting confirmation.",
+
     "appointmentsTitle": "Our space",
     "appointmentsText": "Our space was designed to offer comfort, privacy, and a unique experience in every consultation."
   },
+
+  "formErrors": {
+    "requiredField": "The {{field}} field is required.",
+    "invalidEmail": "Please enter a valid email address.",
+    "invalidPhone": "Please enter a complete and valid phone number."
+  },
+
+
   "products": {
     "productsBookTitle": "Recipe Book: from the world to your home",
     "productsBookText1": "Original recipes with international inspiration.",

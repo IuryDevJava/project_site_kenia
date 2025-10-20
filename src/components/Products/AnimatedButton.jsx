@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import "../../assets/Style/Button.css";
+import "../../assets/Style/ButtonSecundary.css";
 import { Link } from "react-router-dom";
 
 const AnimatedButton = ({ text, link }) => {

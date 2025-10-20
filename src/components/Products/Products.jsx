@@ -4,12 +4,10 @@ import AnimatedButton from "./AnimatedButton";
 
 // Importando as imagens
 import ImageOpenBookDesk from "../../assets/images/products-img/Image-open-livro.png";
-
 import ImageOpenBookTablet from "../../assets/images/products-img/Image-open-livro 2.png";
-
 import ImageOpenBookMobile2 from "../../assets/images/products-img/Image-open-livro 3.png";
-
 import ImageOpenBookMobile1 from "../../assets/images/products-img/Image-open-livro 4.png";
+
 
 import ImageBookFront from "../../assets/images/products-img/BookFront.png";
 import ImageBookBack from "../../assets/images/products-img/LivroBack.png";
@@ -74,7 +72,7 @@ const Products = () => {
               </picture>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
-              <h1 className="text-center h1_product_title">
+              <h1 className="h1_product_title">
                 Caderno de Receitas: <br />
                 do mundo para sua casa
               </h1>
@@ -132,7 +130,7 @@ const Products = () => {
           {/* --- Item 3: Descrição Ebook + Card de Compra Ebook --- */}
           <div className="div_product_item">
             <div className="div_product_content-wrapper">
-              <h2 className="text-center h2_product_subtitle">Ebook</h2>
+              <h2 className=" h2_product_subtitle">Ebook</h2>
               <ul className=" ul_product_features">
                 <li>
                   Descubra como a sua microbiota pode ser a chave para emagrecer

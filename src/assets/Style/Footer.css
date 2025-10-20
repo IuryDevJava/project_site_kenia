@@ -203,13 +203,13 @@
   }
 
   .copy-left {
-    font-size: 14px;
+    font-size: 14px !important;
     justify-content: start !important;
     text-align: left !important;
   }
 
   .copy-right {
-    font-size: 14px;
+    font-size: 14px !important;
     justify-content: start !important;
     text-align: left !important;
   }

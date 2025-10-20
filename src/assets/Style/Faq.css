@@ -11,7 +11,7 @@
 }
 
 .accordion-item {
-  border: 2px solid rgba(138, 0, 119, 0.151) !important;
+  border: 2px solid #FAF1E6 !important;
   border-radius: 16px !important;
   overflow: hidden;
   transition: background-color 0.3s ease;
@@ -60,7 +60,7 @@ p {
   outline: none !important;
   border-color: none !important;
   box-shadow: none !important;
-  color: rgb(117, 0, 102);
+  color: #650000;
   font-weight: bolder;
   font-style: italic;
 }

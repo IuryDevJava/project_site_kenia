@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/Style/Comunidade.css";
-import "../assets/Style/Button.css";
+import "../assets/Style/ButtonSecundary.css";
+import AnimatedButton from "../components/Products/AnimatedButton";
 
 import ImagePatreonCommunity1 from "../assets/images/about-img/img_kenia_about_desk.png";
 import ImagePatreonCommunity2 from "../assets/images/about-img/img_kenia_about_tablet.png";
@@ -41,14 +42,10 @@ const CommunityPage = () => {
               ideias e caminharmos em direção a uma vida mais leve e saudável.
             </p>
 
-            <a
-              className="button_purchase"
+            <AnimatedButton
               href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Faça parte
-            </a>
+              text="Faça parte"
+            />
           </div>
         </div>
       </div>

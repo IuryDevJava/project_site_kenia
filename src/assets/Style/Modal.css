@@ -1,3 +1,83 @@
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding: 0 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.PhoneInputInput {
+  border: none !important;
+  background: none !important;
+  padding: 0.6rem 0.2rem !important;
+  outline: none !important;
+  flex-grow: 1;
+  height: 100% !important;
+  font-size: 16px !important;
+}
+
+.PhoneInputCountryIconImg {
+  width: 25px !important;
+  height: 15px !important;
+}
+
+.PhoneInputCountrySelect:focus {
+  outline: none !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+
+/* Placeholder */
+.PhoneInputInput::placeholder {
+  color: #8b8985 !important;
+  font-size: 16px !important;
+  font-style: italic !important;
+  font-weight: 200 !important;
+}
+
+.PhoneInput:focus-within {
+  border: 1px solid #650000;
+  box-shadow: 0 0 6px rgba(128, 0, 32, 0.3);
+}
+
+.PhoneInputInternationalIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  opacity: 0.65;
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.PhoneInputInternationalIcon:active {
+  border: 2px solid black !important;
+}
+
+.PhoneInputCountrySelect:active {
+  border: 2px solid black !important;
+}
+
+.PhoneInputCountrySelect:focus {
+  border: 2px solid black !important;
+}
+
+.PhoneInputCountrySelectArrow {
+  color: #8f5f00 !important;
+  opacity: 1;
+}
+
+.div_form_group {
+  display: grid;
+  gap: 25px;
+}
+
 /* Fundo da modal */
 .custom-modal-backdrop {
   position: fixed;
@@ -6,7 +86,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(80, 80, 80, 0.589);
-  z-index: 1050;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,22 +101,37 @@
   padding: 80px 80px;
 }
 
-/* Botão X */
+/* --- CORREÇÃO 2: Estilos para o botão de fechar com SVG --- */
 .custom-close-btn {
   position: absolute;
-  top: 2px;
+  top: 20px; /* Ajustado para melhor posicionamento vertical */
   right: 20px;
-  background: transparent;
+  background: transparent !important;
+  padding: 0;
+  margin: 0;
   border: none;
-  font-size: 3rem;
-  font-weight: bold;
   cursor: pointer;
-  color: #800020;
+  color: #650000;
+  padding: 5px; /* Adiciona área de clique */
+  display: flex; /* Para centralizar o SVG */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Define um tamanho fixo */
+  height: 40px; /* Define um tamanho fixo */
+  transition: color 0.2s ease;
 }
 
 .custom-close-btn:hover {
   color: #a0002a;
 }
+
+.custom-close-btn svg {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* --- FIM DA CORREÇÃO 2 --- */
 
 /* Título */
 .custom-modal-title {
@@ -44,11 +139,11 @@
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 24px !important;
+  white-space: nowrap;
 }
 
 .form_camp_client {
   display: grid;
-  gap: 20px;
 }
 
 /* Inputs e selects */
@@ -66,7 +161,7 @@ select.custom-input,
 }
 
 .custom-input:focus {
-  border: 2px solid #800020;
+  border: 1px solid #650000;
   box-shadow: 0 0 6px rgba(128, 0, 32, 0.3);
 }
 
@@ -81,26 +176,6 @@ select.custom-input,
   font-size: 16px;
   font-style: italic;
   font-weight: 200;
-}
-
-/* Botão de enviar */
-.custom-submit-btn {
-  background-color: #800020;
-  color: #ffffff;
-  font-weight: 400;
-  width: 204px;
-  height: 50px;
-  font-size: 18px;
-  margin: auto;
-  border-radius: 6px;
-  border: none;
-  transition: background 0.3s;
-  margin-top: 4px;
-  
-}
-
-.custom-submit-btn:hover {
-  background-color: #800020d0;
 }
 
 /* Estilos para a tela de redirecionamento */
@@ -119,8 +194,8 @@ select.custom-input,
 .spinner {
   width: 50px;
   height: 50px;
-  border: 6px solid #f3f3f3; /* Cinza claro */
-  border-top: 6px solid #1c8648; /* Azul primário (ou a cor da sua marca) */
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #1c8648;
   border-radius: 50%;
   animation: spin 1.5s linear infinite;
 }
@@ -140,6 +215,38 @@ select.custom-input,
   }
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mensagem de erro */
+.error-message {
+  color: #c92a2a; /* Vermelho mais forte e acessível */
+  font-size: 0.875rem; /* 14px */
+  margin-top: 6px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Estilo para a borda do input com erro */
+.error-input {
+  border: 1px solid #c92a2a;
+  background-color: #fff5f5;
+}
+
+.error-input:focus {
+  border-color: #c92a2a;
+  box-shadow: 0 0 6px rgba(201, 42, 42, 0.4);
+}
+
+/* Aplica o estilo de erro a todo o componente PhoneInput */
+.form-group .PhoneInput.error-input {
+  border: 1px solid #c92a2a; /* Borda de erro mais forte */
+  background-color: #fff5f5; /* Fundo levemente vermelho */
+  box-shadow: 0 0 6px rgba(201, 42, 42, 0.4);
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .custom-modal-content {
     width: 500px !important;
@@ -151,10 +258,15 @@ select.custom-input,
     margin-bottom: 18px !important;
   }
 
+  .div_form_group {
+    display: grid;
+    gap: 20px;
+  }
+
   .custom-submit-btn {
-    background-color: #800020;
-    width: 190px;
-    height: 45px;
+    background-color: #650000;
+    width: 160px !important;
+    height: 45px !important;
     font-size: 16px;
     margin-top: 2px;
   }
@@ -172,18 +284,22 @@ select.custom-input,
   }
 
   .custom-close-btn {
-    font-size: 2.5rem;
-  }
-
-  .form_camp_client {
-    gap: 16px;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
   }
 }
 
 @media (max-width: 767px) {
   .custom-modal-content {
     width: 400px !important;
-    padding: 60px 60px;
+    padding: 60px 40px; /* Ajustado para telas menores */
+  }
+
+  .div_form_group {
+    display: grid;
+    gap: 15px;
   }
 
   .custom-modal-title {
@@ -192,9 +308,9 @@ select.custom-input,
   }
 
   .custom-submit-btn {
-    background-color: #800020;
-    width: 180px;
-    height: 40px;
+    background-color: #650000;
+    width: 150px;
+    height: 38px;
     font-size: 14px;
     margin-top: 2px;
   }
@@ -212,10 +328,10 @@ select.custom-input,
   }
 
   .custom-close-btn {
-    font-size: 2rem;
-  }
-
-  .form_camp_client {
-    gap: 12px;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
   }
 }

@@ -20,8 +20,8 @@
   min-width: auto !important;
   width: 140px !important;
   white-space: nowrap;
-  padding: 6px 8px !important;
-  background-color: rgba(234, 236, 255, 0.753) !important;
+  padding: 6px 4px !important;
+  background-color: rgb(255, 255, 255) !important;
   opacity: 0.8;
   border: 2px solid rgba(0, 0, 0, 0.158) !important;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
@@ -37,13 +37,7 @@
 
 /* ===== Botão que abre o menu ===== */
 .language-switcher .dropdown-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 2px;
-  padding: 6px 10px;
-  background: transparent;
-  border: none;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.2s ease;
@@ -64,7 +58,7 @@
   padding: 6px 8px !important;
   margin: 0 !important;
   color: #000000 !important;
-  background: transparent !important;
+  background: rgb(255, 255, 255) !important;
   border-radius: 6px;
   font-weight: 400 !important;
   width: 100%;
@@ -73,7 +67,7 @@
 
 .language-switcher .dropdown-item:hover,
 .language-switcher-menu .item-language-menu:hover {
-  background: rgba(107, 0, 27, 0.404) !important;
+  background: #A7AA60 !important;
 }
 
 /* ===== Bandeira ===== */

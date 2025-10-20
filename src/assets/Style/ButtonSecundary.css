@@ -2,19 +2,18 @@
   /* Estilos base (iguais aos anteriores) */
   border: none;
   border-radius: 6px;
-  font-weight: bolder;
+  font-weight: 400;
   cursor: pointer;
-  width: 204px;
-  height: 50px;
+  padding: 14px 28px;
+  width: 220px;
   font-size: 18px;
   align-items: center;
   display: flex;
   justify-content: center;
   color: #ffffff;
   filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.651));
-  text-shadow: -1.3px -1.3px 0 #787878, 1.3px -1.3px 0 #787878,
-    -1.3px 1.3px 0 #787878, 1.3px 1.3px 0 #787878;
-
+  text-shadow: -1.3px -1.3px 0 #7878786e, 1.3px -1.3px 0 #7878786e,
+    -1.3px 1.3px 0 #7878786e, 1.3px 1.3px 0 #7878786e;
   --bg-position: 0%;
   background: linear-gradient(to left, #b4916a, #7e5124, #be8749, #b4916a);
   background-position: var(--bg-position) 0;
@@ -24,6 +23,7 @@
 
 .button_purchase:hover {
   transform: scale(1.05);
+  background: #7e5124;
 }
 
 .button_purchase:active {
@@ -36,16 +36,16 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .button_purchase {
-    width: 160px;
-    height: 40px;
+    padding: 10px 20px;
+    width: 200px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 767px) {
   .button_purchase {
+    padding: 8px 12px !important;
     width: 150px;
-    height: 35px;
     font-size: 14px;
   }
 }

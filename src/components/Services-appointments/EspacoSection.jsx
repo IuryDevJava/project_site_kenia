@@ -5,26 +5,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../../assets/Style/EspacoSection.css";
+import { useTranslation } from "react-i18next";
 
 import img1 from "../../assets/images/service-img/Image-card1 1.png";
 import img2 from "../../assets/images/service-img/Image-card2 1.png";
-import img3 from "../../assets/images/service-img/Image-card3 1.png";
+import img3 from "../../assets/images/service-img/Image-card3.png";
 import img4 from "../../assets/images/service-img/Image-card4 1.png";
-import img5 from "../../assets/images/service-img/Image-card5 1.png";
+import img5 from "../../assets/images/service-img/Image-card5.png";
 import img6 from "../../assets/images/service-img/Image-card6 1.png";
 
 function EspacoSection() {
   const espacoImages = [img1, img2, img3, img4, img5, img6];
+
+  const { t } = useTranslation();
 
   return (
     <section className="espaco-section">
       <div className="container">
         <div className="row">
           <div className="col-lg-4 col-md-12 espaco-texto">
-            <h2 className="space_h2">Nosso espaço</h2>
+            <h2 className="space_h2">{t("services.appointmentsTitle")}</h2>
             <p className="p_espaco_section">
-              Nosso espaço foi pensado para oferecer conforto, privacidade e uma
-              experiência única em cada consulta.
+              {t("services.appointmentsText")}
             </p>
           </div>
 

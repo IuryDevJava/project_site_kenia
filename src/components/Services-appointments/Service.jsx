@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../assets/Style/Service.css";
+import "../../assets/Style/ButtonPrimary.css";
 import { useTranslation } from "react-i18next";
 
 // Importando os ícones
@@ -9,7 +10,7 @@ import IconCard03 from "../../assets/icons/service-icons/Icon-card03.svg";
 import IconCard04 from "../../assets/icons/service-icons/Icon-card04.svg";
 import IconCard05 from "../../assets/icons/service-icons/Icon-card05.svg";
 import IconCard06 from "../../assets/icons/service-icons/Icon-card06.svg";
-import Modal from './ModalAppointments/Modal';
+import Modal from "./ModalAppointments/Modal";
 
 const servicesData = [
   {
@@ -51,17 +52,24 @@ const servicesData = [
 ];
 
 const Service = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [showModal, setShowModal] = useState(false);
+
+  const isEnglish = i18n.language.startsWith("en");
+
+  // --- ALTERAÇÃO 3: Crie a string de classes dinamicamente ---
+  const buttonClasses = [
+    "service_button",
+    "btn-base",
+    isEnglish ? "lang-en" : "",
+  ].join(" ");
 
   return (
     <section className="service_section" id="services">
       <div className="container">
         <div className="service_header">
-          <h1>{t('services.serviceTitle')}</h1>
-          <h5 className="service_subtitle">
-            {t('services.serviceSubTitle')}
-          </h5>
+          <h1>{t("services.serviceTitle")}</h1>
+          <h5 className="service_subtitle">{t("services.serviceSubTitle")}</h5>
         </div>
         <div className="row g-4 row_div_card">
           {servicesData.map((service, index) => (
@@ -91,9 +99,12 @@ const Service = () => {
         </div>
 
         <div className="service_div_button">
-           {/* --- ALTERAÇÃO 4: Usando t() para traduzir o botão --- */}
-          <button onClick={() => setShowModal(true)} className="service_button btn-base">
-            {t('services.serviceCardButton')}
+          {/* --- ALTERAÇÃO 4: Usando t() para traduzir o botão --- */}
+          <button
+            onClick={() => setShowModal(true)}
+            className={buttonClasses}
+          >
+            {t("services.serviceCardButton")}
           </button>
         </div>
         {showModal && <Modal onClose={() => setShowModal(false)} />}

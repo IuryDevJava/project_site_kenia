@@ -21,7 +21,7 @@
   },
 
   "services": {
-    "serviceTitle": "Agende sua consulta",
+    "serviceTitle": "Vou te ajudar",
     "serviceSubTitle": "Vou te ajudar a levar uma vida saudável.",
 
     "serviceCardTitle1": "Consultas personalizadas",
@@ -43,23 +43,39 @@
     "serviceCardText6": "Cuidado nutricional voltado às necessidades femininas.",
     "serviceCardButton": "Agendar consulta",
 
+
+
     "modalAppointmentsTitle": "Preencha os dados abaixo",
     "modalAppointmentsLabel1": "Nome",
     "modalAppointmentsInput1Placeholder": "Nome completo",
-
-    "modalAppointmentsLabe2": "Telefone",
-    "modalAppointmentsInput2Placeholder": "(21) 99999-9999",
-
-    "modalAppointmentsLabe3": "E-mail",
+    
+    "modalAppointmentsLabel2": "Telefone",  
+    "modalAppointmentsInput2Placeholder": "+55 (21) 99999-9999",
+    
+    "modalAppointmentsLabel3": "E-mail",
     "modalAppointmentsInput3Placeholder": "nome@e-mail.com",
-
+    
     "modalAppointmentsSelect": "Tipo de consulta",
     "modalAppointmentsSelectOption1": "Presencial",
     "modalAppointmentsSelectOption2": "Online / Teleconsulta",
+    
     "modalAppointmentsButton": "Agendar",
+
+    "modalRedirectTitle": "Aguarde um momento...",
+    "modalRedirectText": "Estamos te redirecionando para o WhatsApp.",
+
+    "whatsappGreeting": "Olá! Gostaria de agendar uma consulta.",
+    "whatsappClientData": "Dados do Cliente:",
+    "whatsappFooter": "Aguardo confirmação.",
 
     "appointmentsTitle": "Nosso espaço",
     "appointmentsText": "Nosso espaço foi pensado para oferecer conforto, privacidade e uma experiência única em cada consulta."
+  },
+
+  "formErrors": {
+    "requiredField": "O campo {{field}} é obrigatório.",
+    "invalidEmail": "Por favor, insira um e-mail válido.",
+    "invalidPhone": "Por favor, insira um número de telefone completo e válido."
   },
 
   "products": {
