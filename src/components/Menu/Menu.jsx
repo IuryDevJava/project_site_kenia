@@ -15,7 +15,6 @@ import IconSpain from "../../assets/icons/menu-icons/ESP.svg";
 import "../../assets/Style/Menu.css";
 import Dropdown from "react-bootstrap/Dropdown";
 
-// Agora o 'name' aqui serve mais como um fallback ou identificador
 const availableLanguages = [
   { id: "pt", name: "Português", icon: IconBrazil },
   { id: "en", name: "Inglês", icon: IconUSA },
@@ -43,9 +42,9 @@ const Menu = () => {
 
   return (
     <header className="header">
-      <div className="container">
-        <div className="header-wrapper d-flex align-items-end">
-          <figure className="header-logo mb-0 pb-0">
+      <div className="container div_container_header">
+        <div className="header-wrapper">
+          <figure className="header-logo">
             <picture>
               <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />
               <source
@@ -60,7 +59,7 @@ const Menu = () => {
             </picture>
           </figure>
           <nav className="header-nav">
-            <ul className="header-nav-list d-flex list-unstyled mb-0">
+            <ul className="header-nav-list list-unstyled">
               <li className="header-nav-item">
                 <HashLink
                   className="header-nav-link text-decoration-none"
@@ -104,15 +103,15 @@ const Menu = () => {
             </ul>
           </nav>
 
-          <div className="header-actions ms-auto d-flex align-items-center">
+          <div className="header-actions">
             <div className="language-switcher">
               <Dropdown>
                 <Dropdown.Toggle
                   id="dropdown-language"
-                  className="language-switcher-toggle d-flex align-items-center"
+                  className="language-switcher-toggle"
                 >
                   <img
-                    className="language-switcher-flag mx-1 mb-1"
+                    className="language-switcher-flag mx-1"
                     src={currentLanguage.icon}
                     alt={`${t("languages." + currentLanguage.id)} flag`} // ALTERADO AQUI
                   />
@@ -132,7 +131,7 @@ const Menu = () => {
                         className="item-language-menu"
                       >
                         <img
-                          className="mb-1 language-switcher-flag"
+                          className="language-switcher-flag"
                           src={lang.icon}
                           alt={`${t("languages." + lang.id)} flag`} // ALTERADO AQUI
                         />
@@ -147,7 +146,7 @@ const Menu = () => {
             </div>
 
             <button
-              className="hamburger-button p-0 m-0"
+              className="hamburger-button"
               onClick={toggleMobileMenu}
             >
               <span className="material-symbols-outlined">menu</span>
@@ -158,7 +157,7 @@ const Menu = () => {
         {/* ... (código do menu mobile) ... */}
         {isMobileMenuOpen && (
           <nav className="mobile-nav">
-            <ul className="mobile-nav-list list-unstyled mb-0">
+            <ul className="mobile-nav-list list-unstyled">
               <li className="mobile-nav-item">
                 <HashLink
                   className="mobile-nav-link text-decoration-none"

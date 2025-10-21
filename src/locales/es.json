@@ -77,56 +77,79 @@
 
   "products": {
     "productsBookTitle": "Cuaderno de Recetas: del mundo a tu casa",
-    "productsBookText1": "Recetas de autor con inspiración internacional.",
-    "productsBookText2": "Estilo elegante, diseñado para experiencias gastronómicas únicas.",
-    "productsBookText3": "Ilustraciones exclusivas en acuarela.",
-    "productsBookText4": "Una obra que une arte, cultura y sabor.",
-    "productsBookPreco1": "De R$ 197,00",
-    "productsBookPreco2": "Por R$ 97,00",
-    "productsBookButton": "Comprar ahora",
+    "productsBookText1": "Recetas de autor con inspiración internacional",
+    "productsBookText2": "Estilo elegante, diseñado para experiencias gastronómicas únicas",
+    "productsBookText3": "Ilustraciones exclusivas en acuarela",
+    "productsBookText4": "Una obra que une arte, cultura y sabor",
+    "productsBookPreco1": "De",
+    "productsBookPreco2": "Por",
+    "productsBookButton": "Ver detalles",
     "productsE-BookTitleName": "La Guía Inteligente para Adelgazar",
     "productsE-BookTitle": "E-book",
-    "productsE-BookText1": "Descubre cómo tu microbiota puede ser la clave para adelgazar con ligereza y sin dietas complicadas.",
-    "productsE-BookText2": "Estrategias aplicables y 2 menús semanales para inspirarte en el día a día.",
-    "productsE-BookText3": "Un ebook práctico con conceptos esenciales.",
-    "productsE-BookPreco1": "De R$ 97,00",
-    "productsE-BookPreco2": "Por R$ 27,00",
+    "productsE-BookText1": "Descubre cómo tu microbiota puede ser la clave para adelgazar con ligereza y sin dietas complicadas",
+    "productsE-BookText2": "Estrategias aplicables y 2 menús semanales para inspirarte en el día a día",
+    "productsE-BookText3": "Un ebook práctico con conceptos esenciales",
+    "productsE-BookPreco1": "De R$",
+    "productsE-BookPreco2": "Por R$",
     "productsE-BookButton": "Comprar ahora"
   },
+
+
   "FAQ": {
     "faqTitle": "Preguntas frecuentes",
+
     "faqQuestion1": "¿Puedo devolver el libro si me arrepiento?",
-    "faqAnswer1": "Sí. Tienes hasta 7 días naturales después de recibir el libro para cancelar la compra. En ese caso, te devolveré el importe íntegro pagado.",
+    "faqAnswer1": "Sí. Tienes hasta 7 días corridos después de recibir el libro para desistir de la compra. En ese caso, te devuelvo el importe total pagado.",
+
     "faqQuestion2": "¿Y si el libro llega con algún problema?",
-    "faqAnswer2": "Si el libro llega defectuoso o dañado durante el transporte, puedes elegir: recibir un nuevo ejemplar o que te devuelvan el dinero. Solo tienes que avisarme y yo me encargo de todo para que no tengas que preocuparte.",
+    "faqAnswer2": "Si el libro llega con algún defecto o dañado durante el transporte, puedes elegir: recibir un nuevo ejemplar o que te devuelvan el dinero. Solo avísame y yo me encargaré de todo para que no tengas ningún inconveniente.",
+
     "faqQuestion3": "¿Cuáles son las formas de pago?",
-    "faqAnswer3": "Puedes pagar con tarjeta de crédito o Pix. Con tarjeta de crédito, puedes pagar en hasta 5 cuotas sin intereses. Con Pix, el pago es al contado y la confirmación es rápida.",
+    "faqAnswer3_p1": "Puedes pagar con tarjeta de crédito o Pix.",
+    "faqAnswer3_li1": "Con tarjeta de crédito, puedes pagar en hasta 5 cuotas sin interés.",
+    "faqAnswer3_li2": "Con Pix, el pago es al contado y la confirmación es rápida.",
+
     "faqQuestion4": "¿En cuánto tiempo envían el libro?",
-    "faqAnswer4": "Una vez confirmado el pago, preparo todo con cuidado y lo envío a la oficina de correos en un plazo de 2 días hábiles.",
+    "faqAnswer4": "Después de confirmado el pago, preparo todo con cuidado y lo envío por Correo en hasta 2 días hábiles.",
+
     "faqQuestion5": "¿Cuánto tarda en llegar?",
-    "faqAnswer5": "El plazo de entrega varía según el código postal y el tipo de envío que elijas: PAC: más económico, pero tarda un poco más. Sedex: llega más rápido. Para que te hagas una idea: los que están en Río de Janeiro lo reciben en unos 5 días hábiles.",
-    "faqQuestion6": "¿Cómo puedo seguir mi pedido?",
-    "faqAnswer6": "En cuanto se envíe el libro, recibirás por correo electrónico el código de seguimiento de Correos. Así podrás seguir cada etapa de la entrega.",
-    "faqQuestion7": "¿Puedo comprarlo como regalo?",
-    "faqAnswer7": "Sí. Solo tienes que introducir la dirección del destinatario en el momento de la compra. Si quieres, puedo incluso incluir una nota especial dentro del paquete.",
+    "faqAnswer5_p1": "El plazo varía según el código postal y el tipo de envío que elijas:",
+    "faqAnswer5_li1": "<strong>PAC:</strong> más económico, pero tarda un poco más.",
+    "faqAnswer5_li2": "<strong>Sedex:</strong> llega más rápido.",
+    "faqAnswer5_p2": "Para que te hagas una idea: alguien en Río de Janeiro lo recibe en unos 5 días hábiles.",
+
+    "faqQuestion6": "¿Cómo hago el seguimiento de mi pedido?",
+    "faqAnswer6": "Tan pronto como se envíe el libro, recibirás por e-mail el código de seguimiento del Correo. Así podrás seguir cada etapa de la entrega.",
+
+    "faqQuestion7": "¿Puedo comprarlo para regalo?",
+    "faqAnswer7": "Sí. Solo tienes que poner la dirección de la persona a la que se lo regalas al momento de la compra. Si quieres, puedo incluso incluir una nota especial dentro del paquete.",
+
     "faqQuestion8": "¿Dónde más puedo comprar este libro?",
-    "faqAnswer8": "La versión física está disponible exclusivamente aquí en mi sitio web. La versión digital (eBook) está disponible en Amazon Kindle.",
-    "faqQuestion9": "¿Y si tengo otra pregunta?",
-    "faqAnswer9": "Solo contáctame. Estoy disponible a través de los canales a continuación, y soy yo quien responde. Correo electrónico: kenia.bispo@hotmail.com WhatsApp: +55 (21) 96952-6214"
+    "faqAnswer8_li1": "La versión <strong>física</strong> está disponible exclusivamente aquí en mi sitio web.",
+    "faqAnswer8_li2": "La versión <strong>digital (eBook)</strong> está disponible en Amazon Kindle.",
+
+    "faqQuestion9": "¿Y si tengo otra duda?",
+    "faqAnswer9_p1": "Solo tienes que contactarme. Estoy disponible a través de los canales a continuación y soy yo misma quien responde.",
+    "faqAnswer9_email": "E-mail:",
+    "faqAnswer9_whatsapp": "WhatsApp:"
   },
+
+
   "locale": {
     "localeTitle": "Ubicación",
     "localeText": "Un espacio que combina comodidad, privacidad y elegancia, diseñado para recibirte con toda la exclusividad que mereces."
   },
+
+
   "footer": {
-    "footerTextAbout": "Seguimiento nutricional personalizado, enfocado en la salud, el bienestar y el equilibrio dietético.",
+    "footerTextAbout": "Seguimiento nutricional personalizado, enfocado en la salud, el bienestar y el equilibrio alimentario.",
     "footerTextTitleCompany": "Empresa",
     "footerTextCompanyp1": "Sobre mí",
     "footerTextCompanyp2": "Servicios",
     "footerTextCompanyp3": "Mis productos",
     "footerTextCompanyp4": "Política de privacidad",
-    "footerTextTitleService": "Atención al cliente",
-    "footerTextServicep1": "Cómo funciona nuestro servicio",
+    "footerTextTitleService": "Atención",
+    "footerTextServicep1": "Cómo funciona la Atención",
     "footerTextServicep2": "Preguntas frecuentes",
     "footerTextServicep3": "Términos de uso",
     "footerTextServicep4": "Política de cancelación",
@@ -136,6 +159,29 @@
     "footerTextNutritionp3": "Recetas",
     "footerTextNutritionp4": "Consejos de alimentación saludable",
     "footerRodape1": "© 2025 Drª Kenia. Todos los derechos reservados.",
-    "footerRodape2": "Desarrollado por IC Digital Experience"
+    "footerRodape2_part1": "Desarrollado por ",
+    "footerRodape2_part2": "IC Digital Experience"
+  },
+
+  "bookPage": {
+    "altFront": "Portada del libro Cuaderno de Recetas",
+    "altBack": "Contraportada del libro Cuaderno de Recetas",
+    "title": "Cuaderno de Recetas: del mundo a tu casa",
+    "subtitle": "Un libro que une gastronomía, memorias y arte.",
+    "desc1": "En \"El cuaderno de recetas: del mundo a tu casa\", la nutricionista y viajera Kenia Bispo presenta un repertorio de recetas inspiradas en sus experiencias, traduciendo la esencia de diferentes culturas a una cocina elegante y llena de significado.",
+    "desc2": "Cada página está acompañada por delicadas acuarelas pintadas por la propia autora...",
+    "detailsTitle": "Datos del Libro",
+    "detailsLi1": "<strong class=\"strong\">Páginas:</strong> 133",
+    "detailsLi2": "<strong class=\"strong\">Formato:</strong> 13,5 x 21 cm",
+    "detailsLi3": "<strong class=\"strong\">Encuadernación:</strong> Tapa dura, lomo cuadrado y plastificado mate",
+    "detailsLi4": "<strong class=\"strong\">Idioma:</strong> Portugués",
+    "buttonText": "Comprar ahora"
+  },
+
+  "communityPage": {
+    "altText": "Foto de Kenia Bispo en un entorno de oficina, representando su comunidad de Patreon",
+    "title": "Comunidad de Patreon",
+    "description": "En mi espacio de Patreon, tienes acceso a contenido que no está en las redes sociales: reflexiones sobre alimentación, hábitos de vida, recetas con historia, guías prácticas y materiales exclusivos. También es un lugar para acercarnos, intercambiar ideas y caminar hacia una vida más ligera y saludable.",
+    "buttonText": "Sé parte"
   }
 }

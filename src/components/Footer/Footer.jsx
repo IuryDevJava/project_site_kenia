@@ -1,11 +1,16 @@
 import React from "react";
 import "../../assets/Style/Footer.css";
 
+import { useTranslation } from "react-i18next";
+
 import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk.png";
 import ImageLogoFooterTablet from "../../assets/images/footer-img/logo_footer_tablet.png";
 import ImageLogoFooterMobile from "../../assets/images/footer-img/logo_footer_mobile.png";
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+  
   return (
     <footer className="site-footer">
       <div className="container">
@@ -34,8 +39,7 @@ const Footer = () => {
                 </picture>
                 {/* --- FIM DA ALTERAÇÃO --- */}
                 <p className="footer-desc">
-                  Acompanhamento nutricional personalizado, com foco em saúde,
-                  bem-estar e equilíbrio alimentar.
+                  {t("footer.footerTextAbout")}
                 </p>
               </div>
               <div className="footer-social">
@@ -85,26 +89,26 @@ const Footer = () => {
 
           {/* Column 2 */}
           <div className="col-6 col-md-6 col-lg-3 div_col_company">
-            <h6 className="footer-title">Empresa</h6>
+            <h6 className="footer-title">{t("footer.footerTextTitleCompany")}</h6>
             <ul className="list-unstyled footer-list">
               <li>
                 <a href="#about" target="_top" rel="noopener noreferrer">
-                  Sobre mim
+                  {t("footer.footerTextCompanyp1")}
                 </a>
               </li>
               <li>
                 <a href="#services" target="_top" rel="noopener noreferrer">
-                  Serviços
+                  {t("footer.footerTextCompanyp2")}
                 </a>
               </li>
               <li>
                 <a href="#products" target="_top" rel="noopener noreferrer">
-                  Meus produtos
+                  {t("footer.footerTextCompanyp3")}
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  Política de privacidade
+                  {t("footer.footerTextCompanyp4")}
                 </a>
               </li>
             </ul>
@@ -112,21 +116,21 @@ const Footer = () => {
 
           {/* Column 3 */}
           <div className="col-6 col-md-6 col-lg-3 div_col_service">
-            <h6 className="footer-title">Atendimento</h6>
+            <h6 className="footer-title">{t("footer.footerTextTitleService")}</h6>
             <ul className="list-unstyled footer-list">
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  Como funciona o Atendimento
+                  {t("footer.footerTextServicep1")}
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  Dúvidas frequentes
+                  {t("footer.footerTextServicep2")}
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  Termos de uso
+                  {t("footer.footerTextServicep3")}
                 </a>
               </li>
               <li>
@@ -136,7 +140,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Política de cancelamento
+                  {t("footer.footerTextServicep4")}
                 </a>
               </li>
             </ul>
@@ -144,11 +148,11 @@ const Footer = () => {
 
           {/* Column 4 */}
           <div className="col-12 col-md-6 col-lg-3 div_col_nutrition">
-            <h6 className="footer-title">Nutrição</h6>
+            <h6 className="footer-title">{t("footer.footerTextTitleNutrition")}</h6>
             <ul className="list-unstyled footer-list">
               <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  Blog / Artigos
+                  {t("footer.footerTextNutritionp1")}
                 </a>
               </li>
               <li>
@@ -157,7 +161,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  E-book
+                  {t("footer.footerTextNutritionp2")}
                 </a>
               </li>
               <li>
@@ -166,11 +170,11 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Receitas
+                  {t("footer.footerTextNutritionp3")}
                 </a>
               </li>
               <li>
-                <a href="#">Dicas de alimentação saudável</a>
+                <a href="#">{t("footer.footerTextNutritionp4")}</a>
               </li>
             </ul>
           </div>
@@ -180,20 +184,21 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="copy-left">
-            © 2025 Drª Kenia. Todos os direitos reservados.
+            {t("footer.footerRodape1")}
           </p>
           <p className="copy-right">
-            <s className="a_copy_footer" href="">
-              Desenvolvido por{" "}
+            {/* Corrigi a tag <s> para <span> e dividi a chave de tradução */}
+            <span className="a_copy_footer">
+              {t("footer.footerRodape2_part1")}
               <a
                 className="a_icdigitalexperience"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                IC Digital Experience
+                {t("footer.footerRodape2_part2")}
               </a>
-            </s>
+            </span>
           </p>
         </div>
       </div>

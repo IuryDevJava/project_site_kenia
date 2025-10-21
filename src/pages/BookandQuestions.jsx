@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import AnimatedButton from "../components/Products/AnimatedButton";
+import { useTranslation } from "react-i18next"; // 1. IMPORTAR
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -22,25 +23,30 @@ import ImageProductBookBackMobile from "../assets/images/products-img/back-book-
 
 import Faq from "../components/AskedQuestions/Faq";
 
-const bookImages = [
-  {
-    id: 1,
-    alt: "Capa da frente do livro Caderno de Receitas",
-    desk: ImageProductBookDesk,
-    tablet: ImageProductBookTablet,
-    mobile: ImageProductBookMobile,
-  },
-  {
-    id: 2,
-    alt: "Capa de trás do livro Caderno de Receitas",
-    desk: ImageProductBookBackDesk,
-    tablet: ImageProductBookBackTablet,
-    mobile: ImageProductBookBackMobile,
-  },
-  // ...outras imagens
-];
+// A constante bookImages FOI MOVIDA DAQUI...
 
 const BookandQuestions = () => {
+  const { t } = useTranslation(); // 2. INICIAR O HOOK
+
+  // 3. MOVER A CONSTANTE PARA DENTRO E USAR t()
+  const bookImages = [
+    {
+      id: 1,
+      alt: t("bookPage.altFront"), // Traduzido
+      desk: ImageProductBookDesk,
+      tablet: ImageProductBookTablet,
+      mobile: ImageProductBookMobile,
+    },
+    {
+      id: 2,
+      alt: t("bookPage.altBack"), // Traduzido
+      desk: ImageProductBookBackDesk,
+      tablet: ImageProductBookBackTablet,
+      mobile: ImageProductBookBackMobile,
+    },
+    // ...outras imagens
+  ];
+
   const [selectedImage, setSelectedImage] = useState(bookImages[0]);
 
   const handleThumbnailClick = (image) => {
@@ -54,7 +60,7 @@ const BookandQuestions = () => {
     <section className="section_bookandquestions">
       <div className="container container_bookandquestions">
         <div className="div_response_full">
-          <div>
+          <div className="div_book-gallery">
             <div className="book-gallery">
               {/* Imagem Principal */}
               <div className="main-image-wrapper">
@@ -67,6 +73,7 @@ const BookandQuestions = () => {
                     media="(min-width: 767px)"
                     srcSet={selectedImage.tablet}
                   />
+                  {/* O 'alt' agora vem do objeto de estado traduzido */}
                   <img src={selectedImage.mobile} alt={selectedImage.alt} />
                 </picture>
               </div>
@@ -88,6 +95,7 @@ const BookandQuestions = () => {
                       }`}
                       onClick={() => handleThumbnailClick(image)}
                     >
+                      {/* O 'alt' agora vem do map traduzido */}
                       <img src={image.desk} alt={image.alt} />
                     </button>
                   </SwiperSlide>
@@ -101,46 +109,33 @@ const BookandQuestions = () => {
             {/* ADICIONEI O WRAPPER "book-details-content" para o efeito "card" */}
             <div className="book-details-content">
               <div className="div_response_title_text">
-                <h1 className="h1_title_patreon">
+                <h1 className="h1_title_productspage">
                   Caderno de Receitas: do mundo para sua casa
                 </h1>
                 <h5 className="h5_title_book">
-                  Um livro que une gastronomia, memórias e arte.
+                  {t("bookPage.subtitle")}
                 </h5>
                 <p className="p_text_book1">
-                  Em "O caderno de receitas: do mundo para a sua casa", a
-                  nutricionista e viajante Kenia Bispo apresenta um repertório
-                  de receitas inspiradas em suas experiências, traduzindo a
-                  essência de diferentes culturas para uma cozinha elegante e
-                  cheia de significado.
+                  {t("bookPage.desc1")}
                 </p>
                 <p className="p_text_book2">
-                  Cada página é acompanhada por delicadas aquarelas pintadas
-                  pela própria autora...
+                  {t("bookPage.desc2")}
                 </p>
 
                 <div className="book-details">
-                  <h6 className="fw-bold dados_book">Dados do Livro</h6>
+                  <h6 className="fw-bold dados_book">{t("bookPage.detailsTitle")}</h6>
                   <ul className="ul_ list-unstyled">
-                    <li className="li">
-                      <strong className="strong">Páginas:</strong> 133
-                    </li>
-                    <li className="li">
-                      <strong className="strong">Formato:</strong> 13,5 x 21 cm
-                    </li>
-                    <li className="li">
-                      <strong className="strong">Encadernação:</strong> Capa dura, lombada quadrada
-                      e plastificação fosca
-                    </li>
-                    <li className="li">
-                      <strong className="strong">Idioma:</strong> Português
-                    </li>
+                    {/* Usando dangerouslySetInnerHTML para renderizar o HTML do JSON */}
+                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi1") }} />
+                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi2") }} />
+                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi3") }} />
+                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi4") }} />
                   </ul>
                 </div>
 
                 <AnimatedButton
-                className="button-book"
-                  text="Comprar agora"
+                  className="button-book"
+                  text={t("bookPage.buttonText")} // Traduzido
                   link={linkPaymentBook}
                 />
               </div>
@@ -149,10 +144,10 @@ const BookandQuestions = () => {
         </div>
       </div>
       <article>
+        {/* O Faq já está configurado e buscará suas próprias traduções */}
         <Faq />
       </article>
     </section>
-    
   );
 };
 

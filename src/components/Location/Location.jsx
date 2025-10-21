@@ -1,7 +1,13 @@
 import React from "react";
 import "../../assets/Style/Location.css";
 
+import { useTranslation } from "react-i18next";
+
+
 const Location = () => {
+
+  const { t } = useTranslation();
+
   return (
     <section className="section_maps">
       <div className="container">
@@ -9,11 +15,10 @@ const Location = () => {
           <div className="col-12">
             <h3 className="h3_title_maps">
               <span className="material-symbols-outlined icon_location">location_on</span>
-              Localização
+              {t("locale.localeTitle")}
             </h3>
             <p className="text_p_maps">
-              Um espaço que une conforto, privacidade e elegância, pensado para
-              acolher você com toda a exclusividade que merece.
+              {t("locale.localeText")}
             </p>
           </div>
         </div>

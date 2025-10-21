@@ -1,6 +1,3 @@
-/* src/assets/Style/BookandQuestions.css */
-
-/* --- Layout da Seção --- */
 .section_bookandquestions {
   padding: 132px 0 0;
   overflow-x: hidden;
@@ -9,12 +6,13 @@
 .div_response_full {
   flex-direction: row;
   display: flex;
-  gap: 40px;
+  gap: 50px;
   justify-content: center;
   padding: 70px 0;
   /* background-color: #faf1e6; */
   /* background-color: #a7c7e7; */
-  background-color: #A7AA60;
+  /* background-color: #FAF1E6; */
+  background-color: #344a4e;
   width: 100vw;
   max-width: none;
   margin-left: calc(50% - 50vw);
@@ -22,7 +20,7 @@
 }
 
 .main-image-wrapper {
-  background-color: #faf1e6;
+  background-color: #FAF1E6;
   padding: 30px;
   border: 4px solid #58380010;
   border-radius: 16px;
@@ -38,7 +36,6 @@
   transform: scale(1.05);
 }
 
-/* --- Estilos das Miniaturas (Swiper) --- */
 .thumbnails-swiper {
   width: 160%;
   padding-top: 20px;
@@ -47,12 +44,11 @@
 .thumbnail-button {
   width: 100%;
   padding: 0;
-  border: 1px solid #FAF1E6;
+  border: 1px solid #faf1e6;
   border-radius: 8px;
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
-  /* background-color: #fff; */
 }
 
 .thumbnail-button:hover {
@@ -70,13 +66,7 @@
   object-fit: cover;
 }
 
-/* --- "Card" de Conteúdo da Direita --- */
 .book-details-content {
-  background-color: #faf1e6;
-  border: 4px solid #58380010;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgb(0, 0, 0);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,16 +76,16 @@
   width: 100%;
 }
 
-.h1_title_patreon {
+.h1_title_productspage {
   font-size: 30px !important;
   font-weight: 600 !important;
-  color: #656565 !important;
+  color: #e5e5e5;
 }
 
 .h5_title_book {
   font-size: 25px;
-  font-weight: 400;
-  color: #8b8985;
+  font-weight: 500;
+  color: #e5e5e5;
   margin: 0;
   padding: 10px 0 15px;
 }
@@ -103,36 +93,36 @@
 .p_text_book1 {
   font-size: 20px !important;
   font-weight: 400;
-  color: #8b8985;
+  color: #e5e5e5;
   margin: 0;
 }
 
 .p_text_book2 {
   font-size: 20px !important;
   font-weight: 400;
-  color: #8b8985;
+  color: #e5e5e5;
   margin: 0;
   padding: 5px 0 0;
 }
 
 .dados_book {
   font-size: 22px !important;
-  font-weight: 400;
-  color: #800020;
+  font-weight: 500 !important;
+  color: #e5e5e5;
   margin: 0;
   padding: 30px 0 10px;
 }
 
 .strong {
   font-size: 20px !important;
-  font-weight: 500;
-  color: #383838;
+  font-weight: 400;
+  color: #e5e5e5;
 }
 
 .li {
   font-size: 18px !important;
-  font-weight: 400;
-  color: #696969;
+  font-weight: 200;
+  color: #e5e5e5;
 }
 
 .book-details {
@@ -146,7 +136,7 @@
 
   .div_response_full {
     flex-direction: row;
-    gap: 30px;
+    gap: 40px;
     padding: 50px 0;
   }
 
@@ -160,7 +150,6 @@
   }
 
   .book-details-content {
-    padding: 30px;
     border-radius: 12px;
     height: 100%;
     display: flex;
@@ -171,7 +160,7 @@
     width: 100%;
   }
 
-  .h1_title_patreon {
+  .h1_title_productspage {
     font-size: 25px !important;
   }
 
@@ -181,23 +170,23 @@
   }
 
   .p_text_book1 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .p_text_book2 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .dados_book {
-    font-size: 20px !important;
+    font-size: 18px !important;
     padding: 25px 0 8px;
   }
 
-  strong {
-    font-size: 18px !important;
+  .strong {
+    font-size: 16px !important;
   }
 
-  li {
+  .li {
     font-size: 16px !important;
   }
 
@@ -208,58 +197,48 @@
 
 @media (max-width: 767px) {
   .section_bookandquestions {
-    padding: 86px 0 0;
+    padding: 85px 0 0;
   }
 
   .div_response_full {
     flex-direction: column;
     display: grid;
-    gap: 30px;
-    padding: 32px 0;
+    padding: 32px 0 34px;
   }
 
   .book-gallery {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    gap: 10px !important;
+    align-items: end;
+    padding-left: 200px;
   }
 
   .main-image-wrapper {
-    margin: 0;
-    padding: 10px;
-    width: 163px !important;
-    max-width: 300px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgb(0, 0, 0);
-  }
-
-  .thumbnails-swiper {
-    width: 70%;
-    max-width: 240px;
-    margin-left: 140px !important;
-    margin: 0;
-    padding-top: 15px;
+    padding: 10px 4px;
+    width: 360px;
+    margin: auto !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    text-align: center !important;
   }
 
   .book-details-content {
-    padding: 25px 20px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 400px;
     width: 90% !important;
-    margin: 0 auto;
+    margin: auto;
   }
 
-  .h1_title_patreon {
+  .h1_title_productspage {
     font-size: 20px !important;
+    margin: 0;
   }
 
   .h5_title_book {
-    font-size: 18px;
+    font-size: 18px !important;
     padding: 8px 0 10px !important;
     text-align: left !important;
   }
@@ -273,18 +252,17 @@
   }
 
   .dados_book {
-    font-size: 18px !important;
+    font-size: 16px !important;
     padding: 18px 0 6px;
     text-align: center !important;
   }
 
   .strong {
-    font-size: 15px !important;
-    
+    font-size: 14px !important;
   }
 
   .li {
-    font-size: 15px !important;
+    font-size: 14px !important;
     text-align: left !important;
   }
 

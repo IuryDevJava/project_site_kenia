@@ -75,56 +75,77 @@
 
   "products": {
     "productsBookTitle": "Recipe Book: from the world to your home",
-    "productsBookText1": "Original recipes with international inspiration.",
-    "productsBookText2": "Elegant style, designed for unique gastronomic experiences.",
-    "productsBookText3": "Exclusive watercolor illustrations.",
-    "productsBookText4": "A work that combines art, culture, and flavor.",
-    "productsBookPreco1": "From R$ 197.00",
-    "productsBookPreco2": "For R$ 97.00",
-    "productsBookButton": "Buy now",
+    "productsBookText1": "Original recipes with international inspiration",
+    "productsBookText2": "Elegant style, designed for unique gastronomic experiences",
+    "productsBookText3": "Exclusive watercolor illustrations",
+    "productsBookText4": "A work that combines art, culture, and flavor",
+    "productsBookPreco1": "From",
+    "productsBookPreco2": "For",
+    "productsBookButton": "View details",
     "productsE-BookTitleName": "The Smart Guide to Weight Loss",
     "productsE-BookTitle": "E-book",
-    "productsE-BookText1": "Discover how your microbiota can be the key to losing weight easily and without complicated diets.",
-    "productsE-BookText2": "Applicable strategies and 2 weekly menus to inspire you daily.",
-    "productsE-BookText3": "A practical ebook with essential concepts.",
-    "productsE-BookPreco1": "From R$ 97.00",
-    "productsE-BookPreco2": "For R$ 27.00",
+    "productsE-BookText1": "Discover how your microbiota can be the key to losing weight easily and without complicated diets",
+    "productsE-BookText2": "Applicable strategies and 2 weekly menus to inspire you daily",
+    "productsE-BookText3": "A practical ebook with essential concepts",
+    "productsE-BookPreco1": "From",
+    "productsE-BookPreco2": "For",
     "productsE-BookButton": "Buy now"
   },
+
+
   "FAQ": {
-    "faqTitle": "Frequently asked questions",
+    "faqTitle": "Frequently Asked Questions",
+
     "faqQuestion1": "Can I return the book if I change my mind?",
     "faqAnswer1": "Yes. You have up to 7 calendar days after receiving the book to cancel the purchase. In this case, I will refund the full amount paid.",
+
     "faqQuestion2": "What if the book arrives with a problem?",
-    "faqAnswer2": "If the book arrives defective or damaged during transport, you can choose: receive a new copy or get your money back. Just let me know, and I will take care of everything so you don't have to worry.",
+    "faqAnswer2": "If the book arrives with a defect or is damaged in transit, you can choose: receive a new copy or get your money back. Just let me know and I'll take care of everything so you don't have to worry.",
+
     "faqQuestion3": "What are the payment methods?",
-    "faqAnswer3": "You can pay with a credit card or Pix. With a credit card, you can pay in up to 5 interest-free installments. With Pix, the payment is in full and confirmation is fast.",
+    "faqAnswer3_p1": "You can pay with a credit card or Pix.",
+    "faqAnswer3_li1": "With a credit card, you can pay in up to 5 interest-free installments.",
+    "faqAnswer3_li2": "With Pix, the payment is in full and confirmation is quick.",
+
     "faqQuestion4": "How long does it take to ship the book?",
-    "faqAnswer4": "After payment is confirmed, I prepare everything carefully and post it at the Post Office within 2 business days.",
+    "faqAnswer4": "After payment is confirmed, I carefully prepare everything and post it at the Post Office within 2 business days.",
+
     "faqQuestion5": "How long does it take to arrive?",
-    "faqAnswer5": "The delivery time varies depending on the postal code and the type of shipping you choose: PAC: more economical, but takes a little longer. Sedex: arrives faster. To give you an idea: those in Rio de Janeiro receive it in about 5 business days.",
-    "faqQuestion6": "How can I track my order?",
-    "faqAnswer6": "As soon as the book is shipped, you will receive the Post Office tracking code by email. This way, you can track every step of the delivery.",
+    "faqAnswer5_p1": "The delivery time varies according to the postal code and the shipping method you choose:",
+    "faqAnswer5_li1": "<strong>PAC:</strong> more economical, but takes a little longer.",
+    "faqAnswer5_li2": "<strong>Sedex:</strong> arrives faster.",
+    "faqAnswer5_p2": "To give you an idea: someone in Rio de Janeiro receives it in about 5 business days.",
+
+    "faqQuestion6": "How do I track my order?",
+    "faqAnswer6": "As soon as the book is posted, you will receive the Post Office tracking code by email. This way, you can follow each step of the delivery.",
+
     "faqQuestion7": "Can I buy it as a gift?",
-    "faqAnswer7": "Yes. Just enter the recipient's address at the time of purchase. If you want, I can even include a special note inside the package.",
+    "faqAnswer7": "Yes. Just enter the recipient's address at checkout. If you want, I can even include a special note inside the package.",
+
     "faqQuestion8": "Where else can I buy this book?",
-    "faqAnswer8": "The physical version is available exclusively here on my website. The digital version (eBook) is available on Amazon Kindle.",
+    "faqAnswer8_li1": "The <strong>physical</strong> version is available exclusively here on my website.",
+    "faqAnswer8_li2": "The <strong>digital (eBook)</strong> version is available on Amazon Kindle.",
+
     "faqQuestion9": "What if I have another question?",
-    "faqAnswer9": "Just contact me. I am available through the channels below, and I am the one who answers. E-mail: kenia.bispo@hotmail.com WhatsApp: +55 (21) 96952-6214"
+    "faqAnswer9_p1": "Just contact me. I am available through the channels below and I am the one who answers.",
+    "faqAnswer9_email": "E-mail:",
+    "faqAnswer9_whatsapp": "WhatsApp:"
   },
+
+
   "locale": {
     "localeTitle": "Location",
     "localeText": "A space that combines comfort, privacy, and elegance, designed to welcome you with all the exclusivity you deserve."
   },
   "footer": {
-    "footerTextAbout": "Personalized nutritional follow-up, focused on health, well-being, and dietary balance.",
+    "footerTextAbout": "Personalized nutritional monitoring, focused on health, well-being, and dietary balance.",
     "footerTextTitleCompany": "Company",
     "footerTextCompanyp1": "About me",
     "footerTextCompanyp2": "Services",
     "footerTextCompanyp3": "My products",
     "footerTextCompanyp4": "Privacy policy",
-    "footerTextTitleService": "Customer Service",
-    "footerTextServicep1": "How our Service Works",
+    "footerTextTitleService": "Support",
+    "footerTextServicep1": "How consultations work",
     "footerTextServicep2": "Frequently asked questions",
     "footerTextServicep3": "Terms of use",
     "footerTextServicep4": "Cancellation policy",
@@ -133,7 +154,31 @@
     "footerTextNutritionp2": "E-book",
     "footerTextNutritionp3": "Recipes",
     "footerTextNutritionp4": "Healthy eating tips",
-    "footerRodape1": "© 2025 Drª Kenia. All rights reserved.",
-    "footerRodape2": "Developed by IC Digital Experience"
+    "footerRodape1": "© 2025 Dr. Kenia. All rights reserved.",
+    "footerRodape2_part1": "Developed by ",
+    "footerRodape2_part2": "IC Digital Experience"
+  },
+
+  "bookPage": {
+    "altFront": "Front cover of the Recipe Notebook book",
+    "altBack": "Back cover of the Recipe Notebook book",
+    "title": "Recipe Notebook: from the world to your home",
+    "subtitle": "A book that unites gastronomy, memories, and art.",
+    "desc1": "In \"The Recipe Notebook: from the world to your home\", nutritionist and traveler Kenia Bispo presents a repertoire of recipes inspired by her experiences, translating the essence of different cultures into an elegant and meaningful cuisine.",
+    "desc2": "Each page is accompanied by delicate watercolors painted by the author herself...",
+    "detailsTitle": "Book Details",
+    "detailsLi1": "<strong class=\"strong\">Pages:</strong> 133",
+    "detailsLi2": "<strong class=\"strong\">Format:</strong> 13.5 x 21 cm",
+    "detailsLi3": "<strong class=\"strong\">Binding:</strong> Hardcover, square spine, and matte lamination",
+    "detailsLi4": "<strong class=\"strong\">Language:</strong> Portuguese",
+    "buttonText": "Buy now"
+  },
+
+
+  "communityPage": {
+    "altText": "Photo of Kenia Bispo in an office setting, representing her Patreon community",
+    "title": "Patreon Community",
+    "description": "In my Patreon space, you have access to content that isn't on social media: reflections on food, lifestyle habits, recipes with stories, practical guides, and exclusive materials. It's also a place for us to connect, exchange ideas, and move towards a lighter, healthier life.",
+    "buttonText": "Join us"
   }
 }

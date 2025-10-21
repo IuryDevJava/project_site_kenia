@@ -2,6 +2,8 @@ import React from "react";
 import "../../assets/Style/Products.css";
 import AnimatedButton from "./AnimatedButton";
 
+import { useTranslation } from "react-i18next";
+
 // Importando as imagens
 import ImageOpenBookDesk from "../../assets/images/products-img/Image-open-livro.png";
 import ImageOpenBookTablet from "../../assets/images/products-img/Image-open-livro 2.png";
@@ -20,6 +22,9 @@ import SparkleIcon from "./SparkIcon";
 const Products = () => {
   const linkPaymentEbook =
     "https://pay.hotmart.com/M100399386O?bid=1750428900670";
+
+  const { t } = useTranslation();
+
   return (
     <section className="section_products" id="products">
       <SparkleIcon className="sparkle_icon sparkle--1" />
@@ -77,13 +82,12 @@ const Products = () => {
                 do mundo para sua casa
               </h1>
               <ul className="ul_product_features">
-                <li>Receitas autorais com inspiração internacional.</li>
+                <li>{t("products.productsBookText1")}</li>
                 <li>
-                  Estilo elegante, pensado para experiências gastronômicas
-                  diferenciadas.
+                  {t("products.productsBookText2")}
                 </li>
-                <li>Ilustrações exclusivas em aquarela.</li>
-                <li>Uma obra que une arte, cultura e sabor.</li>
+                <li>{t("products.productsBookText3")}</li>
+                <li>{t("products.productsBookText4")}</li>
               </ul>
             </div>
           </div>
@@ -106,13 +110,13 @@ const Products = () => {
                 </div>
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
-                    De <s>R$ 197,00</s>
+                    {t("products.productsBookPreco1")} <s>R$ 197,00</s>
                   </span>
                   <span className="span_price_current">
-                    Por <strong>R$ 97,00</strong>
+                    {t("products.productsBookPreco2")} <strong>R$ 97,00</strong>
                   </span>
                 </div>
-                <AnimatedButton text="Ver detalhes" link="/livro" />
+                <AnimatedButton text={t("products.productsBookButton")} link="/livro" />
               </div>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">
@@ -133,14 +137,12 @@ const Products = () => {
               <h2 className=" h2_product_subtitle">Ebook</h2>
               <ul className=" ul_product_features">
                 <li>
-                  Descubra como a sua microbiota pode ser a chave para emagrecer
-                  com leveza e sem dietas complicadas.
+                  {t("products.productsE-BookText1")}
                 </li>
                 <li>
-                  Estratégias aplicáveis e 2 cardápios semanais para te inspirar
-                  no dia a dia.
+                  {t("products.productsE-BookText2")}
                 </li>
-                <li>Um ebook prático, com conceitos essenciais.</li>
+                <li>{t("products.productsE-BookText3")}</li>
               </ul>
             </div>
             <div className="div_product_image-wrapper">
@@ -156,13 +158,13 @@ const Products = () => {
                 />
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
-                    De <s>R$ 97,00</s>
+                    {t("products.productsE-BookPreco1")} <s>R$ 97,00</s>
                   </span>
                   <span className="span_price_current">
-                    Por <strong>R$ 27,00</strong>
+                    {t("products.productsE-BookPreco2")} <strong>R$ 27,00</strong>
                   </span>
                 </div>
-                <AnimatedButton text="Comprar agora" link={linkPaymentEbook} />
+                <AnimatedButton text={t("products.productsE-BookButton")} link={linkPaymentEbook} />
               </div>
             </div>
           </div>
