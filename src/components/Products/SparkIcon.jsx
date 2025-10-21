@@ -1,10 +1,8 @@
 import React from "react";
 
-// Este componente encapsula o ícone SVG, tornando-o reutilizável.
-// Ele aceita 'className' para que possamos estilizá-lo de fora.
 const SparkleIcon = ({ className }) => {
   return (
-    // O 'aria-hidden' é importante para acessibilidade, pois o ícone é decorativo.
+  
     <div className={className} aria-hidden="true">
       <svg
         width="100"

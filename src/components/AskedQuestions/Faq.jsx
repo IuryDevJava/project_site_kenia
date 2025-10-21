@@ -4,27 +4,18 @@ import "../../assets/Style/Faq.css";
 import { useTranslation } from "react-i18next";
 
 const Faq = () => {
-
   const { t } = useTranslation();
 
   const faqData = [
     {
       id: "faq1",
       question: t("FAQ.faqQuestion1"),
-      answer: (
-        <p className="p-0 m-0">
-          {t("FAQ.faqAnswer1")}
-        </p>
-      ),
+      answer: <p className="p-0 m-0">{t("FAQ.faqAnswer1")}</p>,
     },
     {
       id: "faq2",
       question: t("FAQ.faqQuestion2"),
-      answer: (
-        <p className="p-0 m-0">
-          {t("FAQ.faqAnswer2")}
-        </p>
-      ),
+      answer: <p className="p-0 m-0">{t("FAQ.faqAnswer2")}</p>,
     },
     {
       id: "faq3",
@@ -42,11 +33,7 @@ const Faq = () => {
     {
       id: "faq4",
       question: t("FAQ.faqQuestion4"),
-      answer: (
-        <p className="p-0 m-0">
-          {t("FAQ.faqAnswer4")}
-        </p>
-      ),
+      answer: <p className="p-0 m-0">{t("FAQ.faqAnswer4")}</p>,
     },
     {
       id: "faq5",
@@ -55,7 +42,6 @@ const Faq = () => {
         <>
           <p className="p-0 m-0">{t("FAQ.faqAnswer5_p1")}</p>
           <ul>
-            {/* Usamos 'dangerouslySetInnerHTML' porque o JSON tem tags <strong> */}
             <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer5_li1") }} />
             <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer5_li2") }} />
           </ul>
@@ -66,20 +52,12 @@ const Faq = () => {
     {
       id: "faq6",
       question: t("FAQ.faqQuestion6"),
-      answer: (
-        <p className="p-0 m-0">
-          {t("FAQ.faqAnswer6")}
-        </p>
-      ),
+      answer: <p className="p-0 m-0">{t("FAQ.faqAnswer6")}</p>,
     },
     {
       id: "faq7",
       question: t("FAQ.faqQuestion7"),
-      answer: (
-        <p className="p-0 m-0">
-          {t("FAQ.faqAnswer7")}
-        </p>
-      ),
+      answer: <p className="p-0 m-0">{t("FAQ.faqAnswer7")}</p>,
     },
     {
       id: "faq8",
@@ -87,7 +65,6 @@ const Faq = () => {
       answer: (
         <>
           <ul className="px-4 p-0 m-0">
-            {/* Usamos 'dangerouslySetInnerHTML' porque o JSON tem tags <strong> */}
             <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer8_li1") }} />
             <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer8_li2") }} />
           </ul>
@@ -129,7 +106,6 @@ const Faq = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            {/* 3. Traduza o título também */}
             <h2 className="faq-title text-center">{t("FAQ.faqTitle")}</h2>
 
             <div className="accordion" id="faqAccordion">

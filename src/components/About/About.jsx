@@ -22,13 +22,11 @@ const About = () => {
               <p className="p-2-text">
                 {t('about.textAbout2')}
               </p>
-              {/* Div do botão comentada */}
             </div>
 
-            {/* AQUI ESTÁ A CORREÇÃO */}
-            <div className="about_image_container"> {/* Um contêiner pode ser útil para estilização */}
+            <div className="about_image_container"> 
               <picture>
-                {/* Imagem para Desktop (telas a partir de 992px) */}
+               
                 <source
                   media="(min-width: 992px)"
                   srcSet={ImageAboutDesk1}
@@ -38,12 +36,10 @@ const About = () => {
                   media="(min-width: 768px) and (max-width: 991px)"
                   srcSet={ImageAboutTablet1}
                 />
-                {/* A tag <img> é OBRIGATÓRIA. Ela é a imagem padrão e o fallback */}
-                {/* O navegador usará a imagem mobile (ou a primeira que encontrar) como padrão */}
                 <img
                   className="img-about-content"
                   src={ImageAboutMobile1}
-                  alt="Uma foto de Kenia Bispo" // Use um texto alternativo descritivo
+                  alt="Uma foto de Kenia Bispo"
                 />
               </picture>
             </div>

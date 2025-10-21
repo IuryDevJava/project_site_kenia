@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-// logos e ícones
 import ImgLogoMenuDesk from "../../assets/images/menu-img/logo (6).png";
 import ImgLogoMenuTablet from "../../assets/images/menu-img/logo-tablet.png";
 import ImgLogoMenuMobile from "../../assets/images/menu-img/logo-mobile.png";
@@ -113,9 +112,8 @@ const Menu = () => {
                   <img
                     className="language-switcher-flag mx-1"
                     src={currentLanguage.icon}
-                    alt={`${t("languages." + currentLanguage.id)} flag`} // ALTERADO AQUI
+                    alt={`${t("languages." + currentLanguage.id)} flag`}
                   />
-                  {/* --- ALTERAÇÃO PRINCIPAL AQUI --- */}
                   <span className="language-switcher-text">
                     {t(`languages.${currentLanguage.id}`)}
                   </span>
@@ -133,9 +131,8 @@ const Menu = () => {
                         <img
                           className="language-switcher-flag"
                           src={lang.icon}
-                          alt={`${t("languages." + lang.id)} flag`} // ALTERADO AQUI
+                          alt={`${t("languages." + lang.id)} flag`}
                         />
-                        {/* --- E ALTERAÇÃO PRINCIPAL AQUI --- */}
                         <span className="mx-1 language-switcher-text">
                           {t(`languages.${lang.id}`)}
                         </span>
@@ -154,7 +151,6 @@ const Menu = () => {
           </div>
         </div>
 
-        {/* ... (código do menu mobile) ... */}
         {isMobileMenuOpen && (
           <nav className="mobile-nav">
             <ul className="mobile-nav-list list-unstyled">

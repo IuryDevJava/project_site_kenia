@@ -7,10 +7,24 @@ import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk
 import ImageLogoFooterTablet from "../../assets/images/footer-img/logo_footer_tablet.png";
 import ImageLogoFooterMobile from "../../assets/images/footer-img/logo_footer_mobile.png";
 
-const Footer = () => {
+// 1. MANTENHA O 'Link' para a página /privacidade
+import { Link } from "react-router-dom";
+// 2. ADICIONE O 'HashLink' para os links de âncora
+import { HashLink } from "react-router-hash-link";
 
+const Footer = () => {
   const { t } = useTranslation();
-  
+
+  const linkLinkedin =
+    "https://www.linkedin.com/in/keniabispo/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app";
+
+  const linkInstagram = "https://www.instagram.com/keniabisponutri/";
+
+  const linkYoutube = "https://www.youtube.com/@keniabisponutri/videos";
+
+  const linkWhatsapp =
+    "https://api.whatsapp.com/send/?phone=5521969526214&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0";
+
   return (
     <footer className="site-footer">
       <div className="container">
@@ -18,144 +32,144 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <div className="footer-brand">
               <div className="flex_items_imgtext">
-                {/* --- ALTERAÇÃO AQUI --- */}
                 <picture>
-                  {/* Imagem para Desktop (telas a partir de 1024px) */}
+                  {/* ... (código da imagem - sem alteração) ... */}
                   <source
                     media="(min-width: 992px)"
                     srcSet={ImageLogoFooterDesk}
                   />
-                  {/* Imagem para Tablet (telas a partir de 768px) */}
                   <source
                     media="(min-width: 768px)"
                     srcSet={ImageLogoFooterTablet}
                   />
-                  {/* Imagem padrão (Mobile) e fallback */}
                   <img
                     src={ImageLogoFooterMobile}
                     alt="Logo"
                     className="footer-logo"
                   />
                 </picture>
-                {/* --- FIM DA ALTERAÇÃO --- */}
-                <p className="footer-desc">
-                  {t("footer.footerTextAbout")}
-                </p>
+                <p className="footer-desc">{t("footer.footerTextAbout")}</p>
               </div>
               <div className="footer-social">
+                {/* TODOS OS LINKS EXTERNOS (sociais) ABAIXO ESTÃO CORRETOS.
+                  Eles DEVEM usar <a> e target="_blank".
+                */}
                 <a
-                  href="https://www.linkedin.com/in/keniabispo/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  href={linkLinkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="social-btn"
                 >
                   <i className="bi bi-linkedin"></i>{" "}
-                  {/* Corrigido para className */}
                 </a>
                 <a
-                  href="https://www.instagram.com/keniabisponutri/"
+                  href={linkInstagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                   className="social-btn"
                 >
                   <i className="bi bi-instagram"></i>{" "}
-                  {/* Corrigido para className */}
                 </a>
                 <a
-                  href="https://www.youtube.com/@keniabisponutri/videos"
+                  href={linkYoutube}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
                   className="social-btn"
                 >
                   <i className="bi bi-youtube"></i>{" "}
-                  {/* Corrigido para className */}
                 </a>
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5521969526214&text=Ol%C3%A1+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os%21&type=phone_number&app_absent=0"
+                  href={linkWhatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
                   className="social-btn"
                 >
                   <i className="bi bi-whatsapp"></i>{" "}
-                  {/* Corrigido para className */}
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Column 2 */}
           <div className="col-6 col-md-6 col-lg-3 div_col_company">
-            <h6 className="footer-title">{t("footer.footerTextTitleCompany")}</h6>
+            <h6 className="footer-title">
+              {t("footer.footerTextTitleCompany")}
+            </h6>
             <ul className="list-unstyled footer-list">
               <li>
-                <a href="#about" target="_top" rel="noopener noreferrer">
+                {/* 3. CORRIGIDO: Trocado <a> por <HashLink> */}
+                <HashLink to="/#about">
                   {t("footer.footerTextCompanyp1")}
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#services" target="_top" rel="noopener noreferrer">
+                {/* 4. CORRIGIDO: Trocado <a> por <HashLink> */}
+                <HashLink to="/#services">
                   {t("footer.footerTextCompanyp2")}
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#products" target="_top" rel="noopener noreferrer">
+                {/* 5. CORRIGIDO: Trocado <a> por <HashLink> */}
+                <HashLink to="/#products">
                   {t("footer.footerTextCompanyp3")}
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  {t("footer.footerTextCompanyp4")}
-                </a>
+                {/* 6. CORRETO: Este link já estava certo!
+                  Ele usa <Link> (normal) para uma página interna.
+                */}
+                <Link to="/politica-de-privacidade">{t("footer.footerTextCompanyp4")}</Link>
               </li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div className="col-6 col-md-6 col-lg-3 div_col_service">
-            <h6 className="footer-title">{t("footer.footerTextTitleService")}</h6>
+            <h6 className="footer-title">
+              {t("footer.footerTextTitleService")}
+            </h6>
             <ul className="list-unstyled footer-list">
-              <li>
+              {/* Links de placeholder - Lembre-se de atualizar os 'href="#"'
+                quando tiver as URLs de destino.
+              */}
+              {/* <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   {t("footer.footerTextServicep1")}
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <HashLink to="/livro#faq">
                   {t("footer.footerTextServicep2")}
-                </a>
+                </HashLink>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <Link to="/termos-de-uso">
                   {t("footer.footerTextServicep3")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="a_police"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link className="a_police" to="/politica-de-cancelamento">
                   {t("footer.footerTextServicep4")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4 */}
           <div className="col-12 col-md-6 col-lg-3 div_col_nutrition">
-            <h6 className="footer-title">{t("footer.footerTextTitleNutrition")}</h6>
+            <h6 className="footer-title">
+              {t("footer.footerTextTitleNutrition")}
+            </h6>
             <ul className="list-unstyled footer-list">
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <Link to="/comunidade">
                   {t("footer.footerTextNutritionp1")}
-                </a>
+                </Link>
               </li>
               <li>
+                {/* CORRETO: Link externo (Hotmart) usa <a> */}
                 <a
                   href="https://pay.hotmart.com/M100399386O?bid=1750428900670"
                   target="_blank"
@@ -165,6 +179,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                {/* CORRETO: Link externo (Checkout) usa <a> */}
                 <a
                   href="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart"
                   target="_blank"
@@ -173,9 +188,9 @@ const Footer = () => {
                   {t("footer.footerTextNutritionp3")}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#">{t("footer.footerTextNutritionp4")}</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -183,16 +198,13 @@ const Footer = () => {
         <hr className="footer-divider" />
 
         <div className="footer-bottom">
-          <p className="copy-left">
-            {t("footer.footerRodape1")}
-          </p>
+          <p className="copy-left">{t("footer.footerRodape1")}</p>
           <p className="copy-right">
-            {/* Corrigi a tag <s> para <span> e dividi a chave de tradução */}
             <span className="a_copy_footer">
               {t("footer.footerRodape2_part1")}
               <a
                 className="a_icdigitalexperience"
-                href="#"
+                href="#" // Lembre-se de atualizar este link
                 target="_blank"
                 rel="noopener noreferrer"
               >

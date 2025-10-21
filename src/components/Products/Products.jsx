@@ -4,7 +4,6 @@ import AnimatedButton from "./AnimatedButton";
 
 import { useTranslation } from "react-i18next";
 
-// Importando as imagens
 import ImageOpenBookDesk from "../../assets/images/products-img/Image-open-livro.png";
 import ImageOpenBookTablet from "../../assets/images/products-img/Image-open-livro 2.png";
 import ImageOpenBookMobile2 from "../../assets/images/products-img/Image-open-livro 3.png";
@@ -42,11 +41,6 @@ const Products = () => {
               <h1 className="h1_version_mobile">
                 Caderno de Receitas: do mundo para sua casa
               </h1>
-              {/* <img
-                src={ImageOpenBook}
-                alt="Livro Aberto"
-                className="img_product_open-book"
-              /> */}
 
               <picture>
                 {/* Imagem para Desktop (telas a partir de 1024px) */}
@@ -92,7 +86,6 @@ const Products = () => {
             </div>
           </div>
 
-          {/* --- Item 2: Card de Compra + Livros Empilhados --- */}
           <div className="div_product_item div_product_item--purchase">
             <div className="div_product_image-wrapper">
               <div className="div_purchase-card">
@@ -129,9 +122,7 @@ const Products = () => {
           </div>
         </div>
 
-        {/* ========== Bloco: Ebook ========== */}
         <div className="div_products_block">
-          {/* --- Item 3: Descrição Ebook + Card de Compra Ebook --- */}
           <div className="div_product_item">
             <div className="div_product_content-wrapper">
               <h2 className=" h2_product_subtitle">Ebook</h2>

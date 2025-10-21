@@ -43,22 +43,20 @@
     "serviceCardText6": "Cuidado nutricional voltado às necessidades femininas.",
     "serviceCardButton": "Agendar consulta",
 
-
-
     "modalAppointmentsTitle": "Preencha os dados abaixo",
     "modalAppointmentsLabel1": "Nome",
     "modalAppointmentsInput1Placeholder": "Nome completo",
-    
-    "modalAppointmentsLabel2": "Telefone",  
+
+    "modalAppointmentsLabel2": "Telefone",
     "modalAppointmentsInput2Placeholder": "+55 (21) 99999-9999",
-    
+
     "modalAppointmentsLabel3": "E-mail",
     "modalAppointmentsInput3Placeholder": "nome@e-mail.com",
-    
+
     "modalAppointmentsSelect": "Tipo de consulta",
     "modalAppointmentsSelectOption1": "Presencial",
     "modalAppointmentsSelectOption2": "Online / Teleconsulta",
-    
+
     "modalAppointmentsButton": "Agendar",
 
     "modalRedirectTitle": "Aguarde um momento...",
@@ -123,7 +121,7 @@
     "faqAnswer5_p1": "O prazo varia de acordo com o CEP e o tipo de envio que você escolher:",
     "faqAnswer5_li1": "<strong>PAC:</strong> mais econômico, mas demora um pouco mais.",
     "faqAnswer5_li2": "<strong>Sedex:</strong> chega mais rápido.",
-    "faqAnswer5_p2": "Para ter uma ideia: quem está no Rio de Janeiro recebe em cerca de 5 dias úteis.",
+    "faqAnswer5_p2": "Para ter uma ideia: quem está no Rio de Janeiro recebe em cerca de 3 dias úteis.",
 
     "faqQuestion6": "Como acompanho meu pedido?",
     "faqAnswer6": "Assim que o livro for postado, você recebe por e-mail o código de rastreio dos Correios. Assim pode acompanhar cada etapa da entrega.",
@@ -141,12 +139,10 @@
     "faqAnswer9_whatsapp": "WhatsApp:"
   },
 
-
   "locale": {
     "localeTitle": "Localização",
     "localeText": "Um espaço que une conforto, privacidade e elegância, pensado para acolher você com toda a exclusividade que merece."
   },
-
 
   "footer": {
     "footerTextAbout": "Acompanhamento nutricional personalizado, com foco em saúde, bem-estar e equilíbrio alimentar.",
@@ -169,7 +165,6 @@
     "footerRodape2_part1": "Desenvolvido por ",
     "footerRodape2_part2": "IC Digital Experience"
   },
-
 
   "bookPage": {
     "altFront": "Capa da frente do livro Caderno de Receitas",

@@ -50,23 +50,6 @@ function EspacoSection() {
                 className="espaco-swiper"
               >
 
-              {/* <Swiper
-                modules={[Navigation, Pagination]}
-                spaceBetween={24} // positivo (sem "recortes")
-                slidesPerView={"auto"}
-                centeredSlides={true} // centraliza o slide principal
-                grabCursor={true}
-                loop={true}
-                navigation={{
-                  nextEl: ".swiper-button-next-custom",
-                  prevEl: ".swiper-button-prev-custom",
-                }}
-                pagination={{
-                  clickable: true,
-                  el: ".swiper-pagination-container",
-                }}
-                className="espaco-swiper"
-              > */}
                 {espacoImages.map((imgSrc, index) => (
                   <SwiperSlide key={index}>
                     <img src={imgSrc} alt={`Foto do espaço ${index + 1}`} />
