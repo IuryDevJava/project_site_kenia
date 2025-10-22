@@ -86,17 +86,17 @@ const Menu = () => {
               <li className="header-nav-item">
                 <HashLink
                   className="header-nav-link text-decoration-none"
-                  to="/livro#faq"
+                  to="/comunidade"
                 >
-                  {t("header.FAQ")}
+                  {t("header.exclusive-space")}
                 </HashLink>
               </li>
               <li className="header-nav-item">
                 <HashLink
                   className="header-nav-link text-decoration-none"
-                  to="/comunidade"
+                  to="/livro#faq"
                 >
-                  {t("header.community")}
+                  {t("header.FAQ")}
                 </HashLink>
               </li>
             </ul>
@@ -184,20 +184,21 @@ const Menu = () => {
               <li className="mobile-nav-item">
                 <HashLink
                   className="mobile-nav-link text-decoration-none"
+                  to="/comunidade"
+                >
+                  {t("header.exclusive-space")}
+                </HashLink>
+              </li>
+              <li className="mobile-nav-item">
+                <HashLink
+                  className="mobile-nav-link text-decoration-none"
                   to="/livro#faq"
                   onClick={toggleMobileMenu}
                 >
                   {t("header.FAQ")}
                 </HashLink>
               </li>
-              <li className="mobile-nav-item">
-                <HashLink
-                  className="mobile-nav-link text-decoration-none"
-                  to="/comunidade"
-                >
-                  {t("header.community")}
-                </HashLink>
-              </li>
+              
             </ul>
           </nav>
         )}

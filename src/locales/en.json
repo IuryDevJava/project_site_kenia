@@ -4,8 +4,9 @@
     "about": "About me",
     "services": "Services and appointments",
     "products": "Products",
-    "FAQ": "FAQ",
-    "community": "Community"
+    "exclusive-space": "Exclusive space",
+    "FAQ": "FAQ"
+    
   },
   "languages": {
     "pt": "Portuguese",
