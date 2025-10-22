@@ -1,15 +1,24 @@
-// Arquivo: TermsOfUse.jsx
-
 import React from "react";
-import "../assets/Style/LegalPages.css"; // Importa o CSS compartilhado
+import "../assets/Style/LegalPages.css";
+// 1. Importar hooks
+import { useTranslation, Trans } from "react-i18next";
 
 const TermsOfUse = () => {
-  // ============== SUBSTITUA ESTES DADOS ==============
-  const SEU_SITE_NOME = "[Nome do Seu Site ou Seu Nome]";
-  const SEU_SITE_URL = "[Endereço do seu site]";
-  const SEU_EMAIL_CONTATO = "[Seu E-mail de Contato]";
-  const DATA_ATUALIZACAO = "[Data de Hoje]";
-  // =====================================================
+  // 2. Inicializar i18n
+  const { t, i18n } = useTranslation();
+
+  // 3. Manter constantes para injeção
+  const SEU_SITE_NOME = "Drª Kenia Bispo";
+  const SEU_SITE_URL = "https://www.keniabispo.com/";
+  const SEU_EMAIL_CONTATO = "kenia.bispo@hotmail.com";
+
+  // 4. Lógica da Data Dinâmica
+  const dataOriginal = new Date('2025-10-21T12:00:00');
+  const DATA_ATUALIZACAO = new Intl.DateTimeFormat(i18n.language, {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(dataOriginal);
 
   return (
     <section className="legal-page-wrapper">
@@ -17,86 +26,72 @@ const TermsOfUse = () => {
         <div className="row">
           <div className="col-12 col-lg-10 offset-lg-1">
             <div className="legal-content">
-              <h1>Termos de Uso</h1>
-              <p>
-                <strong>Última atualização:</strong> {DATA_ATUALIZACAO}
+              <h1 className="legal-content__title--h1">{t("legal.terms.h1")}</h1>
+              <p className="text_p_atualization">
+                <strong className="legal-content__strong">
+                  {t("legal.terms.lastUpdated")}
+                </strong> {DATA_ATUALIZACAO}
               </p>
 
-              <p>
-                Bem-vindo ao {SEU_SITE_NOME}! Ao acessar e usar este site (
-                {SEU_SITE_URL}), você concorda em cumprir e aceitar os seguintes
-                termos e condições de uso. Se você não concorda com estes
-                termos, por favor, não utilize nosso site.
+              <p className="legal-content__paragraph">
+                <Trans
+                  i18nKey="legal.terms.intro"
+                  values={{ siteName: SEU_SITE_NOME, siteUrl: SEU_SITE_URL }}
+                />
               </p>
 
-              <h2>1. Uso do Site</h2>
-              <p>
-                Você concorda em usar este site apenas para fins legais e de
-                maneira que não infrinja os direitos de, ou restrinja ou iniba o
-                uso e gozo deste site por qualquer terceiro.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title1")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.terms.p1_1")}
               </p>
-              <ul>
-                <li>
-                  O conteúdo e os produtos vendidos neste site são destinados ao
-                  seu uso pessoal e não comercial.
+              <ul className="legal-content__list">
+                <li className="legal-content__list-item">
+                  {t("legal.terms.li1_1")}
                 </li>
-                <li>
-                  Você não tem permissão para distribuir, modificar, transmitir,
-                  reutilizar ou republicar qualquer conteúdo deste site para
-                  fins públicos ou comerciais sem nossa permissão expressa por
-                  escrito.
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  {t("legal.terms.li1_2")}
                 </li>
               </ul>
 
-              <h2>2. Propriedade Intelectual</h2>
-              <p>
-                Todo o conteúdo presente neste site, incluindo, mas não se
-                limitando a, textos, gráficos, logotipos, ícones, imagens e o
-                próprio livro digital (e-book), é propriedade de {SEU_SITE_NOME}{" "}
-                e está protegido pelas leis de direitos autorais.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title2")}</h2>
+              <p className="legal-content__paragraph">
+                <Trans
+                  i18nKey="legal.terms.p2_1"
+                  values={{ siteName: SEU_SITE_NOME }}
+                />
               </p>
-              <p>
-                Ao adquirir nosso produto, você recebe uma licença limitada, não
-                exclusiva e intransferível para uso pessoal. Você não pode
-                copiar, compartilhar ou revender o produto.
+              <p className="legal-content__paragraph legal-content__list-item--sm">
+                {t("legal.terms.p2_2")}
               </p>
 
-              <h2>3. Limitação de Responsabilidade</h2>
-              <p>
-                O conteúdo deste site é fornecido "como está". Embora nos
-                esforcemos para fornecer informações precisas, não oferecemos
-                garantias de qualquer tipo sobre a precisão, confiabilidade ou
-                integridade do conteúdo.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title3")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.terms.p3_1")}
               </p>
-              <p>
-                Em nenhuma circunstância {SEU_SITE_NOME} será responsável por
-                quaisquer danos diretos, indiretos, incidentais ou
-                consequenciais resultantes do uso ou da incapacidade de usar
-                este site ou seus produtos.
+              <p className="legal-content__paragraph legal-content__list-item--sm">
+                <Trans
+                  i18nKey="legal.terms.p3_2"
+                  values={{ siteName: SEU_SITE_NOME }}
+                />
               </p>
 
-              <h2>4. Links para Sites de Terceiros</h2>
-              <p>
-                Nosso site pode conter links para sites de terceiros (como
-                processadores de pagamento ou redes sociais). Esses links são
-                fornecidos apenas para sua conveniência. Não temos controle
-                sobre o conteúdo ou as práticas desses sites e não assumimos
-                responsabilidade por eles.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title4")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.terms.p4_1")}
               </p>
 
-              <h2>5. Alterações nos Termos</h2>
-              <p>
-                Reservamo-nos o direito de modificar estes Termos de Uso a
-                qualquer momento. Quaisquer alterações entrarão em vigor
-                imediatamente após a publicação no site. Recomendamos que você
-                revise esta página periodicamente.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title5")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.terms.p5_1")}
               </p>
 
-              <h2>6. Contato</h2>
-              <p className="p-0 m-0">
-                Se você tiver alguma dúvida sobre estes Termos de Uso, entre em
-                contato conosco através do e-mail:{" "}
-                <strong>{SEU_EMAIL_CONTATO}</strong>.
+              <h2 className="legal-content__title--h2">{t("legal.terms.title6")}</h2>
+              <p className="legal-content__paragraph">
+                <Trans
+                  i18nKey="legal.terms.p6_1"
+                  values={{ email: SEU_EMAIL_CONTATO }}
+                  components={[<strong className="legal-content__strong" />]}
+                />
               </p>
             </div>
           </div>

@@ -99,6 +99,7 @@ const Service = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
+            aria-pressed="true"
           >
             {t("services.serviceCardButton")}
           </a>

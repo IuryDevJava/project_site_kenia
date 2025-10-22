@@ -7,13 +7,11 @@
     "FAQ": "FAQ",
     "community": "Community"
   },
-
   "languages": {
     "pt": "Portuguese",
     "en": "English",
     "es": "Spanish"
   },
-
   "about": {
     "textAbout1": "I am a nutritionist and postdoctoral researcher at UFRJ, passionate about connecting science, food, and memories. With a PhD from Universidad CEU San Pablo and a Master's from UFRJ, I focus on pre-diabetes, gut health, and weight loss. In my travel recipe book, I combine stories and flavors from around the world with a lighthearted approach to eating.",
     "textAbout2": "My mission is to show that healthy weight loss doesn't come from restrictive diets, but from smart choices that take care of the body and the relationship with food.",
@@ -26,8 +24,10 @@
     "serviceCardText1": "Exclusive eating plan, adapted to your goals and lifestyle.",
     "serviceCardTitle2": "Nutritional follow-up",
     "serviceCardText2": "Continuous monitoring to ensure real and sustainable results.",
-    "serviceCardTitle3": "Individualized service",
-    "serviceCardText3": "Each consultation is designed to meet your needs.",
+
+    "serviceCardTitle3": "Online Consultation",
+    "serviceCardText3": "Specialized teleconsultation to receive you in your comfort",
+
     "serviceCardTitle4": "Nutritional Program for weight loss",
     "serviceCardText4": "Smart strategies for weight loss with balance and well-being.",
     "serviceCardTitle5": "Diabetes Management",
@@ -35,46 +35,32 @@
     "serviceCardTitle6": "Women's Health",
     "serviceCardText6": "Nutritional care focused on women's needs.",
     "serviceCardButton": "Schedule appointment",
-
-
-
-
     "modalAppointmentsTitle": "Fill in the details below",
     "modalAppointmentsLabel1": "Name",
     "modalAppointmentsInput1Placeholder": "Full name",
-
     "modalAppointmentsLabel2": "Phone",
     "modalAppointmentsInput2Placeholder": "+1 (555) 999-9999",
-
     "modalAppointmentsLabel3": "E-mail",
     "modalAppointmentsInput3Placeholder": "name@email.com",
-
     "modalAppointmentsSelect": "Appointment type",
     "modalAppointmentsSelectOption1": "In-person",
     "modalAppointmentsSelectOption2": "Online / Teleconsultation",
-
     "modalAppointmentsButton": "Schedule",
-
     "modalRedirectTitle": "Just a moment...",
     "modalRedirectText": "We are redirecting you to WhatsApp.",
-    
     "whatsappGreeting": "Hello! I would like to schedule an appointment.",
     "whatsappClientData": "Client Data:",
     "whatsappFooter": "Awaiting confirmation.",
-
     "appointmentsTitle": "Our space",
     "appointmentsText": "Our space was designed to offer comfort, privacy, and a unique experience in every consultation."
   },
-
   "formErrors": {
     "requiredField": "The {{field}} field is required.",
     "invalidEmail": "Please enter a valid email address.",
     "invalidPhone": "Please enter a complete and valid phone number."
   },
-
-
   "products": {
-    "productsBookTitle": "Recipe Book: from the world to your home",
+    "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
     "productsBookText1": "Original recipes with international inspiration",
     "productsBookText2": "Elegant style, designed for unique gastronomic experiences",
     "productsBookText3": "Exclusive watercolor illustrations",
@@ -82,7 +68,8 @@
     "productsBookPreco1": "From",
     "productsBookPreco2": "For",
     "productsBookButton": "View details",
-    "productsE-BookTitleName": "The Smart Guide to Weight Loss",
+
+    "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
     "productsE-BookTitle": "E-book",
     "productsE-BookText1": "Discover how your microbiota can be the key to losing weight easily and without complicated diets",
     "productsE-BookText2": "Applicable strategies and 2 weekly menus to inspire you daily",
@@ -91,48 +78,35 @@
     "productsE-BookPreco2": "For",
     "productsE-BookButton": "Buy now"
   },
-
-
   "FAQ": {
     "faqTitle": "Frequently Asked Questions",
-
     "faqQuestion1": "Can I return the book if I change my mind?",
     "faqAnswer1": "Yes. You have up to 7 calendar days after receiving the book to cancel the purchase. In this case, I will refund the full amount paid.",
-
     "faqQuestion2": "What if the book arrives with a problem?",
     "faqAnswer2": "If the book arrives with a defect or is damaged in transit, you can choose: receive a new copy or get your money back. Just let me know and I'll take care of everything so you don't have to worry.",
-
     "faqQuestion3": "What are the payment methods?",
     "faqAnswer3_p1": "You can pay with a credit card or Pix.",
     "faqAnswer3_li1": "With a credit card, you can pay in up to 5 interest-free installments.",
     "faqAnswer3_li2": "With Pix, the payment is in full and confirmation is quick.",
-
     "faqQuestion4": "How long does it take to ship the book?",
     "faqAnswer4": "After payment is confirmed, I carefully prepare everything and post it at the Post Office within 2 business days.",
-
     "faqQuestion5": "How long does it take to arrive?",
     "faqAnswer5_p1": "The delivery time varies according to the postal code and the shipping method you choose:",
     "faqAnswer5_li1": "<strong>PAC:</strong> more economical, but takes a little longer.",
     "faqAnswer5_li2": "<strong>Sedex:</strong> arrives faster.",
     "faqAnswer5_p2": "To give you an idea: someone in Rio de Janeiro receives it in about 3 business days.",
-
     "faqQuestion6": "How do I track my order?",
     "faqAnswer6": "As soon as the book is posted, you will receive the Post Office tracking code by email. This way, you can follow each step of the delivery.",
-
     "faqQuestion7": "Can I buy it as a gift?",
     "faqAnswer7": "Yes. Just enter the recipient's address at checkout. If you want, I can even include a special note inside the package.",
-
     "faqQuestion8": "Where else can I buy this book?",
     "faqAnswer8_li1": "The <strong>physical</strong> version is available exclusively here on my website.",
     "faqAnswer8_li2": "The <strong>digital (eBook)</strong> version is available on Amazon Kindle.",
-
     "faqQuestion9": "What if I have another question?",
     "faqAnswer9_p1": "Just contact me. I am available through the channels below and I am the one who answers.",
     "faqAnswer9_email": "E-mail:",
     "faqAnswer9_whatsapp": "WhatsApp:"
   },
-
-
   "locale": {
     "localeTitle": "Location",
     "localeText": "A space that combines comfort, privacy, and elegance, designed to welcome you with all the exclusivity you deserve."
@@ -158,13 +132,13 @@
     "footerRodape2_part1": "Developed by ",
     "footerRodape2_part2": "IC Digital Experience"
   },
-
   "bookPage": {
-    "altFront": "Front cover of the Recipe Notebook book",
-    "altBack": "Back cover of the Recipe Notebook book",
-    "title": "Recipe Notebook: from the world to your home",
+    "altFront": "Front cover of the book 'Caderno de Receitas: do mundo para sua casa'",
+    "altBack": "Back cover of the book 'Caderno de Receitas: do mundo para sua casa'",
+    "title": "Caderno de Receitas: do mundo para sua casa",
+
     "subtitle": "A book that unites gastronomy, memories, and art.",
-    "desc1": "In \"The Recipe Notebook: from the world to your home\", nutritionist and traveler Kenia Bispo presents a repertoire of recipes inspired by her experiences, translating the essence of different cultures into an elegant and meaningful cuisine.",
+    "desc1": "In \"O caderno de receitas: do mundo para a sua casa\", nutritionist and traveler Kenia Bispo presents a repertoire of recipes inspired by her experiences, translating the essence of different cultures into an elegant and meaningful cuisine.",
     "desc2": "Each page is accompanied by delicate watercolors painted by the author herself...",
     "detailsTitle": "Book Details",
     "detailsLi1": "<strong class=\"strong\">Pages:</strong> 133",
@@ -173,12 +147,86 @@
     "detailsLi4": "<strong class=\"strong\">Language:</strong> Portuguese",
     "buttonText": "Buy now"
   },
-
-
   "communityPage": {
     "altText": "Photo of Kenia Bispo in an office setting, representing her Patreon community",
     "title": "Patreon Community",
     "description": "In my Patreon space, you have access to content that isn't on social media: reflections on food, lifestyle habits, recipes with stories, practical guides, and exclusive materials. It's also a place for us to connect, exchange ideas, and move towards a lighter, healthier life.",
     "buttonText": "Join us"
+  },
+  "legal": {
+    "cancellation": {
+      "h1": "Cancellation and Refund Policy",
+      "lastUpdated": "Last updated:",
+      "intro": "This policy describes how we handle cancellations and refunds for <1>{{productName}}</1>.",
+      "title1": "1. Purchase Cancellation (Right of Repentance)",
+      "p1_1": "According to Article 49 of the Brazilian Consumer Defense Code, the customer has the right to withdraw from a purchase of products acquired outside a commercial establishment (such as online) within <1>7 (seven) calendar days</1>, counting from the date of receipt of the product or the signing of the contract.",
+      "p1_2": "For digital products (like our e-book), the 7-day period begins from the date of payment confirmation and release of access to the material.",
+      "title2": "2. How to Request Cancellation",
+      "p2_1": "To exercise your right of repentance, you must notify us within the 7-day period through our official support channel.",
+      "li2_1": "Send an email to: <1>{{email}}</1>",
+      "li2_2": "In the email, please provide your full name, the email used for the purchase, and the reason \"Cancellation Request\".",
+      "title3": "3. Refund Processing",
+      "p3_1": "Upon confirmation of your request (within the 7-day period), we will proceed with a full refund of the amount paid.",
+      "li3_1": "The refund will be processed using the same payment method used for the purchase (e.g., credit card chargeback or PIX/bank transfer refund).",
+      "li3_2": "The timeframe for a credit card chargeback may vary depending on the card operator.",
+      "title4": "4. After the 7-Day Period",
+      "p4_1": "Cancellation or refund requests will not be accepted after the end of the 7-day legal period (right of repentance). As this is a digital product for immediate consumption, the purchase is considered final after this period.",
+      "title5": "5. Contact",
+      "p5_1": "For questions or more information about our cancellation policy, please contact us at the email: <1>{{email}}</1>."
+    },
+    "terms": {
+      "h1": "Terms of Use",
+      "lastUpdated": "Last updated:",
+      "intro": "Welcome to {{siteName}}! By accessing and using this site ({{siteUrl}}), you agree to comply with and be bound by the following terms and conditions of use. If you do not agree to these terms, please do not use our site.",
+      "title1": "1. Site Usage",
+      "p1_1": "You agree to use this site only for lawful purposes and in a way that does not infringe upon the rights of, or restrict or inhibit the use and enjoyment of this site by any third party.",
+      "li1_1": "The content and products sold on this site are intended for your personal, non-commercial use.",
+      "li1_2": "You are not permitted to distribute, modify, transmit, reuse, or republish any content from this site for public or commercial purposes without our express written permission.",
+      "title2": "2. Intellectual Property",
+      "p2_1": "All content on this site, including but not limited to text, graphics, logos, icons, images, and the e-book itself, is the property of {{siteName}} and is protected by copyright laws.",
+      "p2_2": "By purchasing our product, you receive a limited, non-exclusive, non-transferable license for personal use. You may not copy, share, or resell the product.",
+      "title3": "3. Limitation of Liability",
+      "p3_1": "The content of this site is provided \"as is\". While we strive to provide accurate information, we make no warranties of any kind regarding the accuracy, reliability, or completeness of the content.",
+      "p3_2": "Under no circumstances shall {{siteName}} be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this site or its products.",
+      "title4": "4. Links to Third-Party Sites",
+      "p4_1": "Our site may contain links to third-party sites (such as payment processors or social networks). These links are provided for your convenience only. We have no control over the content or practices of these sites and assume no responsibility for them.",
+      "title5": "5. Changes to Terms",
+      "p5_1": "We reserve the right to modify these Terms of Use at any time. Any changes will take effect immediately upon posting on the site. We recommend that you review this page periodically.",
+      "title6": "6. Contact",
+      "p6_1": "If you have any questions about these Terms of Use, please contact us via email: <1>{{email}}</1>."
+    },
+    "privacy": {
+      "h1": "Privacy Policy",
+      "lastUpdated": "Last updated:",
+      "intro1": "Your privacy is extremely important to us. This Privacy Policy describes how <1>{{siteName}}</1> collects, uses, stores, and protects the personal information of users who visit and interact with our site <2>{{siteUrl}}</2>, especially regarding the purchase of <3>{{productName}}</3>.",
+      "intro2": "By using our site, you agree to the collection and use of information in accordance with this policy.",
+      "title1": "1. Information We Collect",
+      "p1_1": "We collect different types of information for various purposes to provide and improve our service.",
+      "title1a": "a) Information Provided Directly by You:",
+      "li1a_1": "<1>Purchase Data:</1> When you purchase our product, we request personal information such as full name, email address, shipping address (if applicable), and payment information.",
+      "li1a_2": "<1>Contact Data:</1> If you subscribe to our newsletter or contact us, we may collect your name and email address.",
+      "title1b": "b) Information Collected Automatically:",
+      "li1b_1": "<1>Cookies and Usage Data:</1> Like most sites, we use cookies to enhance your experience. We may collect information about how the site is accessed and used (e.g., your IP address, browser type, pages visited, and access times).",
+      "title2": "2. How We Use Your Information",
+      "p2_1": "The information collected is used for the following purposes:",
+      "li2_1": "<1>To Process Your Order:</1> We use your personal data to process payments, manage your order, and deliver the product.",
+      "li2_2": "<1>For Communication:</1> To send order confirmations, receipts, updates, and respond to your questions or support requests.",
+      "li2_3": "<1>For Marketing (with your consent):</1> If you opt-in to our newsletter, we will use your email to send news, special offers, and information about other products or services. You may opt-out of these communications at any time.",
+      "li2_4": "<1>To Improve Our Site:</1> We use usage data and cookies to understand how visitors interact with our site and to optimize the user experience.",
+      "title3": "3. Information Sharing",
+      "p3_1": "We do not sell, trade, or rent your personal information to third parties. We may share your information only with third-party service providers who assist us in operating our business, such as:",
+      "li3_1": "<1>Payment Processors:</1> (e.g., {{paymentProcessor}}) to securely process your purchase.",
+      "p3_2": "We require these third parties to keep your information secure and confidential and not to use it for other purposes.",
+      "title4": "4. Data Security",
+      "p4_1": "We implement reasonable security measures to protect your personal information from unauthorized access, alteration, or destruction. Our site uses SSL encryption (HTTPS). However, no method of transmission over the Internet or electronic storage is 100% secure.",
+      "title5": "5. Cookies",
+      "p5_1": "Cookies are small files stored on your device. We use cookies for essential functionalities (like the shopping cart) and for analytics (like Google Analytics). You can instruct your browser to refuse all cookies.",
+      "title6": "6. Your Rights (Under LGPD)",
+      "p6_1": "You have the right to access, correct, update, or request the deletion of your personal information. If you wish to exercise any of these rights, please contact us.",
+      "title7": "7. Changes to this Privacy Policy",
+      "p7_1": "We may update our Privacy Policy periodically. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date.",
+      "title8": "8. Contact",
+      "p8_1": "If you have any questions about this Privacy Policy, please contact us via email: <1>{{email}}</1>"
+    }
   }
 }

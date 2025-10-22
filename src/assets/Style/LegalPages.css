@@ -1,66 +1,144 @@
+/*
+ * Arquivo: LegalPages.css
+ * Controla a estilização das páginas de Política de Privacidade,
+ * Termos de Uso e Política de Cancelamento.
+*/
+
+/* --- Wrapper da Página (Espaçamento Externo) --- */
 .legal-page-wrapper {
-  padding: 196px 0 70px;
+  padding: 196px 0 70px; /* Espaçamento Desktop */
+  margin: 0;
+  background-color: #f8f8f8; /* Adicionado um fundo suave para destacar o conteúdo */
+}
+
+/* --- Bloco de Conteúdo (Container Interno) --- */
+.legal-content {
+  line-height: 1.6;
+  color: #8b8985;
+  font-weight: 400;
+  font-size: 16px; /* Fonte base Desktop */
+}
+
+/* --- Títulos --- */
+.legal-content__title--h1 {
+  font-size: 30px;
+  font-weight: 600; /* Corrigido de 600px para 600 */
+  color: #656565;
   margin: 0;
 }
 
-.legal-content {
-  font-size: 16px;
-  line-height: 1.6;
+.legal-content__title--h2 {
+  font-size: 25px;
+  font-weight: 400; /* Corrigido de 400px para 400 */
+  color: #656565;
+  margin: 0;
+  padding-top: 48px; /* Equivalente ao pt-5 (3rem) do Bootstrap */
+}
+
+.legal-content__title--h3 {
+  font-size: 20px; /* Ajustado para diferenciar do h2 */
+  font-weight: 500;
+  color: #656565;
+  margin: 0;
+  padding-top: 24px; /* Equivalente ao pt-3 (1rem) */
+}
+
+/* --- Textos e Listas --- */
+.legal-content__paragraph {
+  color: #8b8985;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 8px; /* Equivalente ao pt-2 (0.5rem) */
+}
+
+/* Parágrafo de atualização (classe já existente) */
+.text_p_atualization {
+  padding: 30px 0;
   color: #8b8985;
   font-weight: 400;
 }
 
-.legal-content h1 {
-  font-size: 30px;
-  font-weight: 600px;
-  color: #656565;
+/* Primeiro parágrafo após um título não precisa de padding-top */
+.legal-content__title--h2 + .legal-content__paragraph,
+.legal-content__title--h3 + .legal-content__paragraph,
+.legal-content__title--h1 + .text_p_atualization + .legal-content__paragraph {
+  padding-top: 8px; /* pt-2 */
 }
 
-.legal-content h2 {
-  font-size: 25px;
-  font-weight: 400px;
-  color: #656565;
+/* Primeiro parágrafo (introdução) */
+.text_p_atualization + .legal-content__paragraph {
+  padding-top: 0;
 }
 
-.legal-content h3 {
-  font-size: 25px;
-  font-weight: 500px;
-  color: #656565;
+.legal-content__list {
+  margin: 0;
+  padding-left: 20px; /* Adiciona recuo padrão da lista */
+}
+
+.legal-content__list-item {
+  padding-top: 8px; /* Equivalente ao pt-2 */
+}
+
+/* Ajuste para itens de lista com espaçamento menor */
+.legal-content__list-item--sm {
+  padding-top: 4px; /* Equivalente ao pt-1 */
+}
+
+.legal-content__strong {
+  font-weight: 600; /* Define um peso para o strong */
+  color: #656565; /* Destaca o strong */
 }
 
 /* --- Responsividade (Tablet) --- */
 @media (min-width: 768px) and (max-width: 991px) {
+  .legal-page-wrapper {
+    padding: 150px 0 50px; /* Espaçamento Tablet */
+  }
+
   .legal-content {
-    font-size: 15px;
+    font-size: 16px; /* Fonte base Tablet */
   }
-  .legal-content h1 {
-    font-size: 2rem;
+  .legal-content__title--h1 {
+    font-size: 25px;
   }
-  .legal-content h2 {
-    font-size: 1.5rem;
+  .legal-content__title--h2 {
+    font-size: 20px;
+    padding-top: 40px; /* Espaçamento reduzido */
   }
-  .legal-content h3 {
-    font-size: 1.15rem;
+  .legal-content__title--h3 {
+    font-size: 18px;
+    padding-top: 20px; /* Espaçamento reduzido */
+  }
+  .text_p_atualization {
+    padding: 24px 0;
   }
 }
 
 /* --- Responsividade (Mobile) --- */
 @media (max-width: 767px) {
   .legal-page-wrapper {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 116px 0 32px; /* Espaçamento Mobile */
   }
+
   .legal-content {
-    font-size: 14px;
+    font-size: 14px; /* Fonte base Mobile */
   }
-  .legal-content h1 {
-    font-size: 1.75rem;
+
+  .legal-content__title--h1 {
+    font-size: 20px;
   }
-  .legal-content h2 {
-    margin-top: 1.5rem;
-    font-size: 1.35rem;
+
+  .legal-content__title--h2 {
+    font-size: 18px;
+    padding-top: 32px; /* Espaçamento reduzido */
   }
-  .legal-content h3 {
-    font-size: 1.1rem;
+
+  .legal-content__title--h3 {
+    font-size: 16px;
+    padding-top: 16px; /* Espaçamento reduzido */
+  }
+
+  .text_p_atualization {
+    padding: 20px 0;
   }
 }

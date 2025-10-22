@@ -1,164 +1,169 @@
 import React from 'react';
 import '../assets/Style/LegalPages.css';
+// 1. Importar hooks
+import { useTranslation, Trans } from "react-i18next";
 
 const PrivacyPolicy = () => {
+  // 2. Inicializar i18n
+  const { t, i18n } = useTranslation();
 
+  // 3. Manter constantes para injeção
   const SEU_SITE_NOME = "Drª Kenia Bispo";
   const SEU_SITE_URL = "https://www.keniabispo.com/";
-  const SEU_EMAIL_CONTATO = "[Seu E-mail de Contato]";
+  const SEU_EMAIL_CONTATO = "kenia.bispo@hotmail.com";
   const NOME_DO_PRODUTO = "Caderno de Receitas: do mundo para sua casa";
-  const DATA_ATUALIZACAO = "21/10/2025";
   const PROCESSADOR_PAGAMENTO = "[Ex: Stripe, Hotmart, PagSeguro]";
-  const PLATAFORMA_EMAIL = "[Ex: Mailchimp, RD Station]";
-  
-  // 2. REMOVEMOS os estilos inline daqui
+
+  // 4. Lógica da Data Dinâmica
+  const dataOriginal = new Date('2025-10-21T12:00:00');
+  const DATA_ATUALIZACAO = new Intl.DateTimeFormat(i18n.language, {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(dataOriginal);
 
   return (
-    // 3. Adiciona a classe principal da seção
     <section className="legal-page-wrapper">
       <div className="container">
         <div className="row">
-          {/* O layout (grid) que fizemos já é responsivo */}
           <div className="col-12 col-lg-10 offset-lg-1">
-
-            {/* 4. Adiciona a classe para o conteúdo */}
             <div className="legal-content">
+              <h1 className="legal-content__title--h1">{t("legal.privacy.h1")}</h1>
 
-              {/* Título Principal */}
-              <h1 className="m-0">Política de Privacidade</h1>
-
-              {/* --- Início do Texto da Política --- */}
-
-              <p className="m-0"><strong>Última atualização:</strong> {DATA_ATUALIZACAO}</p>
-
-              <p className="m-0">
-                A sua privacidade é de extrema importância para nós. Esta Política de Privacidade
-                descreve como <strong>{SEU_SITE_NOME}</strong> coleta, utiliza, armazena e protege
-                as informações pessoais dos usuários que visitam e interagem com o nosso site
-                <strong> {SEU_SITE_URL}</strong>, especialmente em relação à aquisição
-                do <strong>{NOME_DO_PRODUTO}</strong>.
-              </p>
-              <p className="m-0">
-                Ao utilizar nosso site, você concorda com a coleta e uso de informações
-                de acordo com esta política.
+              <p className="text_p_atualization">
+                <strong className="legal-content__strong">
+                  {t("legal.privacy.lastUpdated")}
+                </strong> {DATA_ATUALIZACAO}
               </p>
 
-              {/* Agora usamos h2/h3/p normais, e o CSS cuida do estilo */}
-              <h2 className="m-0">1. Informações que Coletamos</h2>
-              <p className="m-0">
-                Coletamos diferentes tipos de informações para várias finalidades,
-                visando fornecer e melhorar nosso serviço.
+              <p className="legal-content__paragraph">
+                <Trans
+                  i18nKey="legal.privacy.intro1"
+                  values={{
+                    siteName: SEU_SITE_NOME,
+                    siteUrl: SEU_SITE_URL,
+                    productName: NOME_DO_PRODUTO
+                  }}
+                  components={[
+                    <strong className="legal-content__strong" />, // <1>
+                    <strong className="legal-content__strong" />, // <2>
+                    <strong className="legal-content__strong" />  // <3>
+                  ]}
+                />
+              </p>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.intro2")}
               </p>
 
-              <h3 className="m-0">a) Informações Fornecidas Diretamente por Você:</h3>
-              <ul className="m-0">
-                <li>
-                  <strong>Dados de Compra:</strong> Ao adquirir nosso produto, solicitamos
-                  informações pessoais como nome completo, endereço de e-mail, endereço
-                  de entrega (se aplicável) e informações de pagamento.
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title1")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p1_1")}
+              </p>
+
+              <h3 className="legal-content__title--h3">{t("legal.privacy.title1a")}</h3>
+              <ul className="legal-content__list">
+                <li className="legal-content__list-item">
+                  <Trans
+                    i18nKey="legal.privacy.li1a_1"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
                 </li>
-                <li>
-                  <strong>Dados de Contato:</strong> Se você se inscrever em nossa newsletter
-                  ou nos contatar, podemos coletar seu nome e endereço de e-mail.
-                </li>
-              </ul>
-
-              <h3 className="m-0">b) Informações Coletadas Automaticamente:</h3>
-              <ul className="m-0">
-                <li className="m-0">
-                  <strong>Cookies e Dados de Uso:</strong> Como a maioria dos sites, usamos
-                  cookies para melhorar sua experiência. Podemos coletar informações sobre
-                  como o site é acessado e usado (ex: seu endereço IP, tipo de navegador,
-                  páginas visitadas e horários de acesso).
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li1a_2"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
                 </li>
               </ul>
 
-              <h2 className="m-0">2. Como Usamos Suas Informações</h2>
-              <p className="m-0">
-                As informações coletadas são usadas para os seguintes fins:
-              </p>
-              <ul className="m-0">
-                <li>
-                  <strong>Para Processar seu Pedido:</strong> Usamos seus dados pessoais
-                  para processar pagamentos, gerenciar seu pedido e entregar o produto.
-                </li>
-                <li>
-                  <strong>Para Comunicação:</strong> Para enviar confirmações de pedido, recibos,
-                  atualizações e responder às suas perguntas ou solicitações de suporte.
-                </li>
-                <li>
-                  <strong>Para Marketing (com seu consentimento):</strong> Se você optar por
-                  receber nossa newsletter, usaremos seu e-mail para enviar notícias, ofertas
-                  especiais e informações sobre outros produtos ou serviços. Você pode optar
-                  por não receber estas comunicações a qualquer momento.
-                </li>
-                <li>
-                  <strong>Para Melhorar nosso Site:</strong> Usamos dados de uso e cookies
-                  para entender como os visitantes interagem com nosso site e otimizar a
-                  experiência do usuário.
+              <h3 className="legal-content__title--h3">{t("legal.privacy.title1b")}</h3>
+              <ul className="legal-content__list">
+                <li className="legal-content__list-item">
+                  <Trans
+                    i18nKey="legal.privacy.li1b_1"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
                 </li>
               </ul>
 
-              <h2 className="m-0">3. Compartilhamento de Informações</h2>
-              <p className="m-0">
-                Nós não vendemos, trocamos ou alugamos suas informações pessoais para terceiros.
-                Podemos compartilhar suas informações apenas com prestadores de serviços
-                terceirizados que nos auxiliam na operação do nosso negócio, como:
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title2")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p2_1")}
               </p>
-              <ul className="m-0">
-                <li>
-                  <strong>Processadores de Pagamento:</strong> (Ex: {PROCESSADOR_PAGAMENTO})
-                  para processar sua compra com segurança.
+              <ul className="legal-content__list">
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li2_1"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
                 </li>
-                <li>
-                  <strong>Plataformas de E-mail Marketing:</strong> (Ex: {PLATAFORMA_EMAIL})
-                  para gerenciar nossa newsletter (apenas se você se inscreveu).
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li2_2"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
+                </li>
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li2_3"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
+                </li>
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li2_4"
+                    components={[<strong className="legal-content__strong" />]}
+                  />
                 </li>
               </ul>
-              <p className="m-0">
-                Exigimos que esses terceiros mantenham suas informações seguras e confidenciais
-                e não as utilizem para outros fins.
+
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title3")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p3_1")}
+              </p>
+              <ul className="legal-content__list">
+                <li className="legal-content__list-item legal-content__list-item--sm">
+                  <Trans
+                    i18nKey="legal.privacy.li3_1"
+                    values={{ paymentProcessor: PROCESSADOR_PAGAMENTO }}
+                    components={[<strong className="legal-content__strong" />]}
+                  />
+                </li>
+              </ul>
+              <p className="legal-content__paragraph legal-content__list-item--sm">
+                {t("legal.privacy.p3_2")}
               </p>
 
-              <h2 className="m-0">4. Segurança dos Dados</h2>
-              <p className="m-0"> 
-                Implementamos medidas de segurança razoáveis para proteger suas informações
-                pessoais contra acesso, alteração ou destruição não autorizados. Nosso site
-                utiliza criptografia SSL (HTTPS). No entanto, nenhum método de transmissão
-                pela Internet ou armazenamento eletrônico é 100% seguro.
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title4")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p4_1")}
               </p>
 
-              <h2 className="m-0">5. Cookies</h2>
-              <p className="m-0">
-                Cookies são pequenos arquivos armazenados em seu dispositivo. Usamos cookies
-                para funcionalidades essenciais (como o carrinho de compras) e para análise
-                (como o Google Analytics). Você pode instruir seu navegador a recusar todos
-                os cookies.
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title5")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p5_1")}
               </p>
 
-              <h2 className="m-0">6. Seus Diretos (Conforme a LGPD)</h2>
-              <p className="m-0">
-                Você tem o direito de acessar, corrigir, atualizar ou solicitar a exclusão
-                de suas informações pessoais. Se desejar exercer algum desses direitos,
-                entre em contato conosco.
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title6")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p6_1")}
               </p>
 
-              <h2 className="m-0">7. Alterações nesta Política de Privacidade</h2>
-              <p className="m-0">
-                Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos
-                sobre quaisquer alterações publicando a nova política nesta página e
-                atualizando a data da "Última atualização".
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title7")}</h2>
+              <p className="legal-content__paragraph">
+                {t("legal.privacy.p7_1")}
               </p>
 
-              <h2 className="m-0">8. Contato</h2>
-              <p className="p-0 m-0">
-                Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em
-                contato conosco através do e-mail: <strong>{SEU_EMAIL_CONTATO}</strong>
+              <h2 className="legal-content__title--h2">{t("legal.privacy.title8")}</h2>
+              <p className="legal-content__paragraph">
+                <Trans
+                  i18nKey="legal.privacy.p8_1"
+                  values={{ email: SEU_EMAIL_CONTATO }}
+                  components={[<strong className="legal-content__strong" />]}
+                />
               </p>
 
-              {/* --- Fim do Texto da Política --- */}
-
-            </div> {/* Fim de .privacy-content */}
+            </div>
           </div>
         </div>
       </div>

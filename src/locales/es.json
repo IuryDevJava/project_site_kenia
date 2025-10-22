@@ -7,18 +7,14 @@
     "FAQ": "FAQ",
     "community": "Comunidad"
   },
-
   "languages": {
     "pt": "Portugués",
     "en": "Inglés",
     "es": "Español"
   },
-
-  
   "about": {
     "textAbout1": "Soy nutricionista e investigadora postdoctoral en la UFRJ, apasionada por conectar ciencia, comida y memorias. Doctora por la Universidad CEU San Pablo y máster por la UFRJ, me especializo en pre-diabetes, salud intestinal y adelgazamiento. En mi libro de recetas de viajes, uno historias y sabores del mundo con una mirada ligera sobre la alimentación.",
     "textAbout2": "Mi misión es demostrar que el adelgazamiento saludable no nace de dietas restrictivas, sino de elecciones inteligentes que cuidan el cuerpo y la relación con la comida.",
-
     "aboutButton": "Saber más"
   },
   "services": {
@@ -28,8 +24,10 @@
     "serviceCardText1": "Plan de alimentación exclusivo, adaptado a tus metas y estilo de vida.",
     "serviceCardTitle2": "Seguimiento nutricional",
     "serviceCardText2": "Monitoreo continuo para garantizar resultados reales y sostenibles.",
-    "serviceCardTitle3": "Atención individualizada",
-    "serviceCardText3": "Cada consulta está diseñada para satisfacer tus necesidades.",
+
+    "serviceCardTitle3": "Teleconsulta",
+    "serviceCardText3": "Teleconsulta especializada para recibirte en tu comodidad",
+
     "serviceCardTitle4": "Programa Nutricional para adelgazar",
     "serviceCardText4": "Estrategias inteligentes para la pérdida de peso con equilibrio y bienestar.",
     "serviceCardTitle5": "Control de la Diabetes",
@@ -37,46 +35,32 @@
     "serviceCardTitle6": "Salud de la Mujer",
     "serviceCardText6": "Cuidado nutricional enfocado en las necesidades femeninas.",
     "serviceCardButton": "Agendar cita",
-
-
-
-
-
     "modalAppointmentsTitle": "Complete los datos a continuación",
     "modalAppointmentsLabel1": "Nombre",
     "modalAppointmentsInput1Placeholder": "Nombre completo",
-
     "modalAppointmentsLabel2": "Teléfono",
     "modalAppointmentsInput2Placeholder": "+34 999 999 999",
-
     "modalAppointmentsLabel3": "Correo electrónico",
     "modalAppointmentsInput3Placeholder": "nombre@correo.com",
-
     "modalAppointmentsSelect": "Tipo de consulta",
     "modalAppointmentsSelectOption1": "Presencial",
     "modalAppointmentsSelectOption2": "En línea / Teleconsulta",
-
     "modalAppointmentsButton": "Agendar",
-
     "modalRedirectTitle": "Espere un momento...",
     "modalRedirectText": "Te estamos redirigiendo a WhatsApp.",
-
     "whatsappGreeting": "¡Hola! Me gustaría agendar una consulta.",
     "whatsappClientData": "Datos del Cliente:",
     "whatsappFooter": "Espero confirmación.",
-
     "appointmentsTitle": "Nuestro espacio",
     "appointmentsText": "Nuestro espacio fue diseñado para ofrecer comodidad, privacidad y una experiencia única en cada consulta."
   },
-
   "formErrors": {
     "requiredField": "El campo {{field}} es obligatorio.",
     "invalidEmail": "Por favor, ingrese un correo electrónico válido.",
     "invalidPhone": "Por favor, ingrese un número de teléfono completo y válido."
   },
-
   "products": {
-    "productsBookTitle": "Cuaderno de Recetas: del mundo a tu casa",
+    "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
     "productsBookText1": "Recetas de autor con inspiración internacional",
     "productsBookText2": "Estilo elegante, diseñado para experiencias gastronómicas únicas",
     "productsBookText3": "Ilustraciones exclusivas en acuarela",
@@ -84,63 +68,50 @@
     "productsBookPreco1": "De",
     "productsBookPreco2": "Por",
     "productsBookButton": "Ver detalles",
-    "productsE-BookTitleName": "La Guía Inteligente para Adelgazar",
+    
+    "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
     "productsE-BookTitle": "E-book",
     "productsE-BookText1": "Descubre cómo tu microbiota puede ser la clave para adelgazar con ligereza y sin dietas complicadas",
     "productsE-BookText2": "Estrategias aplicables y 2 menús semanales para inspirarte en el día a día",
     "productsE-BookText3": "Un ebook práctico con conceptos esenciales",
-    "productsE-BookPreco1": "De R$",
-    "productsE-BookPreco2": "Por R$",
+
+    "productsE-BookPreco1": "De",
+    "productsE-BookPreco2": "Por",
     "productsE-BookButton": "Comprar ahora"
   },
-
-
   "FAQ": {
     "faqTitle": "Preguntas frecuentes",
-
     "faqQuestion1": "¿Puedo devolver el libro si me arrepiento?",
     "faqAnswer1": "Sí. Tienes hasta 7 días corridos después de recibir el libro para desistir de la compra. En ese caso, te devuelvo el importe total pagado.",
-
     "faqQuestion2": "¿Y si el libro llega con algún problema?",
     "faqAnswer2": "Si el libro llega con algún defecto o dañado durante el transporte, puedes elegir: recibir un nuevo ejemplar o que te devuelvan el dinero. Solo avísame y yo me encargaré de todo para que no tengas ningún inconveniente.",
-
     "faqQuestion3": "¿Cuáles son las formas de pago?",
     "faqAnswer3_p1": "Puedes pagar con tarjeta de crédito o Pix.",
     "faqAnswer3_li1": "Con tarjeta de crédito, puedes pagar en hasta 5 cuotas sin interés.",
     "faqAnswer3_li2": "Con Pix, el pago es al contado y la confirmación es rápida.",
-
     "faqQuestion4": "¿En cuánto tiempo envían el libro?",
     "faqAnswer4": "Después de confirmado el pago, preparo todo con cuidado y lo envío por Correo en hasta 2 días hábiles.",
-
     "faqQuestion5": "¿Cuánto tarda en llegar?",
     "faqAnswer5_p1": "El plazo varía según el código postal y el tipo de envío que elijas:",
     "faqAnswer5_li1": "<strong>PAC:</strong> más económico, pero tarda un poco más.",
     "faqAnswer5_li2": "<strong>Sedex:</strong> llega más rápido.",
     "faqAnswer5_p2": "Para que te hagas una idea: alguien en Río de Janeiro lo recibe en unos 3 días hábiles.",
-
     "faqQuestion6": "¿Cómo hago el seguimiento de mi pedido?",
     "faqAnswer6": "Tan pronto como se envíe el libro, recibirás por e-mail el código de seguimiento del Correo. Así podrás seguir cada etapa de la entrega.",
-
     "faqQuestion7": "¿Puedo comprarlo para regalo?",
     "faqAnswer7": "Sí. Solo tienes que poner la dirección de la persona a la que se lo regalas al momento de la compra. Si quieres, puedo incluso incluir una nota especial dentro del paquete.",
-
     "faqQuestion8": "¿Dónde más puedo comprar este libro?",
     "faqAnswer8_li1": "La versión <strong>física</strong> está disponible exclusivamente aquí en mi sitio web.",
     "faqAnswer8_li2": "La versión <strong>digital (eBook)</strong> está disponible en Amazon Kindle.",
-
     "faqQuestion9": "¿Y si tengo otra duda?",
     "faqAnswer9_p1": "Solo tienes que contactarme. Estoy disponible a través de los canales a continuación y soy yo misma quien responde.",
     "faqAnswer9_email": "E-mail:",
     "faqAnswer9_whatsapp": "WhatsApp:"
   },
-
-
   "locale": {
     "localeTitle": "Ubicación",
     "localeText": "Un espacio que combina comodidad, privacidad y elegancia, diseñado para recibirte con toda la exclusividad que mereces."
   },
-
-
   "footer": {
     "footerTextAbout": "Seguimiento nutricional personalizado, enfocado en la salud, el bienestar y el equilibrio alimentario.",
     "footerTextTitleCompany": "Empresa",
@@ -162,13 +133,13 @@
     "footerRodape2_part1": "Desarrollado por ",
     "footerRodape2_part2": "IC Digital Experience"
   },
-
   "bookPage": {
-    "altFront": "Portada del libro Cuaderno de Recetas",
-    "altBack": "Contraportada del libro Cuaderno de Recetas",
-    "title": "Cuaderno de Recetas: del mundo a tu casa",
+    "altFront": "Portada del libro 'Caderno de Receitas: do mundo para sua casa'",
+    "altBack": "Contraportada del libro 'Caderno de Receitas: do mundo para sua casa'",
+    "title": "Caderno de Receitas: do mundo para sua casa",
+
     "subtitle": "Un libro que une gastronomía, memorias y arte.",
-    "desc1": "En \"El cuaderno de recetas: del mundo a tu casa\", la nutricionista y viajera Kenia Bispo presenta un repertorio de recetas inspiradas en sus experiencias, traduciendo la esencia de diferentes culturas a una cocina elegante y llena de significado.",
+    "desc1": "En \"O caderno de receitas: do mundo para a sua casa\", la nutricionista y viajera Kenia Bispo presenta un repertorio de recetas inspiradas en sus experiencias, traduciendo la esencia de diferentes culturas a una cocina elegante y llena de significado.",
     "desc2": "Cada página está acompañada por delicadas acuarelas pintadas por la propia autora...",
     "detailsTitle": "Datos del Libro",
     "detailsLi1": "<strong class=\"strong\">Páginas:</strong> 133",
@@ -177,11 +148,86 @@
     "detailsLi4": "<strong class=\"strong\">Idioma:</strong> Portugués",
     "buttonText": "Comprar ahora"
   },
-
   "communityPage": {
     "altText": "Foto de Kenia Bispo en un entorno de oficina, representando su comunidad de Patreon",
     "title": "Comunidad de Patreon",
     "description": "En mi espacio de Patreon, tienes acceso a contenido que no está en las redes sociales: reflexiones sobre alimentación, hábitos de vida, recetas con historia, guías prácticas y materiales exclusivos. También es un lugar para acercarnos, intercambiar ideas y caminar hacia una vida más ligera y saludable.",
     "buttonText": "Sé parte"
+  },
+  "legal": {
+    "cancellation": {
+      "h1": "Política de Cancelación y Reembolso",
+      "lastUpdated": "Última actualización:",
+      "intro": "Esta política describe cómo manejamos las cancelaciones y reembolsos para <1>{{productName}}</1>.",
+      "title1": "1. Cancelación de la Compra (Derecho de Arrepentimiento)",
+      "p1_1": "Según el Artículo 49 del Código de Defensa del Consumidor de Brasil, el cliente tiene derecho a arrepentirse de la compra de productos adquiridos fuera del establecimiento comercial (como por internet) en un plazo de <1>7 (siete) días corridos</1>, a contar desde la fecha de recepción del producto o de la firma del contrato.",
+      "p1_2": "Para productos digitales (como nuestro e-book), el plazo de 7 días comienza a contar desde la fecha de confirmación del pago y liberación del acceso al material.",
+      "title2": "2. Cómo Solicitar la Cancelación",
+      "p2_1": "Para ejercer su derecho de arrepentimiento, debe notificarnos dentro del plazo de 7 días a través de nuestro canal de atención oficial.",
+      "li2_1": "Envíe un correo electrónico a: <1>{{email}}</1>",
+      "li2_2": "En el correo electrónico, informe su nombre completo, el correo electrónico utilizado en la compra y el motivo \"Solicitud de Cancelación\".",
+      "title3": "3. Procesamiento del Reembolso",
+      "p3_1": "Tras la confirmación de su solicitud (dentro del plazo de 7 días), procederemos con el reembolso total del importe pagado.",
+      "li3_1": "El reembolso se procesará a través del mismo método de pago utilizado en la compra (ej: devolución en la tarjeta de crédito o reembolso vía PIX/transferencia).",
+      "li3_2": "El plazo para la devolución en la tarjeta de crédito puede variar dependiendo del operador de la tarjeta.",
+      "title4": "4. Después del Plazo de 7 Días",
+      "p4_1": "No se aceptarán solicitudes de cancelación o reembolso después de que finalice el plazo legal de 7 días (derecho de arrepentimiento). Al tratarse de un producto digital de consumo inmediato, después de este período, la compra se considera definitiva.",
+      "title5": "5. Contacto",
+      "p5_1": "Para dudas o más información sobre nuestra política de cancelación, contáctenos por correo electrónico: <1>{{email}}</1>."
+    },
+    "terms": {
+      "h1": "Términos de Uso",
+      "lastUpdated": "Última actualización:",
+      "intro": "¡Bienvenido a {{siteName}}! Al acceder y utilizar este sitio ({{siteUrl}}), usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso. Si no está de acuerdo con estos términos, por favor no utilice nuestro sitio.",
+      "title1": "1. Uso del Sitio",
+      "p1_1": "Usted acepta usar este sitio solo para fines lícitos y de una manera que no infrinja los derechos de, ni restrinja o inhiba el uso y disfrute de este sitio por parte de terceros.",
+      "li1_1": "El contenido y los productos vendidos en este sitio están destinados para su uso personal y no comercial.",
+      "li1_2": "No se le permite distribuir, modificar, transmitir, reutilizar o republicar ningún contenido de este sitio para fines públicos o comerciales sin nuestro permiso expreso por escrito.",
+      "title2": "2. Propiedad Intelectual",
+      "p2_1": "Todo el contenido presente en este sitio, incluyendo, pero no limitado a, textos, gráficos, logotipos, íconos, imágenes y el propio libro digital (e-book), es propiedad de {{siteName}} y está protegido por las leyes de derechos de autor.",
+      "p2_2": "Al comprar nuestro producto, usted recibe una licencia limitada, no exclusiva e intransferible para uso personal. No puede copiar, compartir ni revender el producto.",
+      "title3": "3. Limitación de Responsabilidad",
+      "p3_1": "El contenido de este sitio se proporciona \"tal cual\". Si bien nos esforzamos por proporcionar información precisa, no ofrecemos garantías de ningún tipo sobre la exactitud, confiabilidad o integridad del contenido.",
+      "p3_2": "En ninguna circunstancia {{siteName}} será responsable de ningún daño directo, indirecto, incidental o consecuente que resulte del uso o la incapacidad de usar este sitio o sus productos.",
+      "title4": "4. Enlaces a Sitios de Terceros",
+      "p4_1": "Nuestro sitio puede contener enlaces a sitios de terceros (como procesadores de pago o redes sociales). Estos enlaces se proporcionan únicamente para su conveniencia. No tenemos control sobre el contenido o las prácticas de estos sitios y no asumimos ninguna responsabilidad por ellos.",
+      "title5": "5. Cambios en los Términos",
+      "p5_1": "Nos reservamos el derecho de modificar estos Términos de Uso en cualquier momento. Cualquier cambio entrará en vigencia inmediatamente después de su publicación en el sitio. Le recomendamos que revise esta página periódicamente.",
+      "title6": "6. Contacto",
+      "p6_1": "Si tiene alguna pregunta sobre estos Términos de Uso, contáctenos por correo electrónico: <1>{{email}}</1>."
+    },
+    "privacy": {
+      "h1": "Política de Privacidad",
+      "lastUpdated": "Última actualización:",
+      "intro1": "Su privacidad es de suma importancia para nosotros. Esta Política de Privacidad describe cómo <1>{{siteName}}</1> recopila, utiliza, almacena y protege la información personal de los usuarios que visitan e interactúan con nuestro sitio <2>{{siteUrl}}</2>, especialmente en relación con la compra de <3>{{productName}}</3>.",
+      "intro2": "Al utilizar nuestro sitio, usted acepta la recopilación y el uso de información de acuerdo con esta política.",
+      "title1": "1. Información que Recopilamos",
+      "p1_1": "Recopilamos diferentes tipos de información para diversos fines para proporcionar y mejorar nuestro servicio.",
+      "title1a": "a) Información Proporcionada Directamente por Usted:",
+      "li1a_1": "<1>Datos de Compra:</1> Al comprar nuestro producto, solicitamos información personal como nombre completo, dirección de correo electrónico, dirección de envío (si corresponde) e información de pago.",
+      "li1a_2": "<1>Datos de Contacto:</1> Si se suscribe a nuestro boletín informativo o nos contacta, podemos recopilar su nombre y dirección de correo electrónico.",
+      "title1b": "b) Información Recopilada Automáticamente:",
+      "li1b_1": "<1>Cookies y Datos de Uso:</1> Como la mayoría de los sitios, utilizamos cookies para mejorar su experiencia. Podemos recopilar información sobre cómo se accede y utiliza el sitio (por ejemplo, su dirección IP, tipo de navegador, páginas visitadas y horas de acceso).",
+      "title2": "2. Cómo Usamos Su Información",
+      "p2_1": "La información recopilada se utiliza para los siguientes fines:",
+      "li2_1": "<1>Para Procesar su Pedido:</1> Usamos sus datos personales para procesar pagos, gestionar su pedido y entregar el producto.",
+      "li2_2": "<1>Para Comunicación:</1> Para enviar confirmaciones de pedido, recibos, actualizaciones y responder a sus preguntas o solicitudes de soporte.",
+      "li2_3": "<1>Para Marketing (con su consentimiento):</1> Si opta por recibir nuestro boletín, usaremos su correo electrónico para enviar noticias, ofertas especiales e información sobre otros productos o servicios. Puede optar por no recibir estas comunicaciones en cualquier momento.",
+      "li2_4": "<1>Para Mejorar Nuestro Sitio:</1> Usamos datos de uso y cookies para comprender cómo interactúan los visitantes con nuestro sitio y optimizar la experiencia del usuario.",
+      "title3": "3. Intercambio de Información",
+      "p3_1": "No vendemos, intercambiamos ni alquilamos su información personal a terceros. Podemos compartir su información solo con proveedores de servicios externos que nos ayudan a operar nuestro negocio, como:",
+      "li3_1": "<1>Procesadores de Pago:</1> (Ej: {{paymentProcessor}}) para procesar su compra de forma segura.",
+      "p3_2": "Exigimos que estos terceros mantengan su información segura y confidencial y no la utilicen para otros fines.",
+      "title4": "4. Seguridad de los Datos",
+      "p4_1": "Implementamos medidas de seguridad razonables para proteger su información personal contra el acceso, alteración o destrucción no autorizados. Nuestro sitio utiliza cifrado SSL (HTTPS). Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro.",
+      "title5": "5. Cookies",
+      "p5_1": "Las cookies son pequeños archivos almacenados en su dispositivo. Utilizamos cookies para funcionalidades esenciales (como el carrito de compras) y para análisis (como Google Analytics). Puede indicar a su navegador que rechace todas las cookies.",
+      "title6": "6. Sus Derechos (Según la LGPD)",
+      "p6_1": "Usted tiene derecho a acceder, corregir, actualizar o solicitar la eliminación de su información personal. Si desea ejercer alguno de estos derechos, póngase en contacto con nosotros.",
+      "title7": "7. Cambios a esta Política de Privacidad",
+      "p7_1": "Podemos actualizar nuestra Política de Privacidad periódicamente. Le notificaremos cualquier cambio publicando la nueva política en esta página y actualizando la fecha de \"Última actualización\".",
+      "title8": "8. Contacto",
+      "p8_1": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos por correo electrónico: <1>{{email}}</1>"
+    }
   }
 }
