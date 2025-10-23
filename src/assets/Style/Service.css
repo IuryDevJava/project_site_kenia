@@ -6,9 +6,7 @@
 
 /* Cabeçalho da seção */
 .service_header {
-  margin-bottom: 40px;
-  gap: 24px;
-  display: grid;
+  padding-bottom: 32px !important;
 }
 
 .service_header h1 {
@@ -16,39 +14,49 @@
   color: #656565;
   font-weight: 600;
   margin-bottom: 0;
+  justify-content: center;
+  display: flex;
 }
 
-.service_subtitle {
+/* .service_subtitle {
   font-size: 20px;
   color: #8b8985;
   font-weight: 400;
-}
+} */
 
 /* Estilo dos cards de serviço */
 .service_card {
-  background-color: var(--service-card-background);
+  /* background-color: var(--service-card-background); */
+  background-color: #ffffff34;
   border: 1px solid #e3e7f4;
-  padding: 40px 23px 112px;
-  border-radius: 5px;
+  border-radius: 6px;
   box-shadow: 0 15px 20px rgba(62, 19, 77, 0.25);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 32px 18px;
+}
+
+.row_div_card {
+  display: grid !important;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 32px;
 }
 
 .card_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+  padding: 0 0 24px;
+  /* border-bottom: 1px solid #eaeaea; */
   border-bottom: 1px solid #eaeaea;
 }
 
 .card_title {
-  font-size: var(--service-section-card-title-font-size);
-  color: #675018;
-  font-weight: 400;
+  font-size: 22px !important;
+  /* color: #675018; */
+  color: #650000;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -65,7 +73,13 @@
   font-size: 18px !important;
   color: #a09d97;
   line-height: 160%;
-  margin: 0;
+  margin: 24px 0 0;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .row_div_card {
+    gap: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -77,21 +91,26 @@
     font-size: 25px !important;
   }
 
-  .service_subtitle {
-    font-size: 18px !important;
+  .service_card {
+    width: 260px;
+    height: 260px;
   }
 
-  .service_header .service_subtitle {
-    font-size: 20px !important;
+  .row_div_card {
+    grid-template-columns: repeat(2, auto);
+    gap: 24px;
+  }
+
+  .card_header {
+    padding: 0 0 18px;
   }
 
   .service_header {
-    margin-bottom: 32px;
-    gap: 18px;
+    padding-bottom: 24px !important;
   }
 
   .card_title {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 
   .card_icon {
@@ -101,52 +120,40 @@
 
   .card_text {
     font-size: 16px !important;
+    margin: 18px 0 0;
   }
 }
 
 @media (max-width: 767px) {
   .service_section {
     padding: 32px 0 60px !important;
+    overflow-x: hidden;
   }
 
   .service_header {
-    margin-bottom: 18px;
-    gap: 12px;
-    justify-content: center;
+    padding-bottom: 24px !important;
   }
 
   .service_header h1 {
     font-size: 20px !important;
     margin-bottom: 0;
-  }
-
-  .service_header h1,
-  .service_header .service_subtitle {
-    margin: auto;
-  }
-
-  .service_header .service_subtitle {
-    font-size: 16px !important;
-  }
-
-  .row_div_card {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    justify-content: center !important;
+    display: flex !important;
   }
 
   .service_card {
-    background-color: var(--service-card-background);
-    border: 1px solid #e3e7f4;
-    padding: 25px 10px 50px;
-    border-radius: 5px;
-    box-shadow: 0 15px 20px rgba(62, 19, 77, 0.25);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 230px;
+    height: 230px;
+    cursor: grabbing;
+  }
+
+  .row_div_card {
+    /* Esta regra está CORRETA. Desliga o grid. */
+    display: block !important;
   }
 
   .card_title {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 
   .card_icon {
@@ -161,17 +168,40 @@
   .swiper-buttons-wrapper {
     display: none;
   }
-}
 
-@media (max-width: 400px) {
-  .row_div_card {
-    display: grid !important;
-    grid-template-columns: repeat(1, 1fr) !important;
-    max-width: 280px;
-    margin: auto !important;
+  /* --- CORREÇÃO PRINCIPAL AQUI --- */
+
+  .service-swiper {
+    overflow: visible !important; 
+    padding-bottom: 48px !important; 
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin: 0 !important;
   }
 
-  .service_header {
-    margin: 0 0 0 !important;
+  /* 4. POSICIONA os bullets dentro do espaço de 40px que criamos */
+  .service-swiper .swiper-pagination {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    
+  }
+
+  /* Estiliza o bullet ativo */
+  .swiper-pagination-bullet-active {
+    background-color: #65000007;
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+  /* (Bônus) Estiliza os bullets inativos para combinar */
+  .swiper-pagination-bullet {
+    background-color: #c4c4c4;
+    opacity: 0.8;
+    margin: 0 4px 0 !important;
   }
 }

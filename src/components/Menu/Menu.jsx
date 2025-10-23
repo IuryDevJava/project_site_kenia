@@ -146,7 +146,7 @@ const Menu = () => {
               className="hamburger-button"
               onClick={toggleMobileMenu}
             >
-              <span className="material-symbols-outlined">menu</span>
+              <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
             </button>
           </div>
         </div>

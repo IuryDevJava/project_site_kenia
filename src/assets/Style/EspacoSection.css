@@ -72,8 +72,8 @@
   position: static;
   width: 44px;
   height: 44px;
-  background-color: #468d86;
-  border: 1px solid #ffffff;
+  background-color: #468d86 !important;
+  border: 1px solid #ffffff !important;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
