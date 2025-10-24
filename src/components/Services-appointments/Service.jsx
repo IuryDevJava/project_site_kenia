@@ -80,11 +80,8 @@ const useWindowSize = () => {
 
 const Service = () => {
   const { t, i18n } = useTranslation();
-  const { width } = useWindowSize(); // <-- Hook
+  const { width } = useWindowSize();
 
-  // --- MUDANÇA AQUI ---
-  // Se 'width' é undefined, não sabemos o tamanho da tela.
-  // É melhor não renderizar NADA nos cards por enquanto.
   if (width === undefined) {
     return (
       <section className="service_section" id="services">
@@ -140,19 +137,19 @@ const Service = () => {
 
         <div className="row_div_card">
           {isMobile ? (
-            // Versão Mobile (Swiper)
             <Swiper
               modules={[Pagination]}
-              // --- MUDANÇA AQUI ---
-              loop={false} // <-- De 'true' para 'false'
-              // --- FIM DA MUDANÇA ---
+              loopedSlides={2}
+              grabCursor={true}
+              loop={true}
               pagination={{ clickable: true }}
               slidesPerView={"auto"}
               spaceBetween={18}
               className="service-swiper"
             >
               {servicesData.map((service, index) => (
-                <SwiperSlide key={index} style={{ width: "auto" }}>
+                <SwiperSlide key={index} style={{ width: "auto"
+                 }}>
                   <div className="service_cards">
                     {renderServiceCard(service)}
                   </div>

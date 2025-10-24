@@ -49,7 +49,7 @@
   align-items: center;
   padding: 0 0 24px;
   /* border-bottom: 1px solid #eaeaea; */
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .card_title {
@@ -126,82 +126,104 @@
 
 @media (max-width: 767px) {
   .service_section {
-    padding: 32px 0 60px !important;
+    padding: 32px 0 70px !important;
     overflow-x: hidden;
+  }
+
+  .card_header {
+    padding: 0 0 18px !important;
+  }
+
+  .card_title {
+    font-size: 16px !important;
+  }
+
+  .card_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card_text {
+    margin: 18px 0 0 !important;
+    font-size: 14px !important;
   }
 
   .service_header {
     padding-bottom: 24px !important;
   }
 
-  .service_header h1 {
+  h1 {
     font-size: 20px !important;
-    margin-bottom: 0;
+    margin: auto !important;
     justify-content: center !important;
-    display: flex !important;
+    text-align: center !important;
   }
 
   .service_card {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     cursor: grabbing;
+    padding: 18px 18px !important;
+    border: 1px solid #e3e7f4 !important;
+    box-shadow: 0 2px 16px rgba(62, 19, 77, 0.25) !important;
+    /* background-color: #4b310017; */
+    overflow: visible !important;
+    transition: transform 1.5s cubic-bezier(0.17, 0.84, 0.44, 1), box-shadow 0.3s ease;
+    z-index: 10;
+  }
+
+  .service_card:active {
+    transform: scale(1.04);
+    transition: transform 0.2s ease-in;
   }
 
   .row_div_card {
-    /* Esta regra está CORRETA. Desliga o grid. */
     display: block !important;
-  }
-
-  .card_title {
-    font-size: 18px !important;
-  }
-
-  .card_icon {
-    width: 28px;
-    height: 38px;
-  }
-
-  .card_text {
-    font-size: 14px !important;
+    box-shadow: none !important;
+    border: none !important;
   }
 
   .swiper-buttons-wrapper {
     display: none;
   }
 
-  /* --- CORREÇÃO PRINCIPAL AQUI --- */
-
   .service-swiper {
-    overflow: visible !important; 
-    padding-bottom: 48px !important; 
-    margin-left: -15px;
-    margin-right: -15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin: 0 !important;
+    position: relative; 
+  
+  /* 2. MUDA de 'visible' para 'hidden'. Isso esconde a "linha". */
+  overflow: hidden; 
+  
+  /* 3. Adiciona padding-top para o seu scale(1.04) não ser cortado */
+  padding-top: 10px; 
+  
+  /* --- SEU CÓDIGO ORIGINAL (Mantido) --- */
+  width: 150%;
+  padding-bottom: 46px !important;
   }
 
-  /* 4. POSICIONA os bullets dentro do espaço de 40px que criamos */
+  /* --- MUDANÇA 3: AJUSTE DOS BULLETS --- */
   .service-swiper .swiper-pagination {
     position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    
+    display: flex;
+    left: -16.5% !important;
+
+    align-items: center !important;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
   }
 
-  /* Estiliza o bullet ativo */
-  .swiper-pagination-bullet-active {
-    background-color: #65000007;
+  .service-swiper .swiper-pagination-bullet {
+    margin: 0 !important;
+    background-color: #b3b3b3;
     opacity: 1;
-    transform: scale(1.3);
   }
 
-  /* (Bônus) Estiliza os bullets inativos para combinar */
-  .swiper-pagination-bullet {
-    background-color: #c4c4c4;
-    opacity: 0.8;
-    margin: 0 4px 0 !important;
+  .service-swiper .swiper-pagination-bullet-active {
+    background-color: #650000 !important;
+    transform: scale(1.2);
   }
+
 }
