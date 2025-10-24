@@ -122,6 +122,9 @@ const Service = () => {
           <img src={service.icon} className="card_icon" alt={service.alt} />
         </figure>
       </div>
+      <div className="line-card">
+        <hr />
+      </div>
       <div className="card_body">
         <p className="card_text">{t(service.descriptionKey)}</p>
       </div>

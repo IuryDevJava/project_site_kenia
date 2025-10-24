@@ -24,7 +24,7 @@
 }
 
 .div_product_item--purchase {
-  margin-top: 100px;
+  margin: 100px 0 0;
 }
 
 .div_product_image-wrapper,
@@ -36,22 +36,30 @@
   text-align: center;
 }
 
-/* --- Estilos de Texto e Títulos (Desktop) --- */
 .h1_product_title {
   font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 40px;
+  font-weight: 600;
+  margin: 0 !important;
+  padding-bottom: 32px;
 }
 
 .h2_product_subtitle {
   font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 40px;
+  font-weight: 600;
+  margin: 0 !important;
+  padding-bottom: 32px;
 }
 
 .ul_product_features li {
-  margin-bottom: 15px;
+  margin: 0 !important;
   position: relative;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.ul_product_features {
+  display: grid;
+  gap: 24px;
 }
 
 /* --- Card de Compra --- */
@@ -68,7 +76,7 @@
 }
 
 .h3_purchase-card_title {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -81,15 +89,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-}
-
-.span_price_current {
-  font-size: 20px;
+  gap: 8px;
 }
 
 .span_price_original {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.span_price_current {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+s {
+  color: #ff5959;
 }
 
 /* --- Imagens --- */
@@ -108,10 +122,6 @@
   margin-top: 150px;
 }
 
-s {
-  color: #ff5959;
-}
-
 /* ########## RESPONSIVIDADE ########## */
 
 /* --- Tablet (até 991px) --- */
@@ -128,9 +138,8 @@ s {
     gap: 30px;
   }
 
-  /* Espaçamento Reduzido */
   .div_product_item--purchase {
-    margin-top: 80px;
+    margin: 80px 0 0;
   }
 
   .div_purchase-card {
@@ -139,13 +148,21 @@ s {
 
   /* Fontes Reduzidas */
   .h1_product_title {
-    font-size: 25px !important;
+    font-size: 25px;
+    padding-bottom: 24px;
   }
+
   .h2_product_subtitle {
-    font-size: 25px !important;
+    font-size: 25px;
+    padding-bottom: 24px;
   }
+
   .h3_purchase-card_title {
     font-size: 20px;
+  }
+
+  .ul_product_features {
+    gap: 16px;
   }
 
   .div_products_block {
@@ -169,22 +186,21 @@ s {
     height: 300px;
   }
 
-  .span_price_current {
-    font-size: 16px;
+  svg {
+    height: 70px !important;
   }
 
   .span_price_original {
-    font-size: 14px;
+    font-size: 16px;
   }
 
-  svg {
-    height: 70px !important;
+  .span_price_current {
+    font-size: 20px;
   }
 }
 
 /* --- Mobile (até 767px) --- */
 @media (max-width: 767px) {
-
   .section_products {
     padding: 32px 0;
   }
@@ -199,25 +215,25 @@ s {
 
   .div_product_item--purchase {
     align-items: center !important;
-  }
-
-  .div_product_item--purchase {
-    margin-top: 30px;
+    margin: 60px 0 0;
   }
 
   .h1_version_mobile {
-    font-size: 20px !important;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 15px !important;
     text-align: center !important;
   }
+
   .h2_product_subtitle {
     font-size: 20px !important;
     margin-bottom: 15px;
     text-align: center !important;
   }
+
   .h3_purchase-card_title {
     font-size: 18px;
   }
+
   .ul_product_features li {
     font-size: 14px;
   }
@@ -235,11 +251,6 @@ s {
     height: 150px;
   }
 
-  /* .img_product_open-book {
-    width: 290px;
-    height: 220px;
-  } */
-
   .div_purchase-card_covers {
     display: flex;
     gap: 12px;
@@ -249,12 +260,12 @@ s {
     margin-top: 80px;
   }
 
-  .span_price_current {
+  .span_price_original {
     font-size: 14px;
   }
 
-  .span_price_original {
-    font-size: 13px;
+  .span_price_current {
+    font-size: 16px;
   }
 
   .div_purchase-card {
@@ -283,7 +294,15 @@ s {
   .div_product_item.div_product_item--purchase {
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 18px;
+  }
+
+  .div_product_item--purchase {
+    margin: 40px 0 0;
+  }
+
+  .footer-logo {
+    margin: 20px 0 20px;
   }
 
   .div_products_container {

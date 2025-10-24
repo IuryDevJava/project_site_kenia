@@ -13,7 +13,7 @@
   font-size: 30px;
   color: #656565;
   font-weight: 600;
-  margin-bottom: 0;
+  margin: 0;
   justify-content: center;
   display: flex;
 }
@@ -33,7 +33,22 @@
   box-shadow: 0 15px 20px rgba(62, 19, 77, 0.25);
   width: 300px;
   height: 300px;
-  padding: 32px 18px;
+  padding: 32px 32px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 32px !important;
+  margin: 0 !important;
+}
+
+.line-card hr {
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+.line-card {
+  background-color: #650000 !important;
+  opacity: 0.1;
 }
 
 .row_div_card {
@@ -47,9 +62,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 24px;
-  /* border-bottom: 1px solid #eaeaea; */
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .card_title {
@@ -72,8 +84,8 @@
 .card_text {
   font-size: 18px !important;
   color: #a09d97;
-  line-height: 160%;
-  margin: 24px 0 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -92,17 +104,15 @@
   }
 
   .service_card {
-    width: 260px;
-    height: 260px;
+    width: 250px;
+    height: 250px;
+    gap: 24px !important;
+    padding: 24px 24px;
   }
 
   .row_div_card {
     grid-template-columns: repeat(2, auto);
     gap: 24px;
-  }
-
-  .card_header {
-    padding: 0 0 18px;
   }
 
   .service_header {
@@ -120,7 +130,6 @@
 
   .card_text {
     font-size: 16px !important;
-    margin: 18px 0 0;
   }
 }
 
@@ -130,8 +139,13 @@
     overflow-x: hidden;
   }
 
+  .swiper-wrapper {
+    padding: 18px 0 0 !important;
+  }
+
   .card_header {
-    padding: 0 0 18px !important;
+    padding: 0 0 0 !important;
+    margin: 0 !important;
   }
 
   .card_title {
@@ -144,12 +158,9 @@
   }
 
   .card_text {
-    margin: 18px 0 0 !important;
+    margin: 0 !important;
+    margin: 0 0 0 !important;
     font-size: 14px !important;
-  }
-
-  .service_header {
-    padding-bottom: 24px !important;
   }
 
   h1 {
@@ -162,18 +173,19 @@
   .service_card {
     width: 200px;
     height: 200px;
-    cursor: grabbing;
-    padding: 18px 18px !important;
+    padding: 16px 16px !important;
     border: 1px solid #e3e7f4 !important;
-    box-shadow: 0 2px 16px rgba(62, 19, 77, 0.25) !important;
+    box-shadow: 0 2px 8px rgba(62, 19, 77, 0.25) !important;
     /* background-color: #4b310017; */
     overflow: visible !important;
-    transition: transform 1.5s cubic-bezier(0.17, 0.84, 0.44, 1), box-shadow 0.3s ease;
+    transition: transform 1.5s cubic-bezier(0.17, 0.84, 0.44, 1),
+      box-shadow 0.3s ease;
     z-index: 10;
+    gap: 16px !important;
   }
 
   .service_card:active {
-    transform: scale(1.04);
+    transform: scale(1.1);
     transition: transform 0.2s ease-in;
   }
 
@@ -188,25 +200,17 @@
   }
 
   .service-swiper {
-    position: relative; 
-  
-  /* 2. MUDA de 'visible' para 'hidden'. Isso esconde a "linha". */
-  overflow: hidden; 
-  
-  /* 3. Adiciona padding-top para o seu scale(1.04) não ser cortado */
-  padding-top: 10px; 
-  
-  /* --- SEU CÓDIGO ORIGINAL (Mantido) --- */
-  width: 150%;
-  padding-bottom: 46px !important;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+    width: 150%;
+    padding-bottom: 46px !important;
   }
 
-  /* --- MUDANÇA 3: AJUSTE DOS BULLETS --- */
   .service-swiper .swiper-pagination {
     position: absolute;
     display: flex;
     left: -16.5% !important;
-
     align-items: center !important;
     justify-content: center;
     gap: 8px;
@@ -225,5 +229,4 @@
     background-color: #650000 !important;
     transform: scale(1.2);
   }
-
 }
