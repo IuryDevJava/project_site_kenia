@@ -139,8 +139,12 @@
     overflow-x: hidden;
   }
 
+  .service_header {
+    padding-bottom: 0px !important;
+  }
+
   .swiper-wrapper {
-    padding: 18px 0 0 !important;
+    padding: 16px 0 0 !important;
   }
 
   .card_header {
@@ -165,12 +169,12 @@
 
   h1 {
     font-size: 20px !important;
-    margin: auto !important;
     justify-content: center !important;
     text-align: center !important;
   }
 
   .service_card {
+    margin: 0 !important;
     width: 200px;
     height: 200px;
     padding: 16px 16px !important;
