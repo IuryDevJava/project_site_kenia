@@ -326,7 +326,7 @@ s {
   }
 
   .footer-logo {
-    margin: 20px 0 20px;
+    margin: 16px 0 0;
   }
 
   .div_products_container {
@@ -340,7 +340,7 @@ s {
 
   .h1_version_mobile {
     font-size: 18px;
-    margin-bottom: 16px;
+    margin: 0;
   }
 
   .sparkle--1 {

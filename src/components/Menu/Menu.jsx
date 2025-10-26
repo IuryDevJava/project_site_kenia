@@ -53,11 +53,11 @@ const Menu = () => {
               <img
                 className="img_logo_kenia"
                 src={ImgLogoMenuMobile}
-                alt="Logo for Drª Kenia's practice"
+                alt="Logo da Drª Kenia Bispo"
               />
             </picture>
           </figure>
-          <nav className="header-nav">
+          <nav role="navigation" className="header-nav">
             <ul className="header-nav-list list-unstyled">
               <li className="header-nav-item">
                 <HashLink
@@ -142,7 +142,7 @@ const Menu = () => {
               </Dropdown>
             </div>
 
-            <button
+            <button aria-label="Botão de menu" role="button"
               className="hamburger-button"
               onClick={toggleMobileMenu}
             >
@@ -152,7 +152,7 @@ const Menu = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <nav className="mobile-nav">
+          <nav role="navigation" className="mobile-nav">
             <ul className="mobile-nav-list list-unstyled">
               <li className="mobile-nav-item">
                 <HashLink

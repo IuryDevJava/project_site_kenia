@@ -26,16 +26,8 @@
 }
 
 .img-about-content {
-  /* width: 1196px;
-  height: 587px; */
   border-radius: var(--about-img-border-radius);
   border: var(--about-img-border);
-}
-
-.button_arrow {
-  width: 35px;
-  height: 35px;
-  display: none;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -62,7 +54,7 @@
   }
 
   .p-2-text {
-    margin-top: 10px !important;
+    margin-top: 8px !important;
   }
 
   .p-1-text,
@@ -84,9 +76,5 @@
   .row-div-section .div_section_cont {
     flex-direction: column-reverse;
     display: flex;
-  }
-
-  .button_arrow {
-    transform: rotate(315deg);
   }
 }
