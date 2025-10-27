@@ -27,19 +27,19 @@ const About = () => {
             <div className="about_image_container"> 
               <picture>
                
-                <source
+                <source alt="Imagem de Kenia Bispo"
                   media="(min-width: 992px)"
                   srcSet={ImageAboutDesk1}
                 />
                 {/* Imagem para Tablet (telas de 768px até 991px) */}
-                <source
+                <source alt="Imagem de Kenia Bispo"
                   media="(min-width: 768px) and (max-width: 991px)"
                   srcSet={ImageAboutTablet1}
                 />
                 <img
                   className="img-about-content"
                   src={ImageAboutMobile1}
-                  alt="Uma foto de Kenia Bispo"
+                  alt="Imagem de Kenia Bispo"
                 />
               </picture>
             </div>

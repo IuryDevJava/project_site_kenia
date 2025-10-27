@@ -84,12 +84,11 @@ const Faq = () => {
             </p>
             <p className="p-0 m-0">
               {t("FAQ.faqAnswer9_whatsapp")}
-              <a
+              <a aria-label="Link para Whatsapp"
                 className="mx-1"
                 href="https://wa.me/5521969526214"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Link para Whatsapp"
               >
                 {" "}
                 +55 (21) 96952-6214

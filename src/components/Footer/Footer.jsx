@@ -51,9 +51,6 @@ const Footer = () => {
                 <p className="footer-desc">{t("footer.footerTextAbout")}</p>
               </div>
               <div className="footer-social">
-                {/* TODOS OS LINKS EXTERNOS (sociais) ABAIXO ESTÃO CORRETOS.
-                  Eles DEVEM usar <a> e target="_blank".
-                */}
                 <a
                   href={linkLinkedin}
                   target="_blank"
@@ -132,14 +129,6 @@ const Footer = () => {
               {t("footer.footerTextTitleService")}
             </h6>
             <ul className="list-unstyled footer-list">
-              {/* Links de placeholder - Lembre-se de atualizar os 'href="#"'
-                quando tiver as URLs de destino.
-              */}
-              {/* <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  {t("footer.footerTextServicep1")}
-                </a>
-              </li> */}
               <li>
                 <HashLink to="/livro#faq">
                   {t("footer.footerTextServicep2")}
@@ -180,13 +169,11 @@ const Footer = () => {
               </li>
               <li>
                 {/* CORRETO: Link externo (Checkout) usa <a> */}
-                <a
-                  href="https://www.keniabispo.com/checkout?checkoutId=1a2c9665-ab6a-373b-8f52-dfcbfefdd1e8&origin=side+cart"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/livro"
                 >
                   {t("footer.footerTextNutritionp3")}
-                </a>
+                </Link>
               </li>
               {/* <li>
                 <a href="#">{t("footer.footerTextNutritionp4")}</a>

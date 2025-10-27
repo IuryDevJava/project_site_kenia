@@ -52,8 +52,8 @@
     "whatsappGreeting": "Hello! I would like to schedule an appointment.",
     "whatsappClientData": "Client Data:",
     "whatsappFooter": "Awaiting confirmation.",
-    "appointmentsTitle": "Our space",
-    "appointmentsText": "Our space was designed to offer comfort, privacy, and a unique experience in every consultation."
+    "appointmentsTitle": "My space",
+    "appointmentsText": "My space was designed to offer comfort, privacy, and a unique experience in every consultation."
   },
   "formErrors": {
     "requiredField": "The {{field}} field is required.",
