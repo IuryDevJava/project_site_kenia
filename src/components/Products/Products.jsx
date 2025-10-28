@@ -63,7 +63,7 @@ const Products = () => {
                   src={ImageOpenBookMobile2}
                   // CORREÇÃO 6: 'alt' text traduzível e descritivo
                   alt={t('products.bookOpenAlt', "Livro 'Caderno de Receitas' aberto exibindo ilustrações e receitas")}
-                  className="footer-logo"
+                  className="product_image_open-book"
                 />
               </picture>
             </div>

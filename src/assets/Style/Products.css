@@ -325,8 +325,8 @@ s {
     align-items: center !important;
   }
 
-  .footer-logo {
-    margin: 16px 0 0;
+  .product_image_open-book {
+    margin: 16px 0 0 !important;
   }
 
   .div_products_container {
