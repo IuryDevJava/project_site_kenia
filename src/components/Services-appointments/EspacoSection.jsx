@@ -15,7 +15,14 @@ import img5 from "../../assets/images/service-img/Image-card5.png";
 import img6 from "../../assets/images/service-img/Image-card6 1.png";
 
 function EspacoSection() {
-  const espacoImages = [img1, img2, img3, img4, img5, img6];
+  const espacoImages = [
+  { src: img1, altKey: "services.imgAlt1" },
+  { src: img2, altKey: "services.imgAlt2" },
+  { src: img3, altKey: "services.imgAlt3" },
+  { src: img4, altKey: "services.imgAlt4" },
+  { src: img5, altKey: "services.imgAlt5" },
+  { src: img6, altKey: "services.imgAlt6" },
+];
 
   const { t } = useTranslation();
 
@@ -33,6 +40,7 @@ function EspacoSection() {
           <div className="col-lg-8 col-md-12">
             <div className="espaco-carousel-wrapper">
               <Swiper
+              aria-label={t('services.region', 'Galeria de fotos do consultório')}
                 modules={[Navigation, Pagination]}
                 spaceBetween={2}
                 slidesPerView={"auto"}
@@ -50,9 +58,11 @@ function EspacoSection() {
                 className="espaco-swiper"
               >
 
-                {espacoImages.map((imgSrc, index) => (
+                {espacoImages.map((image, index) => (
                   <SwiperSlide key={index}>
-                    <img src={imgSrc} alt={`Foto do espaço ${index + 1}`} />
+                    <img 
+                    src={image.src} 
+                    alt={t(Image.altKey, `Foto do consultório ${index + 1}`)} />
                   </SwiperSlide>
                 ))}
               </Swiper>

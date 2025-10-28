@@ -1,6 +1,7 @@
 {
   "companyName": "IC Digital Experience",
   "header": {
+    "home-page": "Home page",
     "about": "About me",
     "services": "Services and appointments",
     "products": "Products",
@@ -14,6 +15,7 @@
     "es": "Spanish"
   },
   "about": {
+    "imageAlt": "Image of Kenia Bispo in her office",
     "textAbout1": "I am a nutritionist and postdoctoral researcher at UFRJ, passionate about connecting science, food, and memories. With a PhD from Universidad CEU San Pablo and a Master's from UFRJ, I focus on pre-diabetes, gut health, and weight loss. In my travel recipe book, I combine stories and flavors from around the world with a lighthearted approach to eating.",
     "textAbout2": "My mission is to show that healthy weight loss doesn't come from restrictive diets, but from smart choices that take care of the body and the relationship with food.",
     "aboutButton": "Learn more"
@@ -53,7 +55,14 @@
     "whatsappClientData": "Client Data:",
     "whatsappFooter": "Awaiting confirmation.",
     "appointmentsTitle": "My space",
-    "appointmentsText": "My space was designed to offer comfort, privacy, and a unique experience in every consultation."
+    "appointmentsText": "My space was designed to offer comfort, privacy, and a unique experience in every consultation.",
+    "imgAlt1": "Office consultation room with an armchair, table, and bioimpedance scale",
+    "imgAlt2": "Consultation room with armchairs, a table with decorative objects, and a notebook",
+    "imgAlt3": "Consultation room with a chair, table with decorative objects, and a cabinet with objects, books, a picture, and a plant pot",
+    "imgAlt4": "Office reception area with armchairs and a table with a plant pot",
+    "imgAlt5": "Consultation room with an armchair, large white floor cabinet, and a wall cabinet with decorative objects, a printer, and a mirror on the wall",
+    "imgAlt6": "Light brown table with a plant pot and the 'Caderno de Receitas' (Recipe Notebook) book on top",
+    "region": "Office photo gallery"
   },
   "formErrors": {
     "requiredField": "The {{field}} field is required.",
@@ -113,6 +122,11 @@
     "localeText": "A space that combines comfort, privacy, and elegance, designed to welcome you with all the exclusivity you deserve."
   },
   "footer": {
+    "logoAlt": "Drª Kenia Bispo Logo",
+    "ariaLinkedin": "Access the profile on LinkedIn",
+    "ariaInstagram": "Access the profile on Instagram",
+    "ariaYoutube": "Access the channel on YouTube",
+    "ariaWhatsapp": "Start conversation on WhatsApp",
     "footerTextAbout": "Personalized nutritional monitoring, focused on health, well-being, and dietary balance.",
     "footerTextTitleCompany": "Company",
     "footerTextCompanyp1": "About me",

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import ImgLogoMenuDesk from "../../assets/images/menu-img/logo (6).png";
 import ImgLogoMenuTablet from "../../assets/images/menu-img/logo-tablet.png";
@@ -22,6 +22,9 @@ const availableLanguages = [
 
 const Menu = () => {
   const { t, i18n } = useTranslation();
+
+  const location = useLocation();
+  const currentPath = location.pathname + location.hash;
 
   const [currentLanguage, setCurrentLanguage] = useState(
     () =>
@@ -43,34 +46,49 @@ const Menu = () => {
     <header className="header">
       <div className="container div_container_header">
         <div className="header-wrapper">
-          <figure className="header-logo">
-            <picture>
-              <source media="(min-width: 992px)" srcSet={ImgLogoMenuDesk} />
-              <source
-                media="(min-width: 768px) and (max-width: 991px)"
-                srcSet={ImgLogoMenuTablet}
-              />
-              <img
-                className="img_logo_kenia"
-                src={ImgLogoMenuMobile}
-                alt="Logo da Drª Kenia Bispo"
-              />
-            </picture>
-          </figure>
-          <nav role="navigation" className="header-nav">
+          <Link to="/" aria-label={t("header.home-page", "Página inicial")}>
+            <figure className="header-logo">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcSet={ImgLogoMenuDesk}
+                  alt="Logo da Drª Kenia Bispo"
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 991px)"
+                  srcSet={ImgLogoMenuTablet}
+                  alt="Logo da Drª Kenia Bispo"
+                />
+                <img
+                  className="img_logo_kenia"
+                  src={ImgLogoMenuMobile}
+                  alt="Logo da Drª Kenia Bispo"
+                />
+              </picture>
+            </figure>
+          </Link>
+
+          <nav className="header-nav">
             <ul className="header-nav-list list-unstyled">
               <li className="header-nav-item">
                 <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#about"
+                  aria-current={
+                    currentPath === "/#about" ? "location" : undefined
+                  }
                 >
                   {t("header.about")}
                 </HashLink>
               </li>
+
               <li className="header-nav-item">
                 <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#services"
+                  aria-current={
+                    currentPath === "/#services" ? "location" : undefined
+                  }
                 >
                   {t("header.services")}
                 </HashLink>
@@ -79,6 +97,9 @@ const Menu = () => {
                 <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/#products"
+                  aria-current={
+                    currentPath === "/#products" ? "location" : undefined
+                  }
                 >
                   {t("header.products")}
                 </HashLink>
@@ -87,6 +108,9 @@ const Menu = () => {
                 <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/comunidade"
+                  aria-current={
+                    location.pathname === "/comunidade" ? "page" : undefined
+                  }
                 >
                   {t("header.exclusive-space")}
                 </HashLink>
@@ -95,6 +119,9 @@ const Menu = () => {
                 <HashLink
                   className="header-nav-link text-decoration-none"
                   to="/livro#faq"
+                  aria-current={
+                    currentPath === "/livro#faq" ? "location" : undefined
+                  }
                 >
                   {t("header.FAQ")}
                 </HashLink>
@@ -108,6 +135,11 @@ const Menu = () => {
                 <Dropdown.Toggle
                   id="dropdown-language"
                   className="language-switcher-toggle"
+                  aria-label={t(
+                    "header.select-language",
+                    "Selecionar idioma, idioma atual: {{language}}",
+                    { language: t(`languages.${currentLanguage.id}`) }
+                  )}
                 >
                   <img
                     className="language-switcher-flag mx-1"
@@ -142,23 +174,35 @@ const Menu = () => {
               </Dropdown>
             </div>
 
-            <button aria-label="Botão de menu" role="button"
+            <button
+              aria-label={
+                isMobileMenuOpen
+                  ? t("header.close-menu", "Fechar menu")
+                  : t("header.open-menu", "Abrir menu")
+              }
               className="hamburger-button"
               onClick={toggleMobileMenu}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-nav-menu"
             >
-              <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
+              <span className="material-symbols-outlined">
+                {isMobileMenuOpen ? "close" : "menu"}
+              </span>
             </button>
           </div>
         </div>
 
         {isMobileMenuOpen && (
-          <nav role="navigation" className="mobile-nav">
+          <nav id="mobile-nav-menu" className="mobile-nav">
             <ul className="mobile-nav-list list-unstyled">
               <li className="mobile-nav-item">
                 <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/#about"
                   onClick={toggleMobileMenu}
+                  aria-current={
+                    currentPath === "/#about" ? "location" : undefined
+                  }
                 >
                   {t("header.about")}
                 </HashLink>
@@ -168,6 +212,9 @@ const Menu = () => {
                   className="mobile-nav-link text-decoration-none"
                   to="/#services"
                   onClick={toggleMobileMenu}
+                  aria-current={
+                    currentPath === "/#services" ? "location" : undefined
+                  }
                 >
                   {t("header.services")}
                 </HashLink>
@@ -177,6 +224,9 @@ const Menu = () => {
                   className="mobile-nav-link text-decoration-none"
                   to="/#products"
                   onClick={toggleMobileMenu}
+                  aria-current={
+                    currentPath === "/#products" ? "location" : undefined
+                  }
                 >
                   {t("header.products")}
                 </HashLink>
@@ -185,6 +235,10 @@ const Menu = () => {
                 <HashLink
                   className="mobile-nav-link text-decoration-none"
                   to="/comunidade"
+                  onClick={toggleMobileMenu}
+                  aria-current={
+                    location.pathname === "/comunidade" ? "page" : undefined
+                  }
                 >
                   {t("header.exclusive-space")}
                 </HashLink>
@@ -194,11 +248,13 @@ const Menu = () => {
                   className="mobile-nav-link text-decoration-none"
                   to="/livro#faq"
                   onClick={toggleMobileMenu}
+                  aria-current={
+                    currentPath === "/livro#faq" ? "location" : undefined
+                  }
                 >
                   {t("header.FAQ")}
                 </HashLink>
               </li>
-              
             </ul>
           </nav>
         )}

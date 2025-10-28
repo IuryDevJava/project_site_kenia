@@ -1,6 +1,7 @@
 {
   "companyName": "IC Digital Experience",
   "header": {
+    "home-page": "Página inicial",
     "about": "Sobre mim",
     "services": "Serviços e agendamentos",
     "products": "Produtos",
@@ -16,6 +17,7 @@
   },
 
   "about": {
+    "imageAlt": "Imagem de Kenia Bispo no consultório",
     "textAbout1": "Sou nutricionista e pesquisadora de pós-doutorado na UFRJ, apaixonada por conectar ciência, comida e memórias. Doutora pela Universidad CEU San Pablo e mestre pela UFRJ, atuo em pré-diabetes, saúde intestinal e emagrecimento. Em meu livro de receitas de viagens, uno histórias e sabores do mundo com um olhar leve sobre a alimentação.",
     "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não nasce de dietas restritivas, mas de escolhas inteligentes que cuidam do corpo e da relação com a comida.",
     "aboutButton": "Saiba mais"
@@ -68,7 +70,14 @@
     "whatsappFooter": "Aguardo confirmação.",
 
     "appointmentsTitle": "Meu espaço",
-    "appointmentsText": "Meu espaço foi pensado para oferecer conforto, privacidade e uma experiência única em cada consulta."
+    "appointmentsText": "Meu espaço foi pensado para oferecer conforto, privacidade e uma experiência única em cada consulta.",
+    "imgAlt1": "Sala de atendimento do consultório com poltrona, mesa e balança de bioimpedância",
+    "imgAlt2": "Sala de atendimento com poltronas, mesa com objetos de decoração e um notebook",
+    "imgAlt3": "Sala de atendimento com uma cadeira, mesa com objetos de decoração e um armário com objetos, livros, quadro e vaso de planta",
+    "imgAlt4": "Recepção do consultório com poltronas e uma mesa com vaso de planta",
+    "imgAlt5": "Sala de atendimento com poltrona, armário branco grande de chão e armário de parede com objetos de decoração, impressora, espelho na parede",
+    "imgAlt6": "Mesa marrom claro com vaso de planta e livro Caderno de Receitas em cima",
+    "region": "Galeria de fotos do consultório"
   },
 
   "formErrors": {
@@ -132,7 +141,7 @@
 
     "faqQuestion8": "Onde mais posso comprar esse livro?",
     "faqAnswer8_li1": "A versão <strong>física</strong> está disponível exclusivamente aqui no meu site.",
-    "faqAnswer8_li2": "A versão <strong>digital (eBook)</strong> está disponível na Amazon Kindle.",
+    "faqAnswer8_li2": "A versão <1>digital (eBook)</1> está disponível na Amazon Kindle.",
 
     "faqQuestion9": "E se eu tiver outra dúvida?",
     "faqAnswer9_p1": "É só me chamar. Estou disponível pelos canais abaixo e sou eu mesma que respondo.",
@@ -146,6 +155,11 @@
   },
 
   "footer": {
+    "logoAlt": "Logo da Drª Kenia Bispo",
+    "ariaLinkedin": "Acessar o perfil no LinkedIn",
+    "ariaInstagram": "Acessar o perfil no Instagram",
+    "ariaYoutube": "Acessar o canal no YouTube",
+    "ariaWhatsapp": "Iniciar conversa no WhatsApp",
     "footerTextAbout": "Acompanhamento nutricional personalizado, com foco em saúde, bem-estar e equilíbrio alimentar.",
     "footerTextTitleCompany": "Empresa",
     "footerTextCompanyp1": "Sobre mim",

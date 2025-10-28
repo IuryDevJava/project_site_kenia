@@ -1,6 +1,7 @@
 {
   "companyName": "IC Digital Experience",
   "header": {
+    "home-page": "Página de inicio",
     "about": "Sobre mí",
     "services": "Servicios y citas",
     "products": "Productos",
@@ -14,6 +15,7 @@
     "es": "Español"
   },
   "about": {
+    "imageAlt": "Imagen de Kenia Bispo en su consultorio",
     "textAbout1": "Soy nutricionista e investigadora postdoctoral en la UFRJ, apasionada por conectar ciencia, comida y memorias. Doctora por la Universidad CEU San Pablo y máster por la UFRJ, me especializo en pre-diabetes, salud intestinal y adelgazamiento. En mi libro de recetas de viajes, uno historias y sabores del mundo con una mirada ligera sobre la alimentación.",
     "textAbout2": "Mi misión es demostrar que el adelgazamiento saludable no nace de dietas restrictivas, sino de elecciones inteligentes que cuidan el cuerpo y la relación con la comida.",
     "aboutButton": "Saber más"
@@ -53,7 +55,14 @@
     "whatsappClientData": "Datos del Cliente:",
     "whatsappFooter": "Espero confirmación.",
     "appointmentsTitle": "Mi espacio",
-    "appointmentsText": "Nuestro espacio fue diseñado para ofrecer comodidad, privacidad y una experiencia única en cada consulta."
+    "appointmentsText": "Nuestro espacio fue diseñado para ofrecer comodidad, privacidad y una experiencia única en cada consulta.",
+    "imgAlt1": "Sala de consulta del consultorio con sillón, mesa y báscula de bioimpedancia",
+    "imgAlt2": "Sala de consulta con sillones, mesa con objetos de decoración y un notebook",
+    "imgAlt3": "Sala de consulta con una silla, mesa con objetos de decoración y un armario con objetos, libros, un cuadro y una maceta",
+    "imgAlt4": "Recepción del consultorio con sillones y una mesa con una maceta",
+    "imgAlt5": "Sala de consulta con sillón, armario blanco grande de suelo y armario de pared con objetos de decoración, impresora y espejo en la pared",
+    "imgAlt6": "Mesa marrón claro con una maceta y el libro 'Caderno de Receitas' (Cuaderno de Recetas) encima",
+    "region": "Galería de fotos del consultorio"
   },
   "formErrors": {
     "requiredField": "El campo {{field}} es obligatorio.",
@@ -114,6 +123,11 @@
     "localeText": "Un espacio que combina comodidad, privacidad y elegancia, diseñado para recibirte con toda la exclusividad que mereces."
   },
   "footer": {
+    "logoAlt": "Logo de la Drª Kenia Bispo",
+    "ariaLinkedin": "Acceder al perfil en LinkedIn",
+    "ariaInstagram": "Acceder al perfil en Instagram",
+    "ariaYoutube": "Acceder al canal en YouTube",
+    "ariaWhatsapp": "Iniciar conversación en WhatsApp",
     "footerTextAbout": "Seguimiento nutricional personalizado, enfocado en la salud, el bienestar y el equilibrio alimentario.",
     "footerTextTitleCompany": "Empresa",
     "footerTextCompanyp1": "Sobre mí",

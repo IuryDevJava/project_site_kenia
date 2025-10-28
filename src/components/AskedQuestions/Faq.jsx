@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/Style/Faq.css";
 
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 
 const Faq = () => {
   const { t } = useTranslation();
@@ -42,8 +42,17 @@ const Faq = () => {
         <>
           <p className="p-0 m-0">{t("FAQ.faqAnswer5_p1")}</p>
           <ul>
-            <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer5_li1") }} />
-            <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer5_li2") }} />
+            {/* ESTA É A FORMA CORRETA */}
+            <li>
+              <Trans i18nKey="FAQ.faqAnswer5_li1">
+                <strong>PAC:</strong> mais econômico, mas demora um pouco mais.
+              </Trans>
+            </li>
+            <li>
+              <Trans i18nKey="FAQ.faqAnswer5_li2">
+                <strong>Sedex:</strong> chega mais rápido.
+              </Trans>
+            </li>
           </ul>
           <p className="p-0 m-0">{t("FAQ.faqAnswer5_p2")}</p>
         </>
@@ -65,8 +74,18 @@ const Faq = () => {
       answer: (
         <>
           <ul className="px-4 p-0 m-0">
-            <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer8_li1") }} />
-            <li dangerouslySetInnerHTML={{ __html: t("FAQ.faqAnswer8_li2") }} />
+            <li>
+              <Trans i18nKey="FAQ.faqAnswer8_li1">
+                A versão <strong>física</strong> está disponível exclusivamente
+                aqui no meu site.
+              </Trans>
+            </li>
+            <li>
+              <Trans i18nKey="FAQ.faqAnswer8_li2">
+                A versão <strong>digital (eBook)</strong> está disponível na
+                Amazon Kindle.
+              </Trans>
+            </li>
           </ul>
         </>
       ),
@@ -80,11 +99,20 @@ const Faq = () => {
           <div className="faq-contact-info">
             <p className="">
               {t("FAQ.faqAnswer9_email")}
-              <span className="mx-1">kenia.bispo@hotmail.com</span>
+              <a
+                className="mx-1"
+                href="mailto:kenia.bispo@hotmail.com"
+                aria-label={t(
+                  "FAQ.emailAriaLabel",
+                  "Enviar e-mail para kenia.bispo@hotmail.com"
+                )}
+              >
+                kenia.bispo@hotmail.com
+              </a>
             </p>
             <p className="p-0 m-0">
               {t("FAQ.faqAnswer9_whatsapp")}
-              <a aria-label="Link para Whatsapp"
+              <a
                 className="mx-1"
                 href="https://wa.me/5521969526214"
                 target="_blank"

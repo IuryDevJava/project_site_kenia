@@ -6,10 +6,7 @@ import { useTranslation } from "react-i18next";
 import ImageLogoFooterDesk from "../../assets/images/footer-img/logo_footer_desk.png";
 import ImageLogoFooterTablet from "../../assets/images/footer-img/logo_footer_tablet.png";
 import ImageLogoFooterMobile from "../../assets/images/footer-img/logo_footer_mobile.png";
-
-// 1. MANTENHA O 'Link' para a página /privacidade
 import { Link } from "react-router-dom";
-// 2. ADICIONE O 'HashLink' para os links de âncora
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -29,25 +26,26 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="container">
         <div className="row footer-top">
-          <div className="col-12 col-md-6 col-lg-3">
+          <div className="col-12 col-md-6 col-lg-3 footer-response-brand">
             <div className="footer-brand">
               <div className="flex_items_imgtext">
-                <picture>
-                  {/* ... (código da imagem - sem alteração) ... */}
-                  <source
-                    media="(min-width: 992px)"
-                    srcSet={ImageLogoFooterDesk}
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcSet={ImageLogoFooterTablet}
-                  />
-                  <img
-                    src={ImageLogoFooterMobile}
-                    alt="Logo"
-                    className="footer-logo"
-                  />
-                </picture>
+                <Link to="/">
+                  <picture>
+                    <source
+                      media="(min-width: 992px)"
+                      srcSet={ImageLogoFooterDesk}
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcSet={ImageLogoFooterTablet}
+                    />
+                    <img
+                      src={ImageLogoFooterMobile}
+                      alt={t('footer.logoAlt', 'Logo da Drª Kenia Bispo')}
+                      className="footer-logo"
+                    />
+                  </picture>
+                </Link>
                 <p className="footer-desc">{t("footer.footerTextAbout")}</p>
               </div>
               <div className="footer-social">
@@ -55,37 +53,37 @@ const Footer = () => {
                   href={linkLinkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="LinkedIn"
+                  aria-label={t('footer.ariaLinkedin', 'Acessar o perfil no LinkedIn')}
                   className="social-btn"
                 >
-                  <i className="bi bi-linkedin"></i>{" "}
+                  <i className="bi bi-linkedin" aria-hidden="true"></i>{" "}
                 </a>
                 <a
                   href={linkInstagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label={t('footer.ariaInstagram', 'Acessar o perfil no Instagram')}
                   className="social-btn"
                 >
-                  <i className="bi bi-instagram"></i>{" "}
+                  <i className="bi bi-instagram" aria-hidden="true"></i>{" "}
                 </a>
                 <a
                   href={linkYoutube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="YouTube"
+                  aria-label={t('footer.ariaYoutube', 'Acessar o canal no YouTube')}
                   className="social-btn"
                 >
-                  <i className="bi bi-youtube"></i>{" "}
+                  <i className="bi bi-youtube" aria-hidden="true"></i>{" "}
                 </a>
                 <a
                   href={linkWhatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="WhatsApp"
+                  aria-label={t('footer.ariaWhatsapp', 'Iniciar conversa no WhatsApp')}
                   className="social-btn"
                 >
-                  <i className="bi bi-whatsapp"></i>{" "}
+                  <i className="bi bi-whatsapp" aria-hidden="true"></i>{" "}
                 </a>
               </div>
             </div>
@@ -97,33 +95,28 @@ const Footer = () => {
             </h6>
             <ul className="list-unstyled footer-list">
               <li>
-                {/* 3. CORRIGIDO: Trocado <a> por <HashLink> */}
                 <HashLink to="/#about">
                   {t("footer.footerTextCompanyp1")}
                 </HashLink>
               </li>
               <li>
-                {/* 4. CORRIGIDO: Trocado <a> por <HashLink> */}
                 <HashLink to="/#services">
                   {t("footer.footerTextCompanyp2")}
                 </HashLink>
               </li>
               <li>
-                {/* 5. CORRIGIDO: Trocado <a> por <HashLink> */}
                 <HashLink to="/#products">
                   {t("footer.footerTextCompanyp3")}
                 </HashLink>
               </li>
               <li>
-                {/* 6. CORRETO: Este link já estava certo!
-                  Ele usa <Link> (normal) para uma página interna.
-                */}
-                <Link to="/politica-de-privacidade">{t("footer.footerTextCompanyp4")}</Link>
+                <Link to="/politica-de-privacidade">
+                  {t("footer.footerTextCompanyp4")}
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3 */}
           <div className="col-6 col-md-6 col-lg-3 div_col_service">
             <h6 className="footer-title">
               {t("footer.footerTextTitleService")}
@@ -158,7 +151,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                {/* CORRETO: Link externo (Hotmart) usa <a> */}
                 <a
                   href="https://pay.hotmart.com/M100399386O?bid=1750428900670"
                   target="_blank"
@@ -168,16 +160,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                {/* CORRETO: Link externo (Checkout) usa <a> */}
-                <Link
-                  to="/livro"
-                >
-                  {t("footer.footerTextNutritionp3")}
-                </Link>
+                <Link to="/livro">{t("footer.footerTextNutritionp3")}</Link>
               </li>
-              {/* <li>
-                <a href="#">{t("footer.footerTextNutritionp4")}</a>
-              </li> */}
             </ul>
           </div>
         </div>
@@ -191,7 +175,7 @@ const Footer = () => {
               {t("footer.footerRodape2_part1")}
               <a
                 className="a_icdigitalexperience"
-                href="#" // Lembre-se de atualizar este link
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
               >
