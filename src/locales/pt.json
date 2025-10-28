@@ -88,26 +88,30 @@
 
   "products": {
     "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
+    "productsBookTitleStyled": "Caderno de Receitas: <1/> do mundo para sua casa",
     "productsBookText1": "Receitas autorais com inspiração internacional",
     "productsBookText2": "Estilo elegante, pensado para experiências gastronômicas diferenciadas",
     "productsBookText3": "Ilustrações exclusivas em aquarela",
     "productsBookText4": "Uma obra que une arte, cultura e sabor",
-
-    "productsBookPreco1": "De",
-    "productsBookPreco2": "Por",
-
     "productsBookButton": "Ver detalhes",
 
     "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
+    "productsE-BookTitleNameStyled": "Guia Inteligente do <1/> Emagrecimento",
     "productsE-BookTitle": "E-book",
     "productsE-BookText1": "Descubra como a sua microbiota pode ser a chave para emagrecer com leveza e sem dietas complicadas",
     "productsE-BookText2": "Estratégias aplicáveis e 2 cardápios semanais para te inspirar no dia a dia",
     "productsE-BookText3": "Um ebook prático, com conceitos essenciais",
+    "productsE-BookButton": "Comprar agora",
 
-    "productsE-BookPreco1": "De",
-    "productsE-BookPreco2": "Por",
+    "bookOpenAlt": "Livro 'Caderno de Receitas' aberto exibindo ilustrações e receitas",
+    "bookFrontAlt": "Capa frontal do livro 'Caderno de Receitas'",
+    "bookBackAlt": "Capa traseira do livro 'Caderno de Receitas'",
+    "ebookCoverAlt": "Capa do Ebook 'Guia Inteligente do Emagrecimento'",
 
-    "productsE-BookButton": "Comprar agora"
+    "productsBookPriceOld": "De <1>R$ 197,00</1>",
+    "productsBookPriceNew": "Por <1>R$ 97,00</1>",
+    "productsEbookPriceOld": "De <1>R$ 97,00</1>",
+    "productsEbookPriceNew": "Por <1>R$ 27,00</1>"
   },
 
   "FAQ": {

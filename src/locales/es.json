@@ -69,26 +69,38 @@
     "invalidEmail": "Por favor, ingrese un correo electrónico válido.",
     "invalidPhone": "Por favor, ingrese un número de teléfono completo y válido."
   },
+
+
+
   "products": {
-    "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
+    "productsBookTitle": "Cuaderno de Recetas: del mundo a tu casa",
+    "productsBookTitleStyled": "Cuaderno de Recetas: <1/> del mundo a tu casa",
     "productsBookText1": "Recetas de autor con inspiración internacional",
-    "productsBookText2": "Estilo elegante, diseñado para experiencias gastronómicas únicas",
+    "productsBookText2": "Estilo elegante, pensado para experiencias gastronómicas diferenciadas",
     "productsBookText3": "Ilustraciones exclusivas en acuarela",
     "productsBookText4": "Una obra que une arte, cultura y sabor",
-    "productsBookPreco1": "De",
-    "productsBookPreco2": "Por",
     "productsBookButton": "Ver detalles",
-    
-    "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
+
+    "productsE-BookTitleName": "Guía Inteligente para Adelgazar",
+    "productsE-BookTitleNameStyled": "Guía Inteligente para <1/> Adelgazar",
     "productsE-BookTitle": "E-book",
     "productsE-BookText1": "Descubre cómo tu microbiota puede ser la clave para adelgazar con ligereza y sin dietas complicadas",
     "productsE-BookText2": "Estrategias aplicables y 2 menús semanales para inspirarte en el día a día",
-    "productsE-BookText3": "Un ebook práctico con conceptos esenciales",
+    "productsE-BookText3": "Un ebook práctico, con conceptos esenciales",
+    "productsE-BookButton": "Comprar ahora",
 
-    "productsE-BookPreco1": "De",
-    "productsE-BookPreco2": "Por",
-    "productsE-BookButton": "Comprar ahora"
+    "bookOpenAlt": "Libro 'Cuaderno de Recetas' abierto mostrando ilustraciones y recetas",
+    "bookFrontAlt": "Portada frontal del libro 'Cuaderno de Recetas'",
+    "bookBackAlt": "Contraportada del libro 'Cuaderno de Recetas'",
+    "ebookCoverAlt": "Portada del Ebook 'Guía Inteligente para Adelgazar'",
+
+    "productsBookPriceOld": "De <1>R$ 197,00</1>",
+    "productsBookPriceNew": "Por <1>R$ 97,00</1>",
+    "productsEbookPriceOld": "De <1>R$ 97,00</1>",
+    "productsEbookPriceNew": "Por <1>R$ 27,00</1>"
   },
+
+  
   "FAQ": {
     "faqTitle": "Preguntas frecuentes",
     "faqQuestion1": "¿Puedo devolver el libro si me arrepiento?",

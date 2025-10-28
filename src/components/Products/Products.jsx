@@ -2,13 +2,13 @@ import React from "react";
 import "../../assets/Style/Products.css";
 import AnimatedButton from "./AnimatedButton";
 
-import { useTranslation } from "react-i18next";
+// CORREÇÃO 1: Importar <Trans> para lidar com HTML nas traduções
+import { useTranslation, Trans } from "react-i18next";
 
 import ImageOpenBookDesk from "../../assets/images/products-img/Image-open-livro.png";
 import ImageOpenBookTablet from "../../assets/images/products-img/Image-open-livro 2.png";
 import ImageOpenBookMobile2 from "../../assets/images/products-img/Image-open-livro 3.png";
 import ImageOpenBookMobile1 from "../../assets/images/products-img/Image-open-livro 4.png";
-
 
 import ImageBookFront from "../../assets/images/products-img/BookFront.png";
 import ImageBookBack from "../../assets/images/products-img/LivroBack.png";
@@ -26,60 +26,58 @@ const Products = () => {
 
   return (
     <section className="section_products" id="products">
-      <SparkleIcon className="sparkle_icon sparkle--1" />
-      <SparkleIcon className="sparkle_icon sparkle--2" />
+      {/* CORREÇÃO 2: Imagem decorativa escondida */}
+      <SparkleIcon className="sparkle_icon sparkle--1" aria-hidden="true" />
+      <SparkleIcon className="sparkle_icon sparkle--2" aria-hidden="true" />
       <img
         className="img_decoration_heart"
         src={ImageHartDecoration}
-        alt="Decoração de coração"
+        alt="" // <-- CORREÇÃO 2: Imagem decorativa
       />
 
       <div className="div_products_container">
         <div className="div_product_block">
           <div className="div_product_item">
             <div className="div_product_image-wrapper">
-              <h1 className="h1_version_mobile">
-                Caderno de Receitas: do mundo para sua casa
-              </h1>
+              {/* CORREÇÃO 3 e 4: Trocado <h1> por <h2> e usando i18n */}
+              <h2 className="h1_version_mobile">
+                {t("products.productsBookTitle")}
+              </h2>
 
               <picture>
-                {/* Imagem para Desktop (telas a partir de 1024px) */}
+                {/* CORREÇÃO 5: Removido 'alt' inválido das tags <source> */}
                 <source
                   media="(min-width: 992px)"
-                  alt="Livro Aberto"
                   srcSet={ImageOpenBookDesk}
                 />
-                {/* Imagem para Tablet (telas a partir de 768px) */}
                 <source
                   media="(min-width: 767px) and (max-width: 991px)"
-                  alt="Livro Aberto"
                   srcSet={ImageOpenBookTablet}
                 />
-
                 <source
                   media="(max-width: 460px)"
-                  alt="Livro Aberto"
                   srcSet={ImageOpenBookMobile1}
                 />
 
-                {/* Imagem padrão (Mobile) e fallback */}
                 <img
                   src={ImageOpenBookMobile2}
-                  alt="Livro Aberto"
+                  // CORREÇÃO 6: 'alt' text traduzível e descritivo
+                  alt={t('products.bookOpenAlt', "Livro 'Caderno de Receitas' aberto exibindo ilustrações e receitas")}
                   className="footer-logo"
                 />
               </picture>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
-              <h1 className="h1_product_title">
-                Caderno de Receitas: <br />
-                do mundo para sua casa
-              </h1>
+              {/* CORREÇÃO 3 e 4: Trocado <h1> por <h2> e usando <Trans> para <br> */}
+              <h2 className="h1_product_title">
+                <Trans i18nKey="products.productsBookTitleStyled">
+                  Caderno de Receitas: <br />
+                  do mundo para sua casa
+                </Trans>
+              </h2>
               <ul className="ul_product_features">
                 <li>{t("products.productsBookText1")}</li>
-                <li>
-                  {t("products.productsBookText2")}
-                </li>
+                <li>{t("products.productsBookText2")}</li>
                 <li>{t("products.productsBookText3")}</li>
                 <li>{t("products.productsBookText4")}</li>
               </ul>
@@ -92,30 +90,40 @@ const Products = () => {
                 <div className="div_purchase-card_covers">
                   <img
                     src={ImageBookFront}
-                    alt="Capa frontal do livro"
+                    // CORREÇÃO 6: 'alt' text traduzível e descritivo
+                    alt={t('products.bookFrontAlt', "Capa frontal do livro 'Caderno de Receitas'")}
                     className="img_purchase-card_cover"
                   />
                   <img
                     src={ImageBookBack}
-                    alt="Capa traseira do livro"
+                    // CORREÇÃO 6: 'alt' text traduzível e descritivo
+                    alt={t('products.bookBackAlt', "Capa traseira do livro 'Caderno de Receitas'")}
                     className="img_purchase-card_cover"
                   />
                 </div>
+                {/* CORREÇÃO 7: Preços "hardcoded" movidos para i18n usando <Trans> */}
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
-                    {t("products.productsBookPreco1")} <s>R$ 197,00</s>
+                    <Trans i18nKey="products.productsBookPriceOld">
+                      De <s>R$ 197,00</s>
+                    </Trans>
                   </span>
                   <span className="span_price_current">
-                    {t("products.productsBookPreco2")} <strong>R$ 97,00</strong>
+                    <Trans i18nKey="products.productsBookPriceNew">
+                      Por <strong>R$ 97,00</strong>
+                    </Trans>
                   </span>
                 </div>
-                <AnimatedButton text={t("products.productsBookButton")} link="/livro" />
+                <AnimatedButton
+                  text={t("products.productsBookButton")}
+                  link="/livro"
+                />
               </div>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">
               <img
                 src={ImageBooks}
-                alt="Pilha de livros"
+                alt="" // <-- CORREÇÃO 2: Imagem decorativa
                 className="img_product_stacked-books"
               />
             </div>
@@ -125,37 +133,48 @@ const Products = () => {
         <div className="div_products_block">
           <div className="div_product_item">
             <div className="div_product_content-wrapper">
-              <h2 className=" h2_product_subtitle">Ebook</h2>
+              {/* CORREÇÃO 4: Título "Ebook" usando i18n */}
+              <h2 className=" h2_product_subtitle">
+                {t("products.productsE-BookTitle")}
+              </h2>
               <ul className=" ul_product_features">
-                <li>
-                  {t("products.productsE-BookText1")}
-                </li>
-                <li>
-                  {t("products.productsE-BookText2")}
-                </li>
+                <li>{t("products.productsE-BookText1")}</li>
+                <li>{t("products.productsE-BookText2")}</li>
                 <li>{t("products.productsE-BookText3")}</li>
               </ul>
             </div>
             <div className="div_product_image-wrapper">
               <div className="div_purchase-card div_purchase-card--ebook">
+                {/* CORREÇÃO 3 e 4: Trocado para <h3> e usando <Trans> para <br> */}
                 <h3 className="h3_purchase-card_title">
-                  Guia Inteligente do <br />
-                  Emagrecimento
+                  <Trans i18nKey="products.productsE-BookTitleNameStyled">
+                    Guia Inteligente do <br />
+                    Emagrecimento
+                  </Trans>
                 </h3>
                 <img
                   src={ImageEbook}
-                  alt="Capa do Ebook"
+                  // CORREÇÃO 6: 'alt' text traduzível e descritivo
+                  alt={t('products.ebookCoverAlt', "Capa do Ebook 'Guia Inteligente do Emagrecimento'")}
                   className="img_purchase-card_ebook-cover"
                 />
+                {/* CORREÇÃO 7: Preços "hardcoded" movidos para i18n usando <Trans> */}
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
-                    {t("products.productsE-BookPreco1")} <s>R$ 97,00</s>
+                    <Trans i18nKey="products.productsEbookPriceOld">
+                      De <s>R$ 97,00</s>
+                    </Trans>
                   </span>
                   <span className="span_price_current">
-                    {t("products.productsE-BookPreco2")} <strong>R$ 27,00</strong>
+                    <Trans i18nKey="products.productsEbookPriceNew">
+                      Por <strong>R$ 27,00</strong>
+                    </Trans>
                   </span>
                 </div>
-                <AnimatedButton text={t("products.productsE-BookButton")} link={linkPaymentEbook} />
+                <AnimatedButton
+                  text={t("products.productsE-BookButton")}
+                  link={linkPaymentEbook}
+                />
               </div>
             </div>
           </div>

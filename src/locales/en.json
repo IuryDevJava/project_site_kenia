@@ -69,25 +69,37 @@
     "invalidEmail": "Please enter a valid email address.",
     "invalidPhone": "Please enter a complete and valid phone number."
   },
+
+
   "products": {
-    "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
+    "productsBookTitle": "Recipe Notebook: from the world to your home",
+    "productsBookTitleStyled": "Recipe Notebook: <1/> from the world to your home",
     "productsBookText1": "Original recipes with international inspiration",
     "productsBookText2": "Elegant style, designed for unique gastronomic experiences",
     "productsBookText3": "Exclusive watercolor illustrations",
-    "productsBookText4": "A work that combines art, culture, and flavor",
-    "productsBookPreco1": "From",
-    "productsBookPreco2": "For",
-    "productsBookButton": "View details",
-
-    "productsE-BookTitleName": "Guia Inteligente do Emagrecimento",
+    "productsBookText4": "A work that unites art, culture, and flavor",
+    "productsBookButton": "See details",
+    
+    "productsE-BookTitleName": "Smart Weight Loss Guide",
+    "productsE-BookTitleNameStyled": "Smart Weight Loss <1/> Guide",
     "productsE-BookTitle": "E-book",
-    "productsE-BookText1": "Discover how your microbiota can be the key to losing weight easily and without complicated diets",
-    "productsE-BookText2": "Applicable strategies and 2 weekly menus to inspire you daily",
+    "productsE-BookText1": "Discover how your microbiota can be the key to losing weight lightly and without complicated diets",
+    "productsE-BookText2": "Applicable strategies and 2 weekly menus to inspire your day-to-day",
     "productsE-BookText3": "A practical ebook with essential concepts",
-    "productsE-BookPreco1": "From",
-    "productsE-BookPreco2": "For",
-    "productsE-BookButton": "Buy now"
+    "productsE-BookButton": "Buy now",
+
+    "bookOpenAlt": "'Recipe Notebook' book open displaying illustrations and recipes",
+    "bookFrontAlt": "Front cover of the 'Recipe Notebook' book",
+    "bookBackAlt": "Back cover of the 'Recipe Notebook' book",
+    "ebookCoverAlt": "Cover of the 'Smart Weight Loss Guide' Ebook",
+
+    "productsBookPriceOld": "From <1>R$ 197,00</1>",
+    "productsBookPriceNew": "For <1>R$ 97,00</1>",
+    "productsEbookPriceOld": "From <1>R$ 97,00</1>",
+    "productsEbookPriceNew": "For <1>R$ 27,00</1>"
   },
+
+  
   "FAQ": {
     "faqTitle": "Frequently Asked Questions",
     "faqQuestion1": "Can I return the book if I change my mind?",
