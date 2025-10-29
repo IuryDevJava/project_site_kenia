@@ -7,7 +7,6 @@
     "products": "Produtos",
     "exclusive-space": "Espaço exclusivo",
     "FAQ": "FAQ"
-    
   },
 
   "languages": {
@@ -17,15 +16,14 @@
   },
 
   "about": {
+    "aboutTitle": "Nutricionista especializada no Rio de Janeiro",
     "imageAlt": "Imagem de Kenia Bispo no consultório",
     "textAbout1": "Sou nutricionista e pesquisadora de pós-doutorado na UFRJ, apaixonada por conectar ciência, comida e memórias. Doutora pela Universidad CEU San Pablo e mestre pela UFRJ, atuo em pré-diabetes, saúde intestinal e emagrecimento. Em meu livro de receitas de viagens, uno histórias e sabores do mundo com um olhar leve sobre a alimentação.",
-    "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não nasce de dietas restritivas, mas de escolhas inteligentes que cuidam do corpo e da relação com a comida.",
-    "aboutButton": "Saiba mais"
+    "textAbout2": "Minha missão é mostrar que o emagrecimento saudável não nasce de dietas restritivas, mas de escolhas inteligentes que cuidam do corpo e da relação com a comida."
   },
 
   "services": {
-    "serviceTitle": "Vou te ajudar",
-    "serviceSubTitle": "Vou te ajudar a levar uma vida saudável.",
+    "serviceSubTitle": "Vou te ajudar a ter uma vida mais saudável.",
 
     "serviceCardTitle1": "Consultas personalizadas",
     "serviceCardText1": "Plano alimentar exclusivo, adaptado às suas metas e estilo de vida.",
@@ -34,7 +32,7 @@
     "serviceCardText2": "Monitoramento contínuo para garantir resultados reais e sustentáveis.",
 
     "serviceCardTitle3": "Atendimento online",
-    "serviceCardText3": "Teleconsulta especializada para te receber no seu conforto",
+    "serviceCardText3": "Consultas por videoconferência feitas de onde você estiver.",
 
     "serviceCardTitle4": "Programa Nutricional para emagrecimento",
     "serviceCardText4": "Estratégias inteligentes para perda de peso com equilíbrio e bem-estar.",
@@ -89,7 +87,7 @@
   "products": {
     "productsBookTitle": "Caderno de Receitas: do mundo para sua casa",
     "productsBookTitleStyled": "Caderno de Receitas: <1/> do mundo para sua casa",
-    "productsBookText1": "Receitas autorais com inspiração internacional",
+    "productsBookText1": "Receitas autorais inspiradas na cozinha internacional",
     "productsBookText2": "Estilo elegante, pensado para experiências gastronômicas diferenciadas",
     "productsBookText3": "Ilustrações exclusivas em aquarela",
     "productsBookText4": "Uma obra que une arte, cultura e sabor",
@@ -121,24 +119,24 @@
     "faqAnswer1": "Sim. Você tem até 7 dias corridos depois de receber o livro para desistir da compra. Nesse caso, eu devolvo todo o valor pago.",
 
     "faqQuestion2": "E se o livro chegar com algum problema?",
-    "faqAnswer2": "Se o livro vier com defeito ou danificado no transporte, você pode escolher: receber um novo exemplar ou ter o dinheiro de volta. Basta me avisar e eu cuido de tudo para você não ter dor de cabeça.",
+    "faqAnswer2": "Se o livro chegar com defeito ou danificado no transporte, você pode escolher entre receber um novo exemplar ou ter o dinheiro de volta. Basta me avisar. Eu cuido de tudo para você não ter dor de cabeça.",
 
     "faqQuestion3": "Quais são as formas de pagamento?",
     "faqAnswer3_p1": "Você pode pagar com cartão de crédito ou Pix.",
     "faqAnswer3_li1": "No cartão, dá para parcelar em até 5 vezes sem juros.",
-    "faqAnswer3_li2": "No Pix, o pagamento é à vista e a confirmação cai rápido.",
+    "faqAnswer3_li2": "No Pix, o pagamento é à vista e a confirmação é rápida.",
 
     "faqQuestion4": "Em quanto tempo vocês enviam o livro?",
     "faqAnswer4": "Depois que o pagamento é confirmado, eu preparo tudo com cuidado e posto nos Correios em até 2 dias úteis.",
 
     "faqQuestion5": "Quanto tempo leva para chegar?",
-    "faqAnswer5_p1": "O prazo varia de acordo com o CEP e o tipo de envio que você escolher:",
+    "faqAnswer5_p1": "O prazo varia de acordo com o CEP e o tipo de envio que você escolher.",
     "faqAnswer5_li1": "<strong>PAC:</strong> mais econômico, mas demora um pouco mais.",
     "faqAnswer5_li2": "<strong>Sedex:</strong> chega mais rápido.",
     "faqAnswer5_p2": "Para ter uma ideia: quem está no Rio de Janeiro recebe em cerca de 3 dias úteis.",
 
     "faqQuestion6": "Como acompanho meu pedido?",
-    "faqAnswer6": "Assim que o livro for postado, você recebe por e-mail o código de rastreio dos Correios. Assim pode acompanhar cada etapa da entrega.",
+    "faqAnswer6": "Assim que o livro for postado, você recebe por e-mail o código de rastreio dos Correios. Então, é só acompanhar cada etapa da entrega.",
 
     "faqQuestion7": "Posso comprar para presente?",
     "faqAnswer7": "Sim. É só colocar o endereço da pessoa presenteada na hora da compra. Se quiser, posso até incluir um recadinho especial dentro do pacote.",
@@ -190,18 +188,18 @@
     "altBack": "Capa de trás do livro Caderno de Receitas",
     "title": "Caderno de Receitas: do mundo para sua casa",
     "subtitle": "Um livro que une gastronomia, memórias e arte.",
-    "desc1": "Em \"O caderno de receitas: do mundo para a sua casa\", apresenta um repertório de receitas inspiradas em suas experiências, traduzindo a essência de diferentes culturas para uma cozinha elegante e cheia de significado.",
+    "desc1": " \"O caderno de receitas: do mundo para a sua casa\", apresenta um repertório de receitas inspiradas em minhas experiências, traduzindo a essência de diferentes culturas para uma cozinha cheia de personalidade e significado.",
     "desc2": "Cada página é acompanhada por delicadas aquarelas pintadas por mim...",
     "detailsTitle": "Dados do Livro",
     "detailsLi1": "<strong class=\"strong\">Páginas:</strong> 133",
     "detailsLi2": "<strong class=\"strong\">Formato:</strong> 13,5 x 21 cm",
     "detailsLi3": "<strong class=\"strong\">Encadernação:</strong> Capa dura, lombada quadrada e plastificação fosca",
     "detailsLi4": "<strong class=\"strong\">Idioma:</strong> Português",
-    "buttonText": "Comprar agora"
+    "buttonText": "Comprar"
   },
 
   "communityPage": {
-    "altText": "Foto de Kenia Bispo em um ambiente de escritório, representando sua comunidade Patreon",
+    "altText": "Foto de Kenia Bispo no escritório, representando sua comunidade Patreon",
     "title": "Comunidade Patreon",
     "description": "No meu espaço no Patreon, você tem acesso a conteúdos que não estão nas redes sociais: reflexões sobre alimentação, hábitos de vida, receitas com história, guias práticos e materiais exclusivos. É também um lugar para nos aproximarmos, trocarmos ideias e caminharmos em direção a uma vida mais leve e saudável.",
     "buttonText": "Faça parte"
@@ -215,15 +213,15 @@
       "title1": "1. Cancelamento da Compra (Direito de Arrependimento)",
       "p1_1": "Conforme o Artigo 49 do Código de Defesa do Consumidor do Brasil, o cliente tem o direito de se arrepender da compra de produtos adquiridos fora do estabelecimento comercial (como pela internet) no prazo de <1>7 (sete) dias corridos</1>, a contar da data do recebimento do produto ou da assinatura do contrato.",
       "p1_2": "Para produtos digitais (como nosso e-book), o prazo de 7 dias começa a contar a partir da data da confirmação do pagamento e liberação do acesso ao material.",
-      "title2": "2. Como Solicitar o Cancelamento",
-      "p2_1": "Para exercer seu direito de arrependimento, você deve nos notificar dentro do prazo de 7 dias através do nosso canal de atendimento oficial.",
+      "title2": "2. Como solicitar o cancelamento?",
+      "p2_1": "Para exercer seu direito de arrependimento, você deve nos notificar dentro do prazo de 7 dias, através do nosso canal de atendimento oficial.",
       "li2_1": "Envie um e-mail para: <1>{{email}}</1>",
-      "li2_2": "No e-mail, informe seu nome completo, e-mail utilizado na compra e o motivo \"Solicitação de Cancelamento\".",
+      "li2_2": "No e-mail, informe seu nome completo, e-mail utilizado na compra e o motivo \"Solicitação de cancelamento\".",
       "title3": "3. Processamento do Reembolso",
       "p3_1": "Após a confirmação da sua solicitação (dentro do prazo de 7 dias), procederemos com o reembolso total do valor pago.",
       "li3_1": "O reembolso será processado através do mesmo método de pagamento utilizado na compra (ex: estorno no cartão de crédito ou reembolso via PIX/transferência).",
       "li3_2": "O prazo para o estorno no cartão de crédito pode variar dependendo da operadora do cartão.",
-      "title4": "4. Após o Prazo de 7 Dias",
+      "title4": "4. Após o prazo de 7 dias",
       "p4_1": "Não serão aceitas solicitações de cancelamento ou reembolso após o término do prazo legal de 7 dias (direito de arrependimento). Por se tratar de um produto digital de consumo imediato, após esse período, a compra é considerada final.",
       "title5": "5. Contato",
       "p5_1": "Para dúvidas ou mais informações sobre nossa política de cancelamento, entre em contato pelo e-mail: <1>{{email}}</1>."

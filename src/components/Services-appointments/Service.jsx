@@ -87,7 +87,7 @@ const Service = () => {
       <section className="service_section" id="services">
         <div className="container">
           <div className="service_header">
-            <h1>{t("services.serviceSubTitle")}</h1>
+            <h3 className="title_service_text">{t("services.serviceSubTitle")}</h3>
           </div>
           {/* Retorna o container vazio para evitar "flash" */}
           <div className="row_div_card"></div>
@@ -135,7 +135,7 @@ const Service = () => {
     <section className="service_section" id="services">
       <div className="container">
         <div className="service_header">
-          <h1>{t("services.serviceSubTitle")}</h1>
+          <h3 className="title_service_text">{t("services.serviceSubTitle")}</h3>
         </div>
 
         <div className="row_div_card">

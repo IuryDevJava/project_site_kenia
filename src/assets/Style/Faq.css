@@ -30,7 +30,7 @@
   font-size: 20px !important;
 }
 
-p {
+p li a {
   font-size: 18px;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -104,8 +104,8 @@ p {
     font-size: 16px !important;
   }
 
-  p {
-    font-size: 14px;
+  p li a {
+    font-size: 16px;
   }
 }
 
@@ -117,7 +117,7 @@ p {
 
   .faq-title {
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .accordion-item {
@@ -130,16 +130,16 @@ p {
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
   }
 
   a {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   li {
-    font-size: 13px;
+    font-size: 14px;
   }
 
 }

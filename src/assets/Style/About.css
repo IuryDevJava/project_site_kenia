@@ -4,6 +4,14 @@
   background-color: var(--about-section-background);
 }
 
+.title_about_text {
+  margin: 0;
+  color: #656565;
+  font-size: 30px;
+  padding: 0 0 32px;
+  font-weight: 600;
+}
+
 .p-1-text,
 .p-2-text {
   display: inline-flex;
@@ -39,11 +47,24 @@
     font-size: 18px !important;
     width: 100%;
   }
+
+  .title_about_text {
+    font-size: 25px;
+    padding: 0 0 24px;
+  }
 }
 
 @media (max-width: 767px) {
   .about_section {
     padding: 117px 0 32px !important;
+  }
+
+  .title_about_text {
+    font-size: 20px !important;
+    padding: 0 0 16px;
+    margin: auto;
+    display: flex;
+    width: 290px !important;
   }
 
   .p-1-text,

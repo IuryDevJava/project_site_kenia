@@ -39,13 +39,11 @@ const Products = () => {
         <div className="div_product_block">
           <div className="div_product_item">
             <div className="div_product_image-wrapper">
-              {/* CORREÇÃO 3 e 4: Trocado <h1> por <h2> e usando i18n */}
               <h2 className="h1_version_mobile">
                 {t("products.productsBookTitle")}
               </h2>
 
               <picture>
-                {/* CORREÇÃO 5: Removido 'alt' inválido das tags <source> */}
                 <source
                   media="(min-width: 992px)"
                   srcSet={ImageOpenBookDesk}
@@ -61,14 +59,12 @@ const Products = () => {
 
                 <img
                   src={ImageOpenBookMobile2}
-                  // CORREÇÃO 6: 'alt' text traduzível e descritivo
                   alt={t('products.bookOpenAlt', "Livro 'Caderno de Receitas' aberto exibindo ilustrações e receitas")}
                   className="product_image_open-book"
                 />
               </picture>
             </div>
             <div className="div_product_content-wrapper div_product_content-wrapper--center">
-              {/* CORREÇÃO 3 e 4: Trocado <h1> por <h2> e usando <Trans> para <br> */}
               <h2 className="h1_product_title">
                 <Trans i18nKey="products.productsBookTitleStyled">
                   Caderno de Receitas: <br />
@@ -90,18 +86,15 @@ const Products = () => {
                 <div className="div_purchase-card_covers">
                   <img
                     src={ImageBookFront}
-                    // CORREÇÃO 6: 'alt' text traduzível e descritivo
                     alt={t('products.bookFrontAlt', "Capa frontal do livro 'Caderno de Receitas'")}
                     className="img_purchase-card_cover"
                   />
                   <img
                     src={ImageBookBack}
-                    // CORREÇÃO 6: 'alt' text traduzível e descritivo
                     alt={t('products.bookBackAlt', "Capa traseira do livro 'Caderno de Receitas'")}
                     className="img_purchase-card_cover"
                   />
                 </div>
-                {/* CORREÇÃO 7: Preços "hardcoded" movidos para i18n usando <Trans> */}
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
                     <Trans i18nKey="products.productsBookPriceOld">
@@ -123,7 +116,7 @@ const Products = () => {
             <div className="div_product_content-wrapper div_product_content-wrapper--centered">
               <img
                 src={ImageBooks}
-                alt="" // <-- CORREÇÃO 2: Imagem decorativa
+                alt=""
                 className="img_product_stacked-books"
               />
             </div>
@@ -133,7 +126,6 @@ const Products = () => {
         <div className="div_products_block">
           <div className="div_product_item">
             <div className="div_product_content-wrapper">
-              {/* CORREÇÃO 4: Título "Ebook" usando i18n */}
               <h2 className=" h2_product_subtitle">
                 {t("products.productsE-BookTitle")}
               </h2>
@@ -145,20 +137,17 @@ const Products = () => {
             </div>
             <div className="div_product_image-wrapper">
               <div className="div_purchase-card div_purchase-card--ebook">
-                {/* CORREÇÃO 3 e 4: Trocado para <h3> e usando <Trans> para <br> */}
-                <h3 className="h3_purchase-card_title">
+                <h2 className="h3_purchase-card_title">
                   <Trans i18nKey="products.productsE-BookTitleNameStyled">
                     Guia Inteligente do <br />
                     Emagrecimento
                   </Trans>
-                </h3>
+                </h2>
                 <img
                   src={ImageEbook}
-                  // CORREÇÃO 6: 'alt' text traduzível e descritivo
                   alt={t('products.ebookCoverAlt', "Capa do Ebook 'Guia Inteligente do Emagrecimento'")}
                   className="img_purchase-card_ebook-cover"
                 />
-                {/* CORREÇÃO 7: Preços "hardcoded" movidos para i18n usando <Trans> */}
                 <div className="div_purchase-card_price-info">
                   <span className="span_price_original">
                     <Trans i18nKey="products.productsEbookPriceOld">

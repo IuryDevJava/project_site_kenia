@@ -4,12 +4,8 @@
   overflow: hidden;
 }
 
-/* Cabeçalho da seção */
-.service_header {
-  padding-bottom: 32px !important;
-}
-
-.service_header h1 {
+.service_header .title_service_text {
+  padding: 0 0 32px;
   font-size: 30px;
   color: #656565;
   font-weight: 600;
@@ -99,8 +95,9 @@
     padding: 50px 0 80px;
   }
 
-  .service_header h1 {
-    font-size: 25px !important;
+  .service_header .title_service_text {
+    padding: 0 0 24px;
+    font-size: 25px;
   }
 
   .service_card {
@@ -113,10 +110,6 @@
   .row_div_card {
     grid-template-columns: repeat(2, auto);
     gap: 24px;
-  }
-
-  .service_header {
-    padding-bottom: 24px !important;
   }
 
   .card_title {
@@ -139,12 +132,11 @@
     overflow-x: hidden;
   }
 
-  .service_header {
-    padding-bottom: 0px !important;
-  }
-
-  .swiper-wrapper {
-    padding: 16px 0 0 !important;
+  .service_header .title_service_text {
+    font-size: 20px !important;
+    padding: 0 0 16px !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
 
   .card_header {
@@ -165,12 +157,6 @@
     margin: 0 !important;
     margin: 0 0 0 !important;
     font-size: 14px !important;
-  }
-
-  h1 {
-    font-size: 20px !important;
-    justify-content: center !important;
-    text-align: center !important;
   }
 
   .service_card {
