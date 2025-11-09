@@ -208,7 +208,7 @@
   "legal": {
     "cancellation": {
       "h1": "Política de Cancelamento e Reembolso",
-      "lastUpdated": "Última atualização:",
+      "lastUpdated": "Última atualização: ",
       "intro": "Esta política descreve como lidamos com cancelamentos e reembolsos para o <1>{{productName}}</1>.",
       "title1": "1. Cancelamento da Compra (Direito de Arrependimento)",
       "p1_1": "Conforme o Artigo 49 do Código de Defesa do Consumidor do Brasil, o cliente tem o direito de se arrepender da compra de produtos adquiridos fora do estabelecimento comercial (como pela internet) no prazo de <1>7 (sete) dias corridos</1>, a contar da data do recebimento do produto ou da assinatura do contrato.",

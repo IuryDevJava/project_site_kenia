@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/Style/Comunidade.css";
 import "../assets/Style/ButtonSecundary.css";
 import AnimatedButton from "../components/Products/AnimatedButton";
-import { useTranslation } from "react-i18next"; // 1. IMPORTAR
+import { useTranslation } from "react-i18next";
 
 import ImagePatreonCommunity1 from "../assets/images/about-img/img_kenia_about_desk.png";
 import ImagePatreonCommunity2 from "../assets/images/about-img/img_kenia_about_tablet.png";
@@ -34,7 +34,7 @@ const CommunityPage = () => {
             </picture>
           </div>
           <div className="div_response_title_text">
-            <h1 className="h1_title_patreon">{t("communityPage.title")}</h1>
+            <h2 className="h1_title_patreon">{t("communityPage.title")}</h2>
             <p className="p_text_patreon">{t("communityPage.description")}</p>
 
             <AnimatedButton href={link} text={t("communityPage.buttonText")} />

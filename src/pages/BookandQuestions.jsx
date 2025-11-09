@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Thumbs, A11y } from "swiper/modules";
 import AnimatedButton from "../components/Products/AnimatedButton";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -71,7 +71,7 @@ const BookandQuestions = () => {
                 slidesPerView={5}
                 freeMode={true}
                 watchSlidesProgress={true}
-                modules={[FreeMode, Thumbs]}
+                modules={[FreeMode, Thumbs, A11y]}
                 className="thumbnails-swiper"
               >
                 {bookImages.map((image) => (
@@ -82,7 +82,7 @@ const BookandQuestions = () => {
                       }`}
                       onClick={() => handleThumbnailClick(image)}
                     >
-                      <img src={image.desk} alt={image.alt} />
+                      <img src={image.desk} alt="" aria-hidden="true" />
                     </button>
                   </SwiperSlide>
                 ))}
@@ -96,23 +96,39 @@ const BookandQuestions = () => {
                 <h1 className="h1_title_productspage">
                   Caderno de Receitas: do mundo para sua casa
                 </h1>
-                <h5 className="h5_title_book">
-                  {t("bookPage.subtitle")}
-                </h5>
-                <p className="p_text_book1">
-                  {t("bookPage.desc1")}
-                </p>
-                <p className="p_text_book2">
-                  {t("bookPage.desc2")}
-                </p>
+                <h2 className="h5_title_book">{t("bookPage.subtitle")}</h2>
+                <p className="p_text_book1">{t("bookPage.desc1")}</p>
+                <p className="p_text_book2">{t("bookPage.desc2")}</p>
 
                 <div className="book-details">
-                  <h6 className="fw-bold dados_book">{t("bookPage.detailsTitle")}</h6>
+                  <h6 className="fw-bold dados_book">
+                    {t("bookPage.detailsTitle")}
+                  </h6>
                   <ul className="ul_ list-unstyled">
-                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi1") }} />
-                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi2") }} />
-                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi3") }} />
-                    <li className="li" dangerouslySetInnerHTML={{ __html: t("bookPage.detailsLi4") }} />
+                    <li className="li">
+                      <Trans
+                        i18nKey="bookPage.detailsLi1"
+                        components={{ strong: <strong className="strong" /> }}
+                      />
+                    </li>
+                    <li className="li">
+                      <Trans
+                        i18nKey="bookPage.detailsLi2"
+                        components={{ strong: <strong className="strong" /> }}
+                      />
+                    </li>
+                    <li className="li">
+                      <Trans
+                        i18nKey="bookPage.detailsLi3"
+                        components={{ strong: <strong className="strong" /> }}
+                      />
+                    </li>
+                    <li className="li">
+                      <Trans
+                        i18nKey="bookPage.detailsLi4"
+                        components={{ strong: <strong className="strong" /> }}
+                      />
+                    </li>
                   </ul>
                 </div>
 
@@ -126,7 +142,7 @@ const BookandQuestions = () => {
           </div>
         </div>
       </div>
-      <article>     
+      <article>
         <Faq />
       </article>
     </section>

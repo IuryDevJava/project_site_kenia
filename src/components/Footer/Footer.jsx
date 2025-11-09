@@ -41,7 +41,7 @@ const Footer = () => {
                     />
                     <img
                       src={ImageLogoFooterMobile}
-                      alt={t('footer.logoAlt', 'Logo da Drª Kenia Bispo')}
+                      alt={t("footer.logoAlt", "Logo da Drª Kenia Bispo")}
                       className="footer-logo"
                     />
                   </picture>
@@ -53,7 +53,10 @@ const Footer = () => {
                   href={linkLinkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('footer.ariaLinkedin', 'Acessar o perfil no LinkedIn')}
+                  aria-label={t(
+                    "footer.ariaLinkedin",
+                    "Acessar o perfil no LinkedIn"
+                  )}
                   className="social-btn"
                 >
                   <i className="bi bi-linkedin" aria-hidden="true"></i>{" "}
@@ -62,7 +65,10 @@ const Footer = () => {
                   href={linkInstagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('footer.ariaInstagram', 'Acessar o perfil no Instagram')}
+                  aria-label={t(
+                    "footer.ariaInstagram",
+                    "Acessar o perfil no Instagram"
+                  )}
                   className="social-btn"
                 >
                   <i className="bi bi-instagram" aria-hidden="true"></i>{" "}
@@ -71,7 +77,10 @@ const Footer = () => {
                   href={linkYoutube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('footer.ariaYoutube', 'Acessar o canal no YouTube')}
+                  aria-label={t(
+                    "footer.ariaYoutube",
+                    "Acessar o canal no YouTube"
+                  )}
                   className="social-btn"
                 >
                   <i className="bi bi-youtube" aria-hidden="true"></i>{" "}
@@ -80,7 +89,10 @@ const Footer = () => {
                   href={linkWhatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t('footer.ariaWhatsapp', 'Iniciar conversa no WhatsApp')}
+                  aria-label={t(
+                    "footer.ariaWhatsapp",
+                    "Iniciar conversa no WhatsApp"
+                  )}
                   className="social-btn"
                 >
                   <i className="bi bi-whatsapp" aria-hidden="true"></i>{" "}
@@ -175,7 +187,7 @@ const Footer = () => {
               {t("footer.footerRodape2_part1")}
               <a
                 className="a_icdigitalexperience"
-                href="#"
+                href="https://www.icdigitalexperience.com.br/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
