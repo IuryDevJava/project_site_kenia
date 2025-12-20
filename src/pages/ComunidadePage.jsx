@@ -4,9 +4,9 @@ import "../assets/Style/ButtonSecundary.css";
 import AnimatedButton from "../components/Products/AnimatedButton";
 import { useTranslation } from "react-i18next";
 
-import ImagePatreonCommunity1 from "../assets/images/about-img/img_kenia_about_desk.png";
-import ImagePatreonCommunity2 from "../assets/images/about-img/img_kenia_about_tablet.png";
-import ImagePatreonCommunity3 from "../assets/images/about-img/img_kenia_about_mobile.png";
+import ImagePatreonCommunity1 from "../assets/images/patreon-img/img-kenia-patron-desk.jpg"
+import ImagePatreonCommunity2 from "../assets/images/patreon-img/img-kenia-patron-tablet.jpg";
+import ImagePatreonCommunity3 from "../assets/images/patreon-img/img-kenia-patron-mobile.jpg";
 
 const CommunityPage = () => {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ const CommunityPage = () => {
             <h2 className="h1_title_patreon">{t("communityPage.title")}</h2>
             <p className="p_text_patreon">{t("communityPage.description")}</p>
 
-            <AnimatedButton href={link} text={t("communityPage.buttonText")} />
+            <AnimatedButton link= {link} text={t("communityPage.buttonText")} />
           </div>
         </div>
       </div>

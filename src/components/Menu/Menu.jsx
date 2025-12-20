@@ -130,7 +130,7 @@ const Menu = () => {
           </nav>
 
           <div className="header-actions">
-            <div className="language-switcher">
+            {/* <div className="language-switcher">
               <Dropdown>
                 <Dropdown.Toggle
                   id="dropdown-language"
@@ -172,7 +172,7 @@ const Menu = () => {
                     ))}
                 </Dropdown.Menu>
               </Dropdown>
-            </div>
+            </div> */}
 
             <button
               aria-label={
