@@ -1,8 +1,8 @@
 import React from "react";
 import "../../assets/Style/About.css";
-import ImageAboutDesk1 from '../../assets/images/about-img/img_kenia_about_desk.png';
-import ImageAboutTablet1 from '../../assets/images/about-img/img_kenia_about_tablet.png';
-import ImageAboutMobile1 from '../../assets/images/about-img/img_kenia_about_mobile.png';
+import ImageAboutDesk1 from '../../assets/images/about-img/img_kenia_about_desk.jpg';
+import ImageAboutTablet1 from '../../assets/images/about-img/img_kenia_about_tablet.jpg';
+import ImageAboutMobile1 from '../../assets/images/about-img/img_kenia_about_mobile.jpg';
 
 import { useTranslation } from "react-i18next";
 
