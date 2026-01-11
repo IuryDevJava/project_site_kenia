@@ -16,7 +16,7 @@ const About = () => {
           <article className="col-12 div_section_cont">
             
             <div className="about_section_text">
-              <h1 className="title_about_text">{t('about.aboutTitle')}</h1>
+              {/* <h1 className="title_about_text">{t('about.aboutTitle')}</h1> */}
               <p className="p-1-text">
                 {t('about.textAbout1')}
               </p>
